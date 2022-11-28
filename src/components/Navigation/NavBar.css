@@ -4,7 +4,7 @@
   background: #181818 !important;
   top: 0;
   left: 0;
-  width: 10vw;
+  width: 9vw;
   height: 100vh;
   border-right: 1px #ff0077 solid;
   text-align: center;
@@ -33,6 +33,8 @@
 #main-nav .nav-links {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
 }
 #main-nav .nav-links .nav-link {
   list-style: none;
@@ -43,7 +45,20 @@
   width: 100%;
   font-size: 0.75rem;
   text-transform: uppercase;
+  transition: color 3000 ease-in-out;
 }
 #main-nav .nav-links .nav-link a:hover {
-  background-color: rgba(24, 24, 24, 0.9);
+  background-color: rgba(26, 26, 26, 0.9);
+  color: #ff0077;
+  font-weight: 600;
+}
+#main-nav .nav-links .nav-link .active {
+  color: #ff0077;
+  font-weight: 600;
+}
+#main-nav #header-footer {
+  color: #8f8f8f;
+  display: inline-block;
+  width: 100%;
+  padding: 0.4rem 0;
 }/*# sourceMappingURL=NavBar.css.map */

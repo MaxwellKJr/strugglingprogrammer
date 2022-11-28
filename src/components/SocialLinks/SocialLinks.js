@@ -1,4 +1,5 @@
 import React from 'react';
+import './SocialLinks.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faTwitter,
@@ -45,11 +46,11 @@ const socialLinkData = [
 const links = socialLinkData;
 
 const SocialLinks = () => (
-	<ul>
+	<ul id='social-links'>
 		{links.map(link => (
-			<li>
+			<li className='social-link'>
 				<a key={link.name} href={link.url}>
-					<FontAwesomeIcon icon={link.icon} />
+					<FontAwesomeIcon icon={link.icon} size='lg' />
 				</a>
 			</li>
 		))}

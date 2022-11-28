@@ -15,12 +15,17 @@ const NavBar = () => {
 				</Link>
 				<ul className='nav-links'>
 					{links.map(link => (
-						<li className='nav-link' activeClassName='active' key={link.name}>
-							<Link to={link.route}>{link.name}</Link>
+						<li className='nav-link' key={link.name}>
+							<Link to={link.route} activeClassName='active'>
+								{link.name}
+							</Link>
 						</li>
 					))}
 				</ul>
 				<SocialLinks />
+				<div id='header-footer'>
+					<small>&copy; MJ Codes</small>
+				</div>
 			</div>
 		</nav>
 	);

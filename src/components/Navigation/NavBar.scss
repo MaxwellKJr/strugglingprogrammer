@@ -5,7 +5,7 @@
 	background: index.$primary-background !important;
 	top: 0;
 	left: 0;
-	width: 10vw;
+	width: 9vw;
 	height: 100vh;
 	border-right: 1px index.$primary-color solid;
 	text-align: center;
@@ -37,6 +37,8 @@
 	.nav-links {
 		display: flex;
 		flex-direction: column;
+		flex-grow: 1;
+		justify-content: center;
 
 		.nav-link {
 			list-style: none;
@@ -47,10 +49,25 @@
 				width: 100%;
 				font-size: 0.75rem;
 				text-transform: uppercase;
+				transition: color 3000 ease-in-out;
 				&:hover {
-					background-color: rgba($color: #181818, $alpha: 0.9);
+					background-color: rgba($color: #1a1a1a, $alpha: 0.9);
+					color: index.$primary-color;
+					font-weight: 600;
 				}
 			}
+
+			.active {
+				color: index.$primary-color;
+				font-weight: 600;
+			}
 		}
+	}
+
+	#header-footer {
+		color: index.$secondary-white;
+		display: inline-block;
+		width: 100%;
+		padding: 0.4rem 0;
 	}
 }

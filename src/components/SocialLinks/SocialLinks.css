@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
+#social-links {
+  border-bottom: 1px solid #8f8f8f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+#social-links .social-link a {
+  color: #8f8f8f;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+#social-links .social-link a:hover {
+  color: #ff0077;
+}/*# sourceMappingURL=SocialLinks.css.map */
