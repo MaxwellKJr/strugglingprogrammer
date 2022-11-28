@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
+#main-nav {
+  position: absolute;
+  background: #181818 !important;
+  top: 0;
+  left: 0;
+  width: 10vw;
+  height: 100vh;
+  border-right: 1px #ff0077 solid;
+  text-align: center;
+}
+#main-nav a {
+  color: #f0f8ff;
+  text-decoration: none;
+}
+#main-nav .logo {
+  display: inline-block;
+  font-family: "Odibee Sans";
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  color: #ff0077;
+  background: rgba(255, 0, 119, 0.1);
+}
+#main-nav .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#main-nav .nav-links {
+  display: flex;
+  flex-direction: column;
+}
+#main-nav .nav-links .nav-link {
+  list-style: none;
+}
+#main-nav .nav-links .nav-link a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+#main-nav .nav-links .nav-link a:hover {
+  background-color: rgba(24, 24, 24, 0.9);
+}/*# sourceMappingURL=NavBar.css.map */
