@@ -13,7 +13,7 @@ const NavBar = () => {
 		<nav id='main-nav'>
 			<div className='container'>
 				<Link to='/' className='logo'>
-					MJ Codes
+					MJ <br /> Codes
 				</Link>
 				<ul className='nav-links'>
 					{links.map(link => (

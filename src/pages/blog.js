@@ -5,7 +5,9 @@ const Blog = () => {
 	return (
 		<Layout>
 			<section>
-				<h1>Read Something</h1>
+				<div className='container'>
+					<h1>Read Something</h1>
+				</div>
 			</section>
 		</Layout>
 	);

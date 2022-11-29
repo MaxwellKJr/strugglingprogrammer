@@ -10,9 +10,11 @@
   color: #8f8f8f;
   display: inline-block;
   padding: 0.5rem 0;
+  transition: all ease-in-out 300ms;
 }
 #social-links .social-link a:hover {
   color: #ff0077;
+  transform: translateY(-8px);
 }
 @media (max-width: 968px) {
   #social-links {

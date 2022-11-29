@@ -3,15 +3,15 @@ import './Showcase.css';
 
 const occupations = [
 	{
-		name: 'Software Developer 💻',
+		name: 'Software Developer💻',
 		url: 'https://maxwellkapezi-resume.netlify.app',
 	},
 	{
-		name: 'Writer 📝',
+		name: 'Writer📝',
 		url: 'https://malawianwriter.vercel.app',
 	},
 	{
-		name: 'Graphic Designer 🖌️',
+		name: 'Graphic Designer🖌️',
 		url: 'https://instagram.com/_maxwellkjr',
 	},
 ];

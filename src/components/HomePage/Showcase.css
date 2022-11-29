@@ -3,7 +3,8 @@
   min-height: 80vh;
 }
 #showcase #slogan {
-  font-size: 2.5rem;
+  font-family: "Poppins";
+  font-size: 2.4rem;
   font-weight: 900;
   line-height: 1;
   margin-bottom: 1rem;
@@ -20,13 +21,13 @@
 }
 #showcase .occupations {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 #showcase .occupations .occupation {
   color: #8f8f8f;
   font-size: 14px;
-  padding-right: 1rem;
+  padding-right: 0.8rem;
 }
 #showcase .occupations .occupation:hover {
   color: #ff0077;

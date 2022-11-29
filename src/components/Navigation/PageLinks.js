@@ -1,4 +1,4 @@
-import { faCode, faHome, faPen, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faLaptopCode, faPen, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const pageLinks = () => [
 	{
@@ -6,6 +6,12 @@ const pageLinks = () => [
 		route: '/',
 		title: 'Home',
 		icon: faHome,
+	},
+	{
+		name: 'About',
+		route: '/about',
+		title: 'Know me',
+		icon: faUser,
 	},
 	{
 		name: 'Blog',
@@ -17,13 +23,7 @@ const pageLinks = () => [
 		name: 'Projects',
 		route: '/projects',
 		title: 'See my work',
-		icon: faCode,
-	},
-	{
-		name: 'About',
-		route: '/about',
-		title: 'Know me',
-		icon: faUser,
+		icon: faLaptopCode,
 	},
 ];
 

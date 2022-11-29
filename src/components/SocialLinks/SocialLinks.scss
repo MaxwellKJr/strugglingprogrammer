@@ -13,8 +13,10 @@
 			color: index.$secondary-white;
 			display: inline-block;
 			padding: 0.5rem 0;
+			transition: all ease-in-out 300ms;
 			&:hover {
 				color: index.$primary-color;
+				transform: translateY(-8px);
 			}
 		}
 	}

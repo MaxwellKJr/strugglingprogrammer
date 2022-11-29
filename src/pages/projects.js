@@ -5,7 +5,9 @@ const Projects = () => {
 	return (
 		<Layout>
 			<section>
-				<h1>My Work</h1>
+				<div className='container'>
+					<h1>My Work</h1>
+				</div>
 			</section>
 		</Layout>
 	);
