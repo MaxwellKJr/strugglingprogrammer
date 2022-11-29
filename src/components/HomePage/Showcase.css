@@ -3,10 +3,20 @@
   min-height: 80vh;
 }
 #showcase #slogan {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 900;
   line-height: 1;
   margin-bottom: 1rem;
+}
+@media (max-width: 968px) {
+  #showcase #slogan {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 480px) {
+  #showcase #slogan {
+    font-size: 2rem;
+  }
 }
 #showcase .occupations {
   display: flex;
@@ -17,6 +27,9 @@
   color: #8f8f8f;
   font-size: 14px;
   padding-right: 1rem;
+}
+#showcase .occupations .occupation:hover {
+  color: #ff0077;
 }
 #showcase p {
   margin: 1.4rem 0;
