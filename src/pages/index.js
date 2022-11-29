@@ -1,11 +1,12 @@
 import * as React from 'react';
 import '../styles/global.css';
 import Layout from '../components/Layout';
+import Showcase from '../components/SocialLinks/HomePage/Showcase';
 
 const IndexPage = () => {
 	return (
 		<Layout>
-			<h1>Hello</h1>
+			<Showcase />
 		</Layout>
 	);
 };

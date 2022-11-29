@@ -4,7 +4,7 @@
 #main-nav {
 	position: absolute;
 	background: index.$primary-background;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	width: 10vw;
 	height: 100vh;
@@ -39,6 +39,7 @@
 		height: 100%;
 
 		@media (max-width: breakpoints.$lg) {
+			height: 10vh !important;
 			justify-content: center;
 		}
 	}
@@ -70,7 +71,6 @@
 				&:hover {
 					background-color: rgba($color: #1a1a1a, $alpha: 0.9);
 					color: index.$primary-color;
-					font-weight: 600;
 				}
 
 				.route-icon {
@@ -88,7 +88,7 @@
 				}
 
 				@media (max-width: breakpoints.$lg) {
-					padding: 1rem 0;
+					padding: 0;
 				}
 			}
 
@@ -100,7 +100,7 @@
 	}
 
 	@media (max-width: breakpoints.$lg) {
-		top: 100vh;
+		background: rgba($color: #ff0077, $alpha: 0.1);
 		bottom: 0;
 		height: 10vh;
 		width: 100vw;
@@ -110,6 +110,9 @@
 			.nav-link {
 				a {
 					padding: 0;
+					&:hover {
+						background: none;
+					}
 				}
 			}
 		}

@@ -11,4 +11,9 @@ body {
   background: #181818;
   color: #ebebeb;
   font-family: "Poppins";
+}
+
+a {
+  color: #ebebeb;
+  text-decoration: none;
 }/*# sourceMappingURL=global.css.map */

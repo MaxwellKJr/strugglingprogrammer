@@ -1,0 +1,37 @@
+@use '../../../styles/index';
+@use '../../../styles/breakpoints';
+
+#showcase {
+	.container {
+		min-height: 80vh;
+	}
+
+	#slogan {
+		font-size: 2.4rem;
+		font-weight: 900;
+		line-height: 1;
+		margin-bottom: 1rem;
+	}
+
+	.occupations {
+		display: flex;
+		justify-content: start;
+		flex-wrap: wrap;
+
+		.occupation {
+			color: index.$secondary-white;
+			font-size: 14px;
+			padding-right: 1rem;
+		}
+	}
+
+	p {
+		margin: 1.4rem 0;
+		max-width: 60%;
+
+		@media (max-width: breakpoints.$lg) {
+			max-width: 100%;
+			font-size: 14px;
+		}
+	}
+}

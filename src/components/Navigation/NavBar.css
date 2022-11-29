@@ -2,7 +2,7 @@
 #main-nav {
   position: absolute;
   background: #181818;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 10vw;
   height: 100vh;
@@ -38,6 +38,7 @@
 }
 @media (max-width: 968px) {
   #main-nav .container {
+    height: 10vh !important;
     justify-content: center;
   }
 }
@@ -70,7 +71,6 @@
 #main-nav .nav-links .nav-link a:hover {
   background-color: rgba(26, 26, 26, 0.9);
   color: #ff0077;
-  font-weight: 600;
 }
 #main-nav .nav-links .nav-link a .route-icon {
   display: none;
@@ -88,7 +88,7 @@
 }
 @media (max-width: 968px) {
   #main-nav .nav-links .nav-link a {
-    padding: 1rem 0;
+    padding: 0;
   }
 }
 #main-nav .nav-links .nav-link .active {
@@ -97,7 +97,7 @@
 }
 @media (max-width: 968px) {
   #main-nav {
-    top: 100vh;
+    background: rgba(255, 0, 119, 0.1);
     bottom: 0;
     height: 10vh;
     width: 100vw;
@@ -106,6 +106,9 @@
   }
   #main-nav .nav-links .nav-link a {
     padding: 0;
+  }
+  #main-nav .nav-links .nav-link a:hover {
+    background: none;
   }
 }
 #main-nav #header-footer {
