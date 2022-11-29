@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
 #main-nav {
   position: absolute;
-  background: #181818 !important;
+  background: #181818;
   top: 0;
   left: 0;
-  width: 9vw;
+  width: 10vw;
   height: 100vh;
   border-right: 1px #ff0077 solid;
   text-align: center;
+  z-index: 1000;
 }
 #main-nav a {
   color: #f0f8ff;
@@ -22,6 +23,11 @@
   color: #ff0077;
   background: rgba(255, 0, 119, 0.1);
 }
+@media (max-width: 968px) {
+  #main-nav .logo {
+    display: none;
+  }
+}
 #main-nav .container {
   display: flex;
   flex-direction: column;
@@ -30,17 +36,31 @@
   width: 100%;
   height: 100%;
 }
+@media (max-width: 968px) {
+  #main-nav .container {
+    justify-content: center;
+  }
+}
 #main-nav .nav-links {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
 }
+@media (max-width: 968px) {
+  #main-nav .nav-links {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
 #main-nav .nav-links .nav-link {
   list-style: none;
 }
 #main-nav .nav-links .nav-link a {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   padding: 1rem 2rem;
   width: 100%;
   font-size: 0.75rem;
@@ -52,13 +72,50 @@
   color: #ff0077;
   font-weight: 600;
 }
+#main-nav .nav-links .nav-link a .route-icon {
+  display: none;
+}
+@media (max-width: 968px) {
+  #main-nav .nav-links .nav-link a .route-icon {
+    display: inline-block;
+  }
+}
+@media (max-width: 968px) {
+  #main-nav .nav-links .nav-link a .route-text {
+    font-size: 0.6rem;
+    margin-top: 0.3rem;
+  }
+}
+@media (max-width: 968px) {
+  #main-nav .nav-links .nav-link a {
+    padding: 1rem 0;
+  }
+}
 #main-nav .nav-links .nav-link .active {
   color: #ff0077;
   font-weight: 600;
+}
+@media (max-width: 968px) {
+  #main-nav {
+    top: 100vh;
+    bottom: 0;
+    height: 10vh;
+    width: 100vw;
+    border-right: none;
+    border-top: 1px #ff0077 solid;
+  }
+  #main-nav .nav-links .nav-link a {
+    padding: 0;
+  }
 }
 #main-nav #header-footer {
   color: #8f8f8f;
   display: inline-block;
   width: 100%;
   padding: 0.4rem 0;
+}
+@media (max-width: 968px) {
+  #main-nav #header-footer {
+    display: none;
+  }
 }/*# sourceMappingURL=NavBar.css.map */

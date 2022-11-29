@@ -49,7 +49,7 @@ const SocialLinks = () => (
 	<ul id='social-links'>
 		{links.map(link => (
 			<li className='social-link'>
-				<a key={link.name} href={link.url}>
+				<a key={link.name} href={link.url} title={link.name}>
 					<FontAwesomeIcon icon={link.icon} size='lg' />
 				</a>
 			</li>

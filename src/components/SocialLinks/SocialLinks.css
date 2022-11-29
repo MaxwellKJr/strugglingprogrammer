@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 #social-links .social-link a {
   color: #8f8f8f;
@@ -13,4 +13,9 @@
 }
 #social-links .social-link a:hover {
   color: #ff0077;
+}
+@media (max-width: 968px) {
+  #social-links {
+    display: none;
+  }
 }/*# sourceMappingURL=SocialLinks.css.map */

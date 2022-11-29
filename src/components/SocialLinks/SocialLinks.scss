@@ -1,11 +1,12 @@
 @use '../../styles/index';
+@use '../../styles/breakpoints';
 
 #social-links {
 	border-bottom: 1px solid index.$secondary-white;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
-	padding: 0.5rem 0;
+	padding: 0.5rem 1rem;
 
 	.social-link {
 		a {
@@ -16,5 +17,9 @@
 				color: index.$primary-color;
 			}
 		}
+	}
+
+	@media (max-width: breakpoints.$lg) {
+		display: none;
 	}
 }
