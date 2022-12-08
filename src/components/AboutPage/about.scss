@@ -25,13 +25,16 @@
 
 	p {
 		font-size: 14px;
-		margin: 0.5rem 0;
+		margin: 1rem 0;
 
 		a {
 			color: index.$primary-color;
+			font-weight: 600;
+			transition: all ease-in-out 100ms;
 
 			&:hover {
-				opacity: 0.8;
+				color: index.$primary-white;
+				opacity: 0.9;
 				text-decoration: underline;
 			}
 		}

@@ -19,13 +19,16 @@
 }
 .bio-details p {
   font-size: 14px;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 .bio-details p a {
   color: #ff0077;
+  font-weight: 600;
+  transition: all ease-in-out 100ms;
 }
 .bio-details p a:hover {
-  opacity: 0.8;
+  color: #ebebeb;
+  opacity: 0.9;
   text-decoration: underline;
 }
 @media (max-width: 968px) {

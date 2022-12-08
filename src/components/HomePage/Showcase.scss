@@ -31,6 +31,7 @@
 			color: index.$secondary-white;
 			font-size: 14px;
 			padding-right: 0.8rem;
+			transition: color ease-in-out 200ms;
 			&:hover {
 				color: index.$primary-color;
 			}

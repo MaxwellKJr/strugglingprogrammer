@@ -28,6 +28,7 @@
   color: #8f8f8f;
   font-size: 14px;
   padding-right: 0.8rem;
+  transition: color ease-in-out 200ms;
 }
 #showcase .occupations .occupation:hover {
   color: #ff0077;
