@@ -2,7 +2,7 @@
 @use '../../styles/breakpoints';
 
 #main-nav {
-	position: absolute;
+	position: fixed;
 	background: index.$primary-background;
 	bottom: 0;
 	left: 0;
@@ -100,7 +100,6 @@
 	}
 
 	@media (max-width: breakpoints.$lg) {
-		position: fixed;
 		background: index.$secondary-color;
 		bottom: 0;
 		height: 10vh;

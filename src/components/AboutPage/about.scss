@@ -4,6 +4,8 @@
 #bio {
 	.container {
 		height: auto;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
 	}
 }
 
@@ -43,5 +45,15 @@
 	@media (max-width: breakpoints.$lg) {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		text-align: center;
+
+		.gatsby-image-wrapper {
+			text-align: center;
+			width: 200px !important;
+			height: 200px !important;
+		}
 	}
 }

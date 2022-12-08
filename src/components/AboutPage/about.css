@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
 #bio .container {
   height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .bio-details {
@@ -35,5 +37,14 @@
   .bio-details {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .bio-details .gatsby-image-wrapper {
+    text-align: center;
+    width: 200px !important;
+    height: 200px !important;
   }
 }/*# sourceMappingURL=about.css.map */

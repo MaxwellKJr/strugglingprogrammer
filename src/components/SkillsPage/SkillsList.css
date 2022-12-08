@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
-#skills .container .skills-grid {
-  margin: 2rem 0;
+#skills h1 {
+  opacity: 0.75;
+}
+#skills .container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+#skills .container .split .skills-grid {
+  margin: 2rem 3rem 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
   gap: 1rem;
 }
-#skills .container .skills-grid .card-dark {
+#skills .container .split .skills-grid .card-dark {
   border: 1px solid rgba(255, 0, 102, 0.4588235294);
   display: inline-flex;
   justify-content: space-between;
@@ -14,4 +22,42 @@
   height: 3rem;
   padding: 0 1rem;
   background: url("./js.png") no-repeat center/cover;
+}
+#skills .container .split h1 {
+  margin-top: 4rem;
+}
+#skills .container .split .uses-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#skills .container .split .use-card {
+  margin: 0.5rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 0, 102, 0.4588235294);
+}
+#skills .container .split .use-card:last-child {
+  border-bottom: none;
+}
+#skills .container .split .use-card .use-type {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+#skills .container .split .use-card .use-type .type {
+  margin-right: 1rem;
+}
+#skills .container .split .use-card .use-description li {
+  list-style: symbols("+") !important;
+  margin-left: 2rem;
+  margin-bottom: 0.4rem;
+  opacity: 0.8;
+}
+@media (max-width: 968px) {
+  #skills .container .split {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
 }/*# sourceMappingURL=SkillsList.css.map */
