@@ -33,12 +33,13 @@ a {
   margin-right: 1rem;
   z-index: 1;
   position: relative;
-  transition: color ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
 }
 .ctas .btn-primary,
 .professional-btns .btn-primary {
   background: #ff0077;
   color: #ebebeb;
+  border-radius: 10px;
 }
 .ctas .btn-primary:after,
 .professional-btns .btn-primary:after {
@@ -50,7 +51,8 @@ a {
   width: 0;
   height: 100%;
   z-index: -1;
-  transition: width ease-in-out 400ms;
+  transition: all ease-in-out 400ms;
+  border-radius: 10px 10px;
 }
 .ctas .btn-primary:hover,
 .professional-btns .btn-primary:hover {
@@ -60,14 +62,16 @@ a {
 .professional-btns .btn-primary:hover::after {
   width: 100%;
   text-decoration: none;
+  border-radius: 10px;
 }
 .ctas .btn-secondary,
 .professional-btns .btn-secondary {
   background: #ebebeb;
   color: #181818;
+  border-radius: 10px;
 }
-.ctas .btn-secondary:after,
-.professional-btns .btn-secondary:after {
+.ctas .btn-secondary:before,
+.professional-btns .btn-secondary:before {
   background: #ff0077;
   position: absolute;
   content: "";
@@ -76,14 +80,16 @@ a {
   width: 10px;
   height: 100%;
   z-index: -1;
-  transition: width ease-in-out 400ms;
+  transition: all ease-in-out 400ms;
+  border-radius: 10px 0 0 10px;
 }
 .ctas .btn-secondary:hover,
 .professional-btns .btn-secondary:hover {
   color: #ebebeb;
 }
-.ctas .btn-secondary:hover::after,
-.professional-btns .btn-secondary:hover::after {
+.ctas .btn-secondary:hover::before,
+.professional-btns .btn-secondary:hover::before {
   width: 100%;
   text-decoration: none;
+  border-radius: 10px;
 }/*# sourceMappingURL=global.css.map */

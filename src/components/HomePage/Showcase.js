@@ -41,7 +41,7 @@ const Showcase = () => (
 				<Link to='/projects' className='btn btn-primary'>
 					View Projects
 				</Link>
-				<Link to='/about' className='btn btn-primary'>
+				<Link to='/about' className='btn btn-secondary'>
 					About Me
 				</Link>
 			</div>
