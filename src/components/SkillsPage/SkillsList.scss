@@ -18,6 +18,7 @@
 
 				.card-dark {
 					border: 1px solid index.$primary-border;
+					border-radius: 10px;
 					display: inline-flex;
 					justify-content: space-between;
 					align-items: center;
@@ -39,12 +40,16 @@
 			}
 
 			.use-card {
-				margin: 0.5rem 0;
-				padding: 1rem 0;
+				padding: 1rem;
 				border-bottom: 1px solid index.$primary-border;
 
 				&:last-child {
 					border-bottom: none;
+				}
+
+				&:nth-child(even) {
+					background-color: rgba($color: index.$secondary-color, $alpha: 0.9);
+					margin: 0;
 				}
 
 				.use-type {
