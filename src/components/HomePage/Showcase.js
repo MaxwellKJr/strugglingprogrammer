@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import './Showcase.css';
 
 const occupations = [
@@ -35,6 +36,15 @@ const Showcase = () => (
 				))}
 			</ul>
 			<p>A platform to showcase my web development journey and share the few things I know.</p>
+
+			<div className='ctas'>
+				<Link to='/projects' className='btn btn-primary'>
+					View Projects
+				</Link>
+				<Link to='/about' className='btn btn-primary'>
+					About Me
+				</Link>
+			</div>
 		</div>
 	</section>
 );

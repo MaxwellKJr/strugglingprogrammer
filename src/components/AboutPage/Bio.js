@@ -46,10 +46,15 @@ const Bio = () => (
 						why not?
 					</p>
 					<div className='professional-btns'>
-						<Link to='/skills' className='btn-primary'>
+						<Link to='/skills' className='btn btn-primary'>
 							My Skills
 						</Link>
-						<a href='https://maxwellkapzi-resume.netlify.app' className='btn-primary'>
+						<a
+							href='https://maxwellkapezi-resume.netlify.app'
+							className='btn btn-secondary'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							My Resume
 						</a>
 					</div>

@@ -20,13 +20,71 @@ a {
 	text-decoration: none;
 }
 
+.ctas,
 .professional-btns {
 	margin: 1rem 0;
+
+	.btn {
+		display: inline-flex;
+		width: 140px;
+		height: 40px;
+		justify-content: center;
+		align-items: center;
+		margin-right: 1rem;
+		z-index: 1;
+		position: relative;
+		transition: color ease-in-out 300ms;
+	}
+
 	.btn-primary {
-		display: inline-block;
 		background: index.$primary-color;
 		color: index.$primary-white;
-		padding: 0.4rem 1rem;
-		margin-right: 1rem;
+
+		&:after {
+			background: index.$primary-white;
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			width: 0;
+			height: 100%;
+			z-index: -1;
+			transition: width ease-in-out 400ms;
+		}
+
+		&:hover {
+			color: index.$primary-background;
+		}
+
+		&:hover::after {
+			width: 100%;
+			text-decoration: none;
+		}
+	}
+
+	.btn-secondary {
+		background: index.$primary-white;
+		color: index.$primary-background;
+
+		&:after {
+			background: index.$primary-color;
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			width: 10px;
+			height: 100%;
+			z-index: -1;
+			transition: width ease-in-out 400ms;
+		}
+
+		&:hover {
+			color: index.$primary-white;
+		}
+
+		&:hover::after {
+			width: 100%;
+			text-decoration: none;
+		}
 	}
 }
