@@ -1,12 +1,13 @@
 import * as React from 'react';
+import Bio from '../components/AboutPage/Bio';
 import Layout from '../components/Layout';
 
 const About = () => {
 	return (
 		<Layout>
-			<section>
+			<section id='bio'>
 				<div className='container'>
-					<h1>About Me</h1>
+					<Bio />
 				</div>
 			</section>
 		</Layout>

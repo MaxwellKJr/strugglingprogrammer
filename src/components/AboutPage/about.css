@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
+#bio .container {
+  height: auto;
+}
+
+.bio-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.bio-details img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.bio-details h1 {
+  margin-bottom: 1rem;
+}
+.bio-details p {
+  font-size: 14px;
+  margin: 0.5rem 0;
+}
+.bio-details p a {
+  color: #ff0077;
+}
+.bio-details p a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+@media (max-width: 968px) {
+  .bio-details {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=about.css.map */

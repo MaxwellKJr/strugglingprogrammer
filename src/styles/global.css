@@ -11,8 +11,21 @@ body {
   background: #181818;
   color: #ebebeb;
   font-family: "Poppins";
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
+}
+
+.professional-btns {
+  margin: 1rem 0;
+}
+.professional-btns .btn-primary {
+  display: inline-block;
+  background: #ff0077;
+  color: #ebebeb;
+  padding: 0.4rem 1rem;
+  margin-right: 1rem;
 }/*# sourceMappingURL=global.css.map */

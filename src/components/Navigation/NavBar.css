@@ -97,7 +97,8 @@
 }
 @media (max-width: 968px) {
   #main-nav {
-    background: rgba(255, 0, 119, 0.1);
+    position: fixed;
+    background: #301622;
     bottom: 0;
     height: 10vh;
     width: 100vw;

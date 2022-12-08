@@ -100,7 +100,8 @@
 	}
 
 	@media (max-width: breakpoints.$lg) {
-		background: rgba($color: #ff0077, $alpha: 0.1);
+		position: fixed;
+		background: index.$secondary-color;
 		bottom: 0;
 		height: 10vh;
 		width: 100vw;
