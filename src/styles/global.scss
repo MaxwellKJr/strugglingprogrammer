@@ -1,5 +1,20 @@
 @use 'index.scss';
 
+::-webkit-scrollbar {
+	background: index.$primary-background !important;
+	width: 14px !important;
+	transition: all 400ms ease-in-out;
+}
+
+::-webkit-scrollbar:hover,
+::-webkit-scrollbar:focus {
+	width: 15px !important;
+}
+
+::-webkit-scrollbar-thumb {
+	background: index.$primary-color !important;
+}
+
 * {
 	margin: 0;
 	padding: 0;

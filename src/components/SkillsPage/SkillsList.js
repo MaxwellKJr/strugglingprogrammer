@@ -11,7 +11,6 @@ import {
 	faLaravel,
 	faLinux,
 	faPhp,
-	faPython,
 	faReact,
 	faWordpress,
 } from '@fortawesome/free-brands-svg-icons';

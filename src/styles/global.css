@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
+::-webkit-scrollbar {
+  background: #181818 !important;
+  width: 14px !important;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+::-webkit-scrollbar:hover,
+::-webkit-scrollbar:focus {
+  width: 15px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0077 !important;
+}
+
 * {
   margin: 0;
   padding: 0;
