@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-card {
+  background-color: rgba(0, 0, 0, 0.562);
+  border-radius: 20px;
+}
+.blog-card .blog-details {
+  padding: 1rem;
+}
+.blog-card .blog-details h3 a {
+  color: #ff0077;
+}
+.blog-card .blog-details hr {
+  margin: 1rem 0;
+}/*# sourceMappingURL=BlogCard.css.map */

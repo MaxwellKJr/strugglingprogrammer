@@ -1,0 +1,25 @@
+h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.blog-card {
+	background-color: rgba(0, 0, 0, 0.562);
+	border-radius: 20px;
+	.blog-details {
+		padding: 1rem;
+
+		h3 {
+			a {
+				color: #ff0077;
+			}
+		}
+
+		hr {
+			margin: 1rem 0;
+		}
+
+		p {
+		}
+	}
+}

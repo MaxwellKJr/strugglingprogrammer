@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: MaxwellKJr/strugglingprogrammer
+  branch: main # Branch to update (optional; defaults to master)
+  base_url: https://netlify-cms.adrianub.vercel.app
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    slug: '{{slug}}'
+    media_folder: ''
+    public_folder: ''
+    path: '{{slug}}/index'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'featuredImage', widget: 'image', required: true }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'list',
+          allow_add: true,
+          default: ['Tech'],
+          field: { label: Tag, name: 'tagName', widget: 'string' },
+        }
+
+  - name: 'projects'
+    label: 'Projects'
+    create: true
+    folder: 'content/projects'
+    slug: '{{slug}}'
+    path: '{{slug}}/index'
+    editor:
+      preview: true
+    media_folder: ''
+    public_folder: ''
+    fields:
+      - { label: 'Project Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Project Image', name: 'projectImage', widget: 'image', required: true }
+      - { label: 'Project URL', name: 'projectURL', widget: 'string' }
+      - { label: 'GitHub URL', name: 'githubURL', widget: 'string' }
+      - { label: 'Description', name: 'projectDescription', widget: 'string' }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'list',
+          allow_add: true,
+          default: ['React'],
+          field: { label: Tag, name: 'tagName', widget: 'string' },
+        }

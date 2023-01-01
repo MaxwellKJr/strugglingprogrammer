@@ -3,9 +3,12 @@ import BlogCard from './BlogCard';
 
 const Blogs = ({ posts }) => (
 	<>
-		{posts.map(post => (
-			<BlogCard post={post} />
-		))}
+		<h1>Read Something</h1>
+		<ul>
+			{posts.map(post => (
+				<BlogCard post={post} />
+			))}
+		</ul>
 	</>
 );
 

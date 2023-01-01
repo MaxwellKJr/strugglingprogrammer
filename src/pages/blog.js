@@ -12,6 +12,7 @@ const Blog = () => {
 						frontmatter {
 							title
 							slug
+							description
 							date
 						}
 					}
@@ -24,9 +25,8 @@ const Blog = () => {
 
 	return (
 		<Layout>
-			<section>
+			<section id='blog'>
 				<div className='container'>
-					<h1>Read Something</h1>
 					<Blogs posts={posts} />
 				</div>
 			</section>
