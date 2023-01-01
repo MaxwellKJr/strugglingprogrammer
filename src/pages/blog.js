@@ -6,14 +6,25 @@ import { useStaticQuery, graphql } from 'gatsby';
 const Blog = () => {
 	const data = useStaticQuery(graphql`
 		query {
-			allMarkdownRemark {
+			allMarkdownRemark(
+				filter: { fileAbsolutePath: { regex: "/blog/" } }
+				sort: { frontmatter: { date: DESC } }
+			) {
 				edges {
 					node {
 						frontmatter {
 							title
-							slug
 							description
-							date
+							date(formatString: "MMMM DD, YYYY")
+							featuredImage {
+								childImageSharp {
+									gatsbyImageData(
+										aspectRatio: 1.5
+										placeholder: BLURRED
+										formats: [AUTO, WEBP, AVIF]
+									)
+								}
+							}
 						}
 					}
 				}
