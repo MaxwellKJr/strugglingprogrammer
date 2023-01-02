@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: MaxwellKJr/strugglingprogrammer
-  branch: main # Branch to update (optional; defaults to master)
-  base_url: https://netlify-cms.adrianub.vercel.app
+  name: git-gateway
+  branch: master
 
 media_folder: static/img
 public_folder: /img
