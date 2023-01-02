@@ -35,6 +35,17 @@ a {
 	text-decoration: none;
 }
 
+.tags {
+	display: flex;
+	.tag {
+		display: inline-flex;
+		background: index.$primary-border;
+		margin-right: 0.5rem;
+		padding: 0 1rem;
+		border-radius: 16px;
+	}
+}
+
 .ctas,
 .professional-btns {
 	margin: 1rem 0;

@@ -5,10 +5,12 @@ h1 {
 
 .blog-card {
 	background-color: rgba(0, 0, 0, 0.562);
-	border-radius: 20px;
+	border-radius: 16px;
+	img {
+		border-radius: 16px 16px 0 0;
+	}
 	.blog-details {
 		padding: 1rem;
-
 		h3 {
 			a {
 				color: #ff0077;
@@ -20,6 +22,7 @@ h1 {
 		}
 
 		p {
+			font-size: 0.9rem;
 		}
 	}
 }
