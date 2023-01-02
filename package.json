@@ -1,40 +1,41 @@
 {
-  "name": "struggling-programmer",
-  "version": "1.0.0",
-  "private": true,
-  "description": "struggling-programmer",
-  "author": "Maxwell Kapezi, Jr",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.1",
-    "@fortawesome/free-brands-svg-icons": "^6.2.1",
-    "@fortawesome/free-regular-svg-icons": "^6.2.1",
-    "@fortawesome/free-solid-svg-icons": "^6.2.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@mdx-js/react": "^2.1.5",
-    "gatsby": "^5.2.0",
-    "gatsby-plugin-image": "^3.2.0",
-    "gatsby-plugin-manifest": "^5.2.0",
-    "gatsby-plugin-mdx": "^5.2.0",
-    "gatsby-plugin-netlify-cms": "^7.2.0",
-    "gatsby-plugin-sass": "^6.2.0",
-    "gatsby-plugin-sharp": "^5.2.0",
-    "gatsby-plugin-sitemap": "^6.2.0",
-    "gatsby-source-filesystem": "^5.2.0",
-    "gatsby-transformer-remark": "^6.2.0",
-    "gatsby-transformer-sharp": "^5.2.0",
-    "netlify-cms-app": "^2.15.72",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.56.1"
-  }
+	"name": "struggling-programmer",
+	"version": "1.0.0",
+	"private": true,
+	"description": "struggling-programmer",
+	"author": "Maxwell Kapezi, Jr",
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"develop": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.2.1",
+		"@fortawesome/free-brands-svg-icons": "^6.2.1",
+		"@fortawesome/free-regular-svg-icons": "^6.2.1",
+		"@fortawesome/free-solid-svg-icons": "^6.2.1",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@mdx-js/react": "^2.1.5",
+		"gatsby": "^5.2.0",
+		"gatsby-plugin-image": "^3.2.0",
+		"gatsby-plugin-manifest": "^5.2.0",
+		"gatsby-plugin-mdx": "^5.2.0",
+		"gatsby-plugin-netlify-cms": "^7.2.0",
+		"gatsby-plugin-sass": "^6.2.0",
+		"gatsby-plugin-sharp": "^5.2.0",
+		"gatsby-plugin-sitemap": "^6.2.0",
+		"gatsby-source-filesystem": "^5.2.0",
+		"gatsby-transformer-remark": "^6.2.0",
+		"gatsby-transformer-sharp": "^5.2.0",
+		"netlify-cms-app": "^2.15.72",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sass": "^1.56.1"
+	},
+	"packageManager": "yarn@3.2.4"
 }
