@@ -8,4 +8,14 @@ h1 {
 }
 .blogs-grid:nth-child(even) {
   gap: 2rem;
+}
+@media (max-width: 968px) {
+  .blogs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .blogs-grid {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=Blogs.css.map */

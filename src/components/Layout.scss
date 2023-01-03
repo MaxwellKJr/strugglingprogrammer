@@ -16,3 +16,17 @@
 		padding: 2rem 0;
 	}
 }
+
+#blog {
+	.container {
+		width: 90%;
+		max-width: breakpoints.$xl;
+		margin-bottom: 5rem;
+	}
+
+	@media (max-width: breakpoints.$lg) {
+		width: calc(100% - 1rem);
+		min-height: 100%;
+		padding: 2rem 0;
+	}
+}

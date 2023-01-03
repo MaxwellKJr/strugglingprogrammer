@@ -41,6 +41,8 @@ a {
 .tags .tag {
   display: inline-flex;
   background: rgba(255, 0, 102, 0.4588235294);
+  font-size: 14px;
+  font-weight: 600;
   margin-right: 0.5rem;
   padding: 0 1rem;
   border-radius: 16px;

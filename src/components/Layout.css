@@ -14,4 +14,17 @@
     min-height: 100%;
     padding: 2rem 0;
   }
+}
+
+#blog .container {
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 5rem;
+}
+@media (max-width: 968px) {
+  #blog {
+    width: calc(100% - 1rem);
+    min-height: 100%;
+    padding: 2rem 0;
+  }
 }/*# sourceMappingURL=Layout.css.map */

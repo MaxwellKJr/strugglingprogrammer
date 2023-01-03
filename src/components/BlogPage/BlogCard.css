@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
 h1 {
   text-align: center;
   margin-bottom: 2rem;
@@ -13,12 +14,18 @@ h1 {
 .blog-card .blog-details {
   padding: 1rem;
 }
+.blog-card .blog-details .timeToRead {
+  font-size: small;
+  font-weight: 600;
+  opacity: 0.5;
+}
 .blog-card .blog-details h3 a {
   color: #ff0077;
 }
-.blog-card .blog-details hr {
-  margin: 1rem 0;
-}
 .blog-card .blog-details p {
+  border-top: 1px solid rgba(255, 0, 102, 0.4588235294);
+  border-bottom: 1px solid rgba(255, 0, 102, 0.4588235294);
+  padding: 1rem 0;
+  margin: 0.5rem 0;
   font-size: 0.9rem;
 }/*# sourceMappingURL=BlogCard.css.map */

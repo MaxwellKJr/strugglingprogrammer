@@ -1,3 +1,5 @@
+@use '../../styles/index.scss';
+
 h1 {
 	text-align: center;
 	margin-bottom: 2rem;
@@ -9,19 +11,26 @@ h1 {
 	img {
 		border-radius: 16px 16px 0 0;
 	}
+
 	.blog-details {
 		padding: 1rem;
+		.timeToRead {
+			font-size: small;
+			font-weight: 600;
+			opacity: 0.5;
+		}
+
 		h3 {
 			a {
 				color: #ff0077;
 			}
 		}
 
-		hr {
-			margin: 1rem 0;
-		}
-
 		p {
+			border-top: 1px solid index.$primary-border;
+			border-bottom: 1px solid index.$primary-border;
+			padding: 1rem 0;
+			margin: 0.5rem 0;
 			font-size: 0.9rem;
 		}
 	}
