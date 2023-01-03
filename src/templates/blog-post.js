@@ -22,33 +22,26 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 					<section dangerouslySetInnerHTML={{ __html: post.html }} />
 					<hr />
 				</article>
-				<nav className='blog-nav'>
-					<ul
-						style={{
-							display: `flex`,
-							flexWrap: `wrap`,
-							justifyContent: `space-between`,
-							listStyle: `none`,
-							padding: 0,
-						}}
-					>
-						<li>
-							{previous && (
-								<Link to={previous.fields.slug} rel='prev'>
-									← {previous.frontmatter.title}
-								</Link>
-							)}
-						</li>
-						<li>
-							{next && (
-								<Link to={next.fields.slug} rel='next'>
-									{next.frontmatter.title} →
-								</Link>
-							)}
-						</li>
-					</ul>
-				</nav>
 			</div>
+			<h2>Other Recent Posts</h2>
+			<nav className='blog-nav'>
+				<ul>
+					<li>
+						{previous && (
+							<Link to={previous.fields.slug} rel='prev'>
+								← {previous.frontmatter.title}
+							</Link>
+						)}
+					</li>
+					<li>
+						{next && (
+							<Link to={next.fields.slug} rel='next'>
+								{next.frontmatter.title} →
+							</Link>
+						)}
+					</li>
+				</ul>
+			</nav>
 		</Layout>
 	);
 };
@@ -63,7 +56,7 @@ export const pageQuery = graphql`
 			}
 		}
 
-		markdownRemark(fields: { slug: { eq: $slug }, fileAbsolutePath: { regex: "content/blog/" } }) {
+		markdownRemark(fields: { slug: { eq: $slug } }) {
 			id
 			excerpt(pruneLength: 160)
 			html
