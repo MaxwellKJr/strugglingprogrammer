@@ -18,7 +18,6 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Slug', name: 'slug', widget: 'slug' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Featured Image', name: 'featuredImage', widget: 'image', required: true }
       - { label: 'Description', name: 'description', widget: 'string' }
@@ -43,7 +42,7 @@ collections:
     media_folder: ''
     public_folder: ''
     fields:
-      - { label: 'Project Title', name: 'projectTitle', widget: 'string' }
+      - { label: 'Project Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Project Image', name: 'projectImage', widget: 'image', required: true }
       - { label: 'Project URL', name: 'projectURL', widget: 'string' }

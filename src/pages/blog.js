@@ -11,6 +11,9 @@ const Blog = () => {
 				sort: { frontmatter: { date: DESC } }
 			) {
 				nodes {
+					fields {
+						slug
+					}
 					frontmatter {
 						title
 						description
