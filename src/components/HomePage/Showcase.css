@@ -8,7 +8,7 @@
   font-weight: 900;
   line-height: 1;
   margin-bottom: 1rem;
-  text-align: start;
+  text-align: start !important;
 }
 @media (max-width: 968px) {
   #showcase #slogan {

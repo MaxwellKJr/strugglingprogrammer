@@ -20,7 +20,9 @@ const occupations = [
 const Showcase = () => (
 	<section id='showcase'>
 		<div className='container'>
-			<h1 id='slogan'>The Struggling Programmer</h1>
+			<h1 id='slogan' style={{ textAlign: 'start' }}>
+				The Struggling Programmer
+			</h1>
 			<ul className='occupations'>
 				{occupations.map(occupation => (
 					<li key={occupation.name}>
