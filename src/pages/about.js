@@ -16,4 +16,4 @@ const About = () => {
 
 export default About;
 
-export const Head = () => <title>Struggling Programmer | About</title>;
+export const Head = () => <title>About | Know Maxwell Kapezi Jr | Struggling Programmer</title>;

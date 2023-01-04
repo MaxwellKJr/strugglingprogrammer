@@ -1,12 +1,45 @@
 import * as React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../layouts/index';
+import ProjectsList from '../components/ProjectsPage/ProjectsList';
 
 const Projects = () => {
+	const data = useStaticQuery(graphql`
+		query {
+			allMarkdownRemark(
+				filter: { fileAbsolutePath: { regex: "/projects/" } }
+				sort: { frontmatter: { date: DESC } }
+			) {
+				nodes {
+					fields {
+						slug
+					}
+					frontmatter {
+						title
+						projectDescription
+						projectURL
+						githubURL
+						date(formatString: "dddd, DD MMMM YYYY")
+						projectImage {
+							childImageSharp {
+								gatsbyImageData(aspectRatio: 1.5, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+							}
+						}
+						tags
+					}
+				}
+			}
+		}
+	`);
+
+	const projects = data.allMarkdownRemark.nodes;
+
 	return (
 		<Layout>
-			<section>
+			<section id='projects'>
 				<div className='container'>
 					<h1>My Work</h1>
+					<ProjectsList projects={projects} />
 				</div>
 			</section>
 		</Layout>
@@ -15,4 +48,4 @@ const Projects = () => {
 
 export default Projects;
 
-export const Head = () => <title>Struggling Programmer | Projects</title>;
+export const Head = () => <title>Projects | Struggling Programmer</title>;

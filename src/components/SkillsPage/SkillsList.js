@@ -75,6 +75,15 @@ const uses = [
 	},
 
 	{
+		type: 'Code Editor',
+		name: 'Neovim - LunarVim',
+		description: 'A neovim distribution.',
+		whyUse:
+			'It does everything that VS Code does but is much faster and responsive. Of course learning VIM/Neovim takes time. Not recommended for beginners to programming.',
+		icon: faCode,
+	},
+
+	{
 		type: 'Internet Browser',
 		name: 'Firefox',
 		description: 'The BEST browser out there.',

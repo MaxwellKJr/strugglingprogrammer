@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
+.project {
+  border-radius: 16px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.562);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 200ms ease-in-out;
+  margin-bottom: 2rem;
+}
+.project:hover {
+  transform: scale(1.02);
+}
+.project .btn-primary .ext-link-icon {
+  margin-left: 5px;
+}
+.project .project-details {
+  padding: 1rem;
+  width: 50%;
+}
+.project .project-details h3 {
+  margin-top: 0.7rem;
+}
+.project .project-details .ext-link-icon {
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  font-size: 1.274rem;
+}
+.project .project-details .project-desc {
+  font-size: 0.8rem;
+}
+.project .img-link {
+  width: 50%;
+  max-width: 500px;
+  margin: 0;
+}
+.project .project-img {
+  height: 100%;
+}
+@media (max-width: 968px) {
+  .project .project {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .project .project .project-details {
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+  .project .project .img-link {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .projects {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .project-desc {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=ProjectCard.css.map */

@@ -14,3 +14,5 @@ const Skills = () => (
 );
 
 export default Skills;
+
+export const Head = () => <title>Skills | Struggling Programmer</title>;

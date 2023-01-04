@@ -1,0 +1,86 @@
+@use '../../styles/index';
+@use '../../styles/breakpoints';
+
+.project {
+	border-radius: 16px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	background-color: index.$card-background;
+	border: 1px solid index.$card-border;
+	transition: all 200ms ease-in-out;
+	margin-bottom: 2rem;
+
+	&:hover {
+		transform: scale(1.02);
+	}
+
+	.btn-primary {
+		.ext-link-icon {
+			margin-left: 5px;
+		}
+	}
+
+	.project-details {
+		padding: 1rem;
+		width: 50%;
+
+		h3 {
+			margin-top: 0.7rem;
+		}
+
+		.ext-link-icon {
+			margin: 0;
+			padding: 0;
+			margin-left: 1rem;
+			font-size: 1.274rem;
+		}
+
+		.project-desc {
+			font-size: 0.8rem;
+		}
+	}
+
+	.img-link {
+		width: 50%;
+		max-width: 500px;
+		margin: 0;
+	}
+
+	.project-img {
+		height: 100%;
+	}
+
+	@media (max-width: breakpoints.$lg) {
+		.project {
+			display: flex;
+			flex-wrap: wrap-reverse;
+		}
+
+		.project .project-details {
+			padding-bottom: 2rem;
+			width: 100%;
+		}
+
+		.project .img-link {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.projects {
+		width: 90%;
+	}
+}
+
+@media (max-width: 600px) {
+	.projects {
+		grid-template-columns: 1fr;
+	}
+
+	.project-desc {
+		font-size: 1rem;
+	}
+}

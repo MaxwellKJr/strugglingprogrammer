@@ -1,7 +1,7 @@
 import * as React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import Blogs from '../components/BlogPage/Blogs';
 import Layout from '../layouts/index';
-import { useStaticQuery, graphql } from 'gatsby';
 
 const Blog = () => {
 	const data = useStaticQuery(graphql`
@@ -46,4 +46,4 @@ const Blog = () => {
 
 export default Blog;
 
-export const Head = () => <title>Struggling Programmer | Blog</title>;
+export const Head = () => <title>Blog | Struggling Programmer</title>;

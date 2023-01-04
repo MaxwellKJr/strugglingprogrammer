@@ -1,5 +1,5 @@
 ---
-projectTitle: MJ Codes Official Repo
+title: MJ Codes Official Repo
 date: 2022-04-30T03:55:29.031Z
 projectImage: mjcodes.png
 projectURL: https://mjcodes.netlify.app/
