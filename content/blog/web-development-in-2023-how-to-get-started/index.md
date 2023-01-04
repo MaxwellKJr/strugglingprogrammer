@@ -36,7 +36,7 @@ Now with that out of the way, lets get started.
 
 #### HyperText Markup Language (HTML)
 
-![](html.png)
+![HTML Logo](html.png "HTML5")
 
 This is the backbone of the web. The thing that started it all (I think...) In fact the web is all HTML. You can have a website or webpage without CSS and JavaScript but you can't have a webpage without HTML.
 
@@ -48,7 +48,7 @@ Since this post is all about the roadmap, I will stop here.
 
 #### Cascading Style Sheets (CSS)
 
-![](css2.png)
+![CSS3 logo](css.jpg "CSS3")
 
 CSS is where the learning actually begins. And it is where you definitely have to apply my Tip #2 - Taking your time. CSS is used to style the HTML elements and make it look appealing. It brings in the sense of uniqueness on the World Wide Web. It manipulates the HTML elements and how they should look.
 
@@ -60,7 +60,7 @@ After learning HTML and CSS, you are good to go to start making static webpages/
 
 #### JavaScript
 
-![](js.png)
+![JavaScript logo](js.png "JavaScript")
 
 JavaScript is a multi-paradigm programming language for the web and makes up the big 3 of the frontend trio. Multi-paradigm simply means there are different ways you can write your code to achieve a task.
 
