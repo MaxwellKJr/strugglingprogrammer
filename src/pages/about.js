@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Bio from '../components/AboutPage/Bio';
-import Layout from '../components/Layout';
+import Layout from '../layouts/index';
 
 const About = () => {
 	return (

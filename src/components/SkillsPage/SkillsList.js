@@ -14,7 +14,7 @@ import {
 	faReact,
 	faWordpress,
 } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faDatabase, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const skillsList = [
 	{

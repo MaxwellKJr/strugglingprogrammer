@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Layout from '../layouts/index';
 import SkillsList from '../components/SkillsPage/SkillsList';
 
 const Skills = () => (

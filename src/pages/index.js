@@ -1,6 +1,6 @@
 import * as React from 'react';
 import '../styles/global.css';
-import Layout from '../components/Layout';
+import Layout from '../layouts/index';
 import Showcase from '../components/HomePage/Showcase';
 
 const IndexPage = () => {

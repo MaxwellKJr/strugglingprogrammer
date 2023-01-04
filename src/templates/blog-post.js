@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import Layout from '../components/Layout';
+import Layout from '../layouts/index';
 import './blog-post.css';
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -11,7 +11,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 	const { previous, next } = pageContext;
 
 	return (
-		<Layout location={location} title={siteTitle}>
+		<Layout title={siteTitle}>
 			<div className='post-wrapper'>
 				<article>
 					<GatsbyImage image={image} alt={post.frontmatter.title} />
@@ -28,14 +28,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 				<ul>
 					<li>
 						{previous && (
-							<Link href={previous.fields.slug} rel='prev'>
+							<Link to={previous.fields.slug} rel='prev'>
 								← {previous.frontmatter.title}
 							</Link>
 						)}
 					</li>
 					<li>
 						{next && (
-							<Link href={next.fields.slug} rel='next'>
+							<Link to={next.fields.slug} rel='next'>
 								{next.frontmatter.title} →
 							</Link>
 						)}

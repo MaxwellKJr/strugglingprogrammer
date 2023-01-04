@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Blogs from '../components/BlogPage/Blogs';
-import Layout from '../components/Layout';
+import Layout from '../layouts/index';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const Blog = () => {
