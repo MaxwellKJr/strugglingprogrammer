@@ -3,14 +3,12 @@ import { motion } from 'framer-motion';
 import NavBar from '../components/Navigation/NavBar';
 import './Layout.css';
 
-export default function Layout({ isVisible, children }) {
+export default function Layout({ children }) {
 	return (
 		<>
 			<NavBar />
 			<main>
-				<motion.div animate={{ opacity: isVisible ? 1 : 0 }} className='container'>
-					{children}
-				</motion.div>
+				<div className='container'>{children}</div>
 			</main>
 		</>
 	);
