@@ -37,6 +37,8 @@ a {
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .tags .tag {
   display: inline-flex;
@@ -44,8 +46,10 @@ a {
   font-size: 14px;
   font-weight: 600;
   margin-right: 0.5rem;
+  margin-top: 0.5rem;
   padding: 0 1rem;
   border-radius: 16px;
+  opacity: 0.8;
 }
 
 .ctas,

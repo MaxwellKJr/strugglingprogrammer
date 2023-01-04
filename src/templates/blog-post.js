@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../layouts/index';
 import './blog-post.css';
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({ data, pageContext }) => {
 	const post = data.markdownRemark;
 	const image = getImage(post.frontmatter.featuredImage);
 	const { siteTitle } = data.site.siteMetadata;
@@ -12,7 +12,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
 	return (
 		<Layout title={siteTitle}>
-			<div className='post-wrapper'>
+			<div id='blog-post' className='post-wrapper'>
 				<article>
 					<GatsbyImage image={image} alt={post.frontmatter.title} />
 					<header>
