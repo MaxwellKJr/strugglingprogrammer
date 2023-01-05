@@ -37,7 +37,7 @@ const Showcase = () => (
 					</li>
 				))}
 			</ul>
-			<p>A platform to showcase my web development journey and share the few things I know.</p>
+			<p>A platform to showcase my software development journey and share the few things I know.</p>
 
 			<div className='ctas'>
 				<Link to='/projects' className='btn btn-primary'>

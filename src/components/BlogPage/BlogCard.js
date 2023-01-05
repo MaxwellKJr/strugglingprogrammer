@@ -13,11 +13,11 @@ const BlogCard = ({ post }) => {
 				<GatsbyImage image={getImage(featuredImage)} alt={title} title={title} />
 			</Link>
 			<div className='blog-details'>
-				<small className='timeToRead'>{`${post.timeToRead} Min read`}</small>
+				<small className='timeToRead'>{`> ${post.timeToRead} minute read`}</small>
 				<h3>
 					<Link to={`${slug}`}>{title}</Link>
 				</h3>
-				<small>{date}</small>
+				<small className='date'>{date}</small>
 				<p>{description}</p>
 				<ul className='tags'>
 					{tags.map(tag => (

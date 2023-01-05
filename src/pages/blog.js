@@ -17,7 +17,7 @@ const Blog = () => {
 					frontmatter {
 						title
 						description
-						date(formatString: "dddd, DD MMMM YYYY")
+						date(formatString: "dddd, D MMMM YYYY")
 						featuredImage {
 							childImageSharp {
 								gatsbyImageData(aspectRatio: 1.5, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])

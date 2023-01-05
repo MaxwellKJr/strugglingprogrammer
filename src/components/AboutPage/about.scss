@@ -5,7 +5,7 @@
 	.container {
 		height: auto;
 		padding-top: 3rem;
-		padding-bottom: 3rem;
+		padding-bottom: 6rem;
 
 		.bio-details {
 			display: grid;
@@ -22,6 +22,12 @@
 			h1 {
 				text-align: left;
 				margin-bottom: 1rem;
+
+				@media (max-width: breakpoints.$lg) {
+					text-align: center;
+					margin-top: 0;
+					margin-bottom: 1rem;
+				}
 			}
 
 			p {

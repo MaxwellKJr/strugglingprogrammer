@@ -41,9 +41,13 @@
 				}
 			}
 
+			.date {
+				color: index.$secondary-white;
+			}
+
 			p {
 				border-top: 1px solid index.$primary-border;
-				color: index.$secondary-white;
+				color: index.$primary-white;
 				padding: 1rem 0;
 				margin: 0.5rem 0;
 				font-size: 0.9rem;

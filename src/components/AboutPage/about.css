@@ -2,7 +2,7 @@
 #bio .container {
   height: auto;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 #bio .container .bio-details {
   display: grid;
@@ -18,6 +18,13 @@
 #bio .container .bio-details h1 {
   text-align: left;
   margin-bottom: 1rem;
+}
+@media (max-width: 968px) {
+  #bio .container .bio-details h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
 }
 #bio .container .bio-details p {
   font-size: 14px;
