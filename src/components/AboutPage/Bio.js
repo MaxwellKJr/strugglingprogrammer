@@ -48,7 +48,7 @@ const Bio = () => (
 					<p>
 						I started learning how to code in 2017 because I wanted to make my own video game (yes I
 						wanted to make video games) but that dream died quick. For the whole story read my post{' '}
-						<Link to='/hello-world'>Hello World</Link>
+						<Link to='/blog/hello-world'>Hello World</Link>
 						{'.'}
 					</p>
 					<p>
