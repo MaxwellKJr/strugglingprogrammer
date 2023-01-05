@@ -15,7 +15,7 @@ h1 {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	@media (max-width: breakpoints.$sm) {
+	@media (max-width: breakpoints.$md) {
 		grid-template-columns: 1fr;
 	}
 }

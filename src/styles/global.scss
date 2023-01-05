@@ -39,6 +39,8 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	border-top: 1px solid index.$primary-border;
+	padding-top: 0.5rem;
 
 	.tag {
 		display: inline-flex;

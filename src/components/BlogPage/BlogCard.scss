@@ -35,8 +35,7 @@
 					transition: all ease-in-out 100ms;
 
 					&:hover {
-						color: index.$primary-white;
-						opacity: 0.9;
+						color: index.$secondary-white;
 						text-decoration: underline;
 					}
 				}
@@ -44,8 +43,7 @@
 
 			p {
 				border-top: 1px solid index.$primary-border;
-				border-bottom: 1px solid index.$primary-border;
-				opacity: 0.8;
+				color: index.$secondary-white;
 				padding: 1rem 0;
 				margin: 0.5rem 0;
 				font-size: 0.9rem;

@@ -1,86 +1,127 @@
 @use '../../styles/index';
 @use '../../styles/breakpoints';
 
-.project {
-	border-radius: 16px;
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-	background-color: index.$card-background;
-	border: 1px solid index.$card-border;
-	transition: all 200ms ease-in-out;
-	margin-bottom: 2rem;
+#projects {
+	.container {
+		margin-bottom: 5rem;
 
-	&:hover {
-		transform: scale(1.02);
-	}
-
-	.btn-primary {
-		.ext-link-icon {
-			margin-left: 5px;
-		}
-	}
-
-	.project-details {
-		padding: 1rem;
-		width: 50%;
-
-		h3 {
-			margin-top: 0.7rem;
+		h1 {
+			text-align: center;
+			margin-bottom: 2rem;
 		}
 
-		.ext-link-icon {
-			margin: 0;
-			padding: 0;
-			margin-left: 1rem;
-			font-size: 1.274rem;
-		}
-
-		.project-desc {
-			font-size: 0.8rem;
-		}
-	}
-
-	.img-link {
-		width: 50%;
-		max-width: 500px;
-		margin: 0;
-	}
-
-	.project-img {
-		height: 100%;
-	}
-
-	@media (max-width: breakpoints.$lg) {
-		.project {
+		.projects-container {
 			display: flex;
-			flex-wrap: wrap-reverse;
-		}
-
-		.project .project-details {
-			padding-bottom: 2rem;
+			flex-direction: row;
 			width: 100%;
+			flex-wrap: wrap;
+
+			@media (max-width: breakpoints.$lg) {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1rem;
+
+				@media (max-width: breakpoints.$sm) {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			.project {
+				border-radius: 16px;
+				display: flex;
+				width: 100%;
+				flex-wrap: wrap;
+				background-color: index.$card-background;
+				border: 1px solid index.$card-border;
+				transition: all 200ms ease-in-out;
+				margin-bottom: 2rem;
+				transition: all 200ms ease-in-out;
+
+				&:hover {
+					transform: scale(1.02);
+					border: 1px solid index.$primary-border;
+				}
+
+				.btn-secondary {
+					.ext-link-icon {
+						margin-left: 5px;
+					}
+				}
+
+				.project-details {
+					padding: 1rem;
+					width: 50%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
+
+					h3 {
+						a {
+							color: index.$primary-white;
+							.ext-link-icon {
+								margin: 0;
+								padding: 0;
+								margin-left: 1rem;
+								font-size: 1.274rem;
+							}
+						}
+					}
+
+					.project-desc {
+						color: index.$secondary-white;
+						margin-top: 0.5rem;
+						font-size: 0.8rem;
+					}
+				}
+
+				.img-link {
+					width: 50%;
+					max-width: 500px;
+					margin: 0;
+
+					.project-img {
+						height: 100%;
+						border-radius: 0 16px 16px 0;
+					}
+				}
+
+				@media (max-width: breakpoints.$lg) {
+					display: flex;
+					flex-wrap: wrap-reverse;
+
+					.img-link {
+						width: 100%;
+						margin: 0;
+
+						.project-img {
+							border-radius: 16px 16px 0 0;
+							width: 100%;
+						}
+					}
+
+					.project-details {
+						padding-bottom: 2rem;
+						width: 100%;
+					}
+				}
+			}
+
+			@media (max-width: 750px) {
+				.projects {
+					width: 90%;
+				}
+			}
+
+			@media (max-width: 600px) {
+				.projects {
+					grid-template-columns: 1fr;
+				}
+
+				.project-desc {
+					font-size: 1rem;
+				}
+			}
 		}
-
-		.project .img-link {
-			width: 100%;
-			margin: 0;
-		}
-	}
-}
-
-@media (max-width: 750px) {
-	.projects {
-		width: 90%;
-	}
-}
-
-@media (max-width: 600px) {
-	.projects {
-		grid-template-columns: 1fr;
-	}
-
-	.project-desc {
-		font-size: 1rem;
 	}
 }

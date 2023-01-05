@@ -22,7 +22,12 @@ const ProjectCard = ({ project }) => {
 				<p className='project-desc'>{projectDescription}</p>
 
 				<div className='ctas'>
-					<a href={githubURL} target='_blank' rel='noopener noreferrer' className='btn btn-primary'>
+					<a
+						href={githubURL}
+						target='_blank'
+						rel='noopener noreferrer'
+						className='btn btn-secondary'
+					>
 						Github <FontAwesomeIcon icon={faGithub} className='ext-link-icon' />{' '}
 					</a>
 				</div>

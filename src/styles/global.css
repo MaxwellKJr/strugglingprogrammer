@@ -39,6 +39,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  border-top: 1px solid rgba(255, 0, 102, 0.4588235294);
+  padding-top: 0.5rem;
 }
 .tags .tag {
   display: inline-flex;
