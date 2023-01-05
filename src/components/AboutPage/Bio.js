@@ -29,8 +29,8 @@ const Bio = () => (
 						/>
 					</a>
 					<p>
-						My name is Maxwell Kapezi Jr. I am a Web Developer from the Warm Heart of Africa,
-						Malawi, currently focusing on{' '}
+						My name is Maxwell Kapezi Jr., a Software Developer from the Warm Heart of Africa,
+						Malawi 🇲🇼, currently focusing on{' '}
 						<a href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
 							React.js
 						</a>{' '}
@@ -46,14 +46,20 @@ const Bio = () => (
 						{'.'}
 					</p>
 					<p>
+						I strive and enjoy: <strong>1. building things that work</strong>,{' '}
+						<strong>2. with a welcoming user experience</strong>, and{' '}
+						<strong>3. appealing/attractive design</strong> whether I am working solo or with a
+						team.
+					</p>
+					<p>
 						I started learning how to code in 2017 because I wanted to make my own video game (yes I
 						wanted to make video games) but that dream died quick. For the whole story read my post{' '}
 						<Link to='/blog/hello-world'>Hello World</Link>
 						{'.'}
 					</p>
 					<p>
-						Apart from coding I also enjoy writing short stories, poetry &amp; video games. I mean
-						why not?
+						Apart from coding I also enjoy writing fiction, poetry &amp; video games. I mean why
+						not?
 					</p>
 					<div className='professional-btns'>
 						<Link to='/skills' className='btn btn-primary'>
