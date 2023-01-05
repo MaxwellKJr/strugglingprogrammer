@@ -30,6 +30,11 @@
 				}
 			}
 
+			.twitter-badge {
+				border-radius: 0;
+				border: 1px solid index.$primary-color;
+			}
+
 			p {
 				font-size: 14px;
 				margin: 1rem 0;

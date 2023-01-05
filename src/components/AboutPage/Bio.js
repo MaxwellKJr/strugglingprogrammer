@@ -1,23 +1,33 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+// import SocialLinks from '../SocialLinks/SocialLinks';
 import './about.css';
 
 const Bio = () => (
 	<>
 		<div>
 			<div className='bio-details'>
-				<StaticImage
-					src='mjk.jpg'
-					alt='Maxwell Kapezi, Jr Portrait'
-					placeholder='blurred'
-					layout='fixed'
-					width={260}
-					height={260}
-					title='Maxwell Kapezi, Jr'
-				/>
+				<div>
+					<StaticImage
+						src='mjk.jpg'
+						alt='Maxwell Kapezi, Jr Portrait'
+						placeholder='blurred'
+						layout='fixed'
+						width={260}
+						height={260}
+						title='Maxwell Kapezi, Jr'
+					/>
+					{/* <SocialLinks /> */}
+				</div>
 				<div className='details'>
 					<h1>About Me</h1>
+					<a href='https://www.twitter.com/maxwellKJr' target='_blank' rel='noreferrer'>
+						<img
+							src='https://img.shields.io/twitter/follow/maxwellKJr?logo=twitter&style=for-the-badge&color=ff0077&labelColor=181818'
+							className='twitter-badge'
+						/>
+					</a>
 					<p>
 						My name is Maxwell Kapezi Jr. I am a Web Developer from the Warm Heart of Africa,
 						Malawi, currently focusing on{' '}

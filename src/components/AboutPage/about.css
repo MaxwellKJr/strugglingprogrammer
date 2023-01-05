@@ -26,6 +26,10 @@
     margin-bottom: 1rem;
   }
 }
+#bio .container .bio-details .twitter-badge {
+  border-radius: 0;
+  border: 1px solid #ff0077;
+}
 #bio .container .bio-details p {
   font-size: 14px;
   margin: 1rem 0;
