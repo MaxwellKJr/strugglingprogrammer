@@ -1,90 +1,87 @@
-@use '../styles/index.scss';
+@use '../styles/index';
+@use '../styles/breakpoints';
 
-#blog-post {
-	.post-wrapper {
-		max-width: 1024px;
-		width: 40%;
-		margin: 0 auto;
-		padding-top: 5rem;
+.post-wrapper {
+	max-width: 1024px;
+	width: 40%;
+	margin: 0 auto;
+	padding: 6rem 0;
 
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			color: index.$primary-color;
-			margin: 0.5rem 0;
-		}
-
-		a {
-			color: index.$primary-color;
-			text-decoration: underline;
-		}
-
-		p {
-			margin: 0.5rem 0;
-		}
-
-		blockquote {
-			border-color: index.$primary-color;
-		}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: index.$primary-color;
+		margin: 0.5rem 0;
 	}
 
-	.other-posts-heading {
-		text-align: center;
-		margin: 1rem 0;
+	a {
+		color: index.$primary-color;
+		text-decoration: underline;
 	}
 
-	.blog-nav {
-		width: 100%;
-		max-width: 1024px;
-		background: index.$primary-background;
-		box-shadow: none;
-		margin: 1rem auto 12vh auto;
+	p {
+		margin: 0.5rem 0;
+	}
 
-		ul {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			width: 70%;
-			margin: 0 auto;
-			a {
-				background: index.$primary-border;
-				color: index.$primary-white;
-				font-weight: 600;
-				display: inline-flex;
-				padding: 1rem 2rem;
-				transition: all ease-in-out 300ms;
-				&:hover {
-					opacity: 0.8;
-				}
+	blockquote {
+		border-color: index.$primary-color;
+	}
+
+	@media (max-width: breakpoints.$lg) {
+		width: 75%;
+
+		.blog-nav {
+			ul {
+				width: 100%;
 			}
 		}
 	}
-}
-
-@media (max-width: 990px) {
-	.post-wrapper {
-		width: 75%;
-	}
-
-	.blog-nav {
-		ul {
-			width: 100%;
-		}
-	}
-}
-
-@media (max-width: 600px) {
-	.post-wrapper {
+	@media (max-width: 600px) {
 		width: calc(100% - 2rem);
 	}
+}
 
-	.blog-nav {
-		ul {
+.other-posts-heading {
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.blog-nav {
+	width: 100%;
+	max-width: 1024px;
+	background: index.$primary-background;
+	box-shadow: none;
+	margin: 1rem auto 12vh auto;
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 70%;
+		margin: 0 auto;
+
+		a {
+			background: index.$primary-border;
+			color: index.$primary-white;
+			font-weight: 600;
+			display: inline-flex;
+			padding: 1rem 2rem;
+			transition: all ease-in-out 300ms;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		@media (max-width: breakpoints.$md) {
 			flex-direction: column;
+
+			a {
+				margin-bottom: 1rem;
+			}
 		}
 	}
 }

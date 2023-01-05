@@ -1,65 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
-#blog-post .post-wrapper {
+.post-wrapper {
   max-width: 1024px;
   width: 40%;
   margin: 0 auto;
-  padding-top: 5rem;
+  padding: 6rem 0;
 }
-#blog-post .post-wrapper h1,
-#blog-post .post-wrapper h2,
-#blog-post .post-wrapper h3,
-#blog-post .post-wrapper h4,
-#blog-post .post-wrapper h5,
-#blog-post .post-wrapper h6 {
+.post-wrapper h1,
+.post-wrapper h2,
+.post-wrapper h3,
+.post-wrapper h4,
+.post-wrapper h5,
+.post-wrapper h6 {
   color: #ff0077;
   margin: 0.5rem 0;
 }
-#blog-post .post-wrapper a {
+.post-wrapper a {
   color: #ff0077;
   text-decoration: underline;
 }
-#blog-post .post-wrapper p {
+.post-wrapper p {
   margin: 0.5rem 0;
 }
-#blog-post .post-wrapper blockquote {
+.post-wrapper blockquote {
   border-color: #ff0077;
 }
-#blog-post .other-posts-heading {
-  text-align: center;
-  margin: 1rem 0;
-}
-#blog-post .blog-nav {
-  width: 100%;
-  max-width: 1024px;
-  background: #181818;
-  box-shadow: none;
-  margin: 1rem auto 12vh auto;
-}
-#blog-post .blog-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%;
-  margin: 0 auto;
-}
-#blog-post .blog-nav ul a {
-  background: rgba(255, 0, 102, 0.4588235294);
-  color: #ebebeb;
-  font-weight: 600;
-  display: inline-flex;
-  padding: 1rem 2rem;
-  transition: all ease-in-out 300ms;
-}
-#blog-post .blog-nav ul a:hover {
-  opacity: 0.8;
-}
-
-@media (max-width: 990px) {
+@media (max-width: 968px) {
   .post-wrapper {
     width: 75%;
   }
-  .blog-nav ul {
+  .post-wrapper .blog-nav ul {
     width: 100%;
   }
 }
@@ -67,7 +36,44 @@
   .post-wrapper {
     width: calc(100% - 2rem);
   }
+}
+
+.other-posts-heading {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.blog-nav {
+  width: 100%;
+  max-width: 1024px;
+  background: #181818;
+  box-shadow: none;
+  margin: 1rem auto 12vh auto;
+}
+.blog-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.blog-nav ul a {
+  background: rgba(255, 0, 102, 0.4588235294);
+  color: #ebebeb;
+  font-weight: 600;
+  display: inline-flex;
+  padding: 1rem 2rem;
+  transition: all ease-in-out 300ms;
+}
+.blog-nav ul a:hover {
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
   .blog-nav ul {
     flex-direction: column;
+  }
+  .blog-nav ul a {
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=blog-post.css.map */

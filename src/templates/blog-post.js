@@ -23,8 +23,10 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 					<hr />
 				</article>
 			</div>
-			<h2 className='other-posts-heading'>Other Recent Posts</h2>
-			<nav className='blog-nav'>
+
+			{/* <h2 className='other-posts-heading'>Other Recent Posts</h2> */}
+
+			{/* <nav className='blog-nav'>
 				<ul>
 					<li>
 						{previous && (
@@ -41,7 +43,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 						)}
 					</li>
 				</ul>
-			</nav>
+			</nav> */}
 		</Layout>
 	);
 };
