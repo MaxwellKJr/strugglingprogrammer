@@ -10,28 +10,34 @@ const Blog = () => {
 				filter: { fileAbsolutePath: { regex: "/blog/" } }
 				sort: { frontmatter: { date: DESC } }
 			) {
-				nodes {
-					fields {
-						slug
-					}
-					frontmatter {
-						title
-						description
-						date(formatString: "dddd, D MMMM YYYY")
-						featuredImage {
-							childImageSharp {
-								gatsbyImageData(aspectRatio: 1.5, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-							}
+				edges {
+					node {
+						fields {
+							slug
 						}
-						tags
+						frontmatter {
+							title
+							description
+							date(formatString: "dddd, D MMMM YYYY")
+							featuredImage {
+								childImageSharp {
+									gatsbyImageData(
+										aspectRatio: 1.5
+										placeholder: BLURRED
+										formats: [AUTO, WEBP, AVIF]
+									)
+								}
+							}
+							tags
+						}
+						timeToRead
 					}
-					timeToRead
 				}
 			}
 		}
 	`);
 
-	const posts = data.allMarkdownRemark.nodes;
+	const posts = data.allMarkdownRemark.edges;
 
 	return (
 		<Layout>

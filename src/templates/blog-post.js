@@ -24,9 +24,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 				</article>
 			</div>
 
-			{/* <h2 className='other-posts-heading'>Other Recent Posts</h2> */}
+			{/* <h2 className='other-posts-heading'>Other Recent Posts</h2>
 
-			{/* <nav className='blog-nav'>
+			<nav className='blog-nav'>
 				<ul>
 					<li>
 						{previous && (
@@ -58,7 +58,7 @@ export const pageQuery = graphql`
 			}
 		}
 
-		markdownRemark(fields: { slug: { eq: $slug } }) {
+		markdownRemark(fileAbsolutePath: { regex: "/blog/" }, fields: { slug: { eq: $slug } }) {
 			id
 			excerpt(pruneLength: 160)
 			html

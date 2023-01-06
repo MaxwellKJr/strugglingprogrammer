@@ -4,8 +4,8 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import './BlogCard.css';
 
 const BlogCard = ({ post }) => {
-	const { title, date, featuredImage, description, tags } = post.frontmatter;
-	const { slug } = post.fields;
+	const { title, date, featuredImage, description, tags } = post.node.frontmatter;
+	const { slug } = post.node.fields;
 
 	return (
 		<div className='blog-card'>
