@@ -53,6 +53,9 @@
 #projects .container .projects-container .project .project-details h3 a {
   color: #ebebeb;
 }
+#projects .container .projects-container .project .project-details h3 a:hover {
+  opacity: 0.845;
+}
 #projects .container .projects-container .project .project-details h3 a .ext-link-icon {
   margin: 0;
   padding: 0;

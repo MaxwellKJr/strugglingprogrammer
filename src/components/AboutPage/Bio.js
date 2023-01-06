@@ -38,8 +38,16 @@ const Bio = () => (
 						<a href='https://laravel.com' target='_blank' rel='noopener noreferrer'>
 							Laravel
 						</a>{' '}
-						frameworks. I am also a fourth year Bachelor of Education (BEd) in Computer Science
-						student at the{' '}
+						frameworks for web development and{' '}
+						<a href='http://kotlinlang.org' target='_blank' rel='noopener noreferrer'>
+							Kotlin
+						</a>{' '}
+						and{' '}
+						<a href='http://flutter.dev' target='_blank' rel='noopener noreferrer'>
+							Flutter
+						</a>{' '}
+						for mobile app development. I am also a fourth year Bachelor of Education (BEd) in
+						Computer Science student at the{' '}
 						<a href='https://unima.ac.mw' target='_blank' rel='noopener noreferrer'>
 							Univeristy of Malawi
 						</a>

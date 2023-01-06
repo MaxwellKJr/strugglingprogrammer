@@ -59,6 +59,10 @@
 					h3 {
 						a {
 							color: index.$primary-white;
+							&:hover {
+								opacity: 0.845;
+							}
+
 							.ext-link-icon {
 								margin: 0;
 								padding: 0;

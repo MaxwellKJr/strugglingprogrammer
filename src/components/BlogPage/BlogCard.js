@@ -13,7 +13,7 @@ const BlogCard = ({ post }) => {
 				<GatsbyImage image={getImage(featuredImage)} alt={title} title={title} />
 			</Link>
 			<div className='blog-details'>
-				<small className='timeToRead'>{`> ${post.timeToRead} minute read`}</small>
+				<small className='timeToRead'>{`> ${post.node.timeToRead} minute read`}</small>
 				<h3>
 					<Link to={`${slug}`}>{title}</Link>
 				</h3>

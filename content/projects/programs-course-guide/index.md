@@ -10,7 +10,6 @@ projectDescription: 'Co-developed this mini program and courses guide as a
   put the work. '
 tags:
   - Next.js
-  - React
   - Tailwind CSS
   - Strapi
   - Heroku
