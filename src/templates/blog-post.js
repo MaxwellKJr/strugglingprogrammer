@@ -58,7 +58,7 @@ export const pageQuery = graphql`
 			}
 		}
 
-		markdownRemark(fileAbsolutePath: { regex: "/blog/" }, fields: { slug: { eq: $slug } }) {
+		markdownRemark(fields: { slug: { eq: $slug } }) {
 			id
 			excerpt(pruneLength: 160)
 			html
