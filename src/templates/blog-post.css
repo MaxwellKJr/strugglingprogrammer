@@ -14,6 +14,21 @@
   color: #ff0077;
   margin: 0.5rem 0;
 }
+.post-wrapper h1 {
+  font-size: 3rem;
+}
+.post-wrapper h2 {
+  font-size: 2.5rem;
+}
+.post-wrapper h3 {
+  font-size: 2rem;
+}
+.post-wrapper h4 {
+  font-size: 1.6rem;
+}
+.post-wrapper h5 {
+  font-size: 1.4rem;
+}
 .post-wrapper a {
   color: #ff0077;
   text-decoration: underline;
