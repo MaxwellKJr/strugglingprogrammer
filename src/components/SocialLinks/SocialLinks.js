@@ -48,7 +48,7 @@ const links = socialLinkData;
 const SocialLinks = () => (
 	<ul id='social-links'>
 		{links.map(link => (
-			<li className='social-link'>
+			<li key={link.url} className='social-link'>
 				<a
 					key={link.name}
 					href={link.url}

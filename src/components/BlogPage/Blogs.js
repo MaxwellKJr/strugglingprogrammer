@@ -7,7 +7,7 @@ const Blogs = ({ posts }) => (
 		<h1>Read Something</h1>
 		<div className='blogs-grid'>
 			{posts.map(post => (
-				<BlogCard post={post} />
+				<BlogCard key={post.node.fields.slug} post={post} />
 			))}
 		</div>
 	</div>

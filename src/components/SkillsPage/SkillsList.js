@@ -11,13 +11,12 @@ import {
 	faJs,
 	faLaravel,
 	faLinux,
-	faMobile,
 	faPhp,
 	faReact,
 	faSass,
 	faWordpress,
 } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faCodeAlt, faLaptopCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faLaptopCode, faDatabase, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 const skillsList = [
 	{
@@ -50,7 +49,7 @@ const skillsList = [
 	},
 	{
 		name: 'Flutter',
-		icon: faAndroid,
+		icon: faMobileAlt,
 	},
 	{
 		name: 'React Native',
@@ -136,7 +135,7 @@ const SkillsList = () => {
 				<p>Languages/Technologies:</p>
 				<ul className='skills-grid'>
 					{skillsList.map(skill => (
-						<li className='card-dark'>
+						<li key={skill.name} className='card-dark'>
 							{skill.name} <FontAwesomeIcon icon={skill.icon} size='lg' />
 						</li>
 					))}
@@ -147,7 +146,7 @@ const SkillsList = () => {
 				<h1>What I Use:</h1>
 				<ul className='uses-grid'>
 					{uses.map(use => (
-						<li className='use-card'>
+						<li key={use.name} className='use-card'>
 							<li className='use-type'>
 								<h5 className='type'>{use.type}: </h5>
 								<h3>

@@ -25,6 +25,7 @@ const Bio = () => (
 					<a href='https://www.twitter.com/maxwellKJr' target='_blank' rel='noreferrer'>
 						<img
 							src='https://img.shields.io/twitter/follow/maxwellKJr?logo=twitter&style=for-the-badge&color=ff0077&labelColor=181818'
+							alt='Twitter Badge'
 							className='twitter-badge'
 						/>
 					</a>
