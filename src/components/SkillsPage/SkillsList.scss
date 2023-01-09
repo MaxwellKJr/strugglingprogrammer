@@ -9,7 +9,7 @@
 			.skills-grid {
 				margin: 2rem 3rem 0 0;
 				display: grid;
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: repeat(3, 1fr);
 				width: 100%;
 				gap: 1rem;
 
@@ -23,6 +23,10 @@
 					height: 3rem;
 					padding: 0 1rem;
 					background: url('./js.png') no-repeat center/cover;
+				}
+
+				@media (max-width: breakpoints.$lg) {
+					grid-template-columns: repeat(2, 1fr);
 				}
 			}
 

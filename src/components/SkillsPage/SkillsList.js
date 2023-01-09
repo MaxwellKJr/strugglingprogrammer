@@ -2,6 +2,7 @@ import React from 'react';
 import './SkillsList.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+	faAndroid,
 	faCss3,
 	faFirefoxBrowser,
 	faGitAlt,
@@ -10,16 +11,22 @@ import {
 	faJs,
 	faLaravel,
 	faLinux,
+	faMobile,
 	faPhp,
 	faReact,
+	faSass,
 	faWordpress,
 } from '@fortawesome/free-brands-svg-icons';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faCodeAlt, faLaptopCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 const skillsList = [
 	{
 		name: 'JavaScript',
 		icon: faJs,
+	},
+	{
+		name: 'TypeScript',
+		icon: faCode,
 	},
 	{
 		name: 'React.js',
@@ -38,12 +45,32 @@ const skillsList = [
 		icon: faJava,
 	},
 	{
+		name: 'Kotlin',
+		icon: faAndroid,
+	},
+	{
+		name: 'Flutter',
+		icon: faAndroid,
+	},
+	{
+		name: 'React Native',
+		icon: faReact,
+	},
+	{
 		name: 'HTML5',
 		icon: faHtml5,
 	},
 	{
 		name: 'CSS3',
 		icon: faCss3,
+	},
+	{
+		name: 'Sass',
+		icon: faSass,
+	},
+	{
+		name: 'SQL',
+		icon: faDatabase,
 	},
 	{
 		name: 'WordPress',
@@ -81,6 +108,15 @@ const uses = [
 		whyUse:
 			'It does everything that VS Code does but is much faster and responsive. Of course learning VIM/Neovim takes time. Not recommended for beginners to programming.',
 		icon: faCode,
+	},
+
+	{
+		type: 'Code Editor',
+		name: 'VS Code',
+		description: 'Great cliche text editor',
+		whyUse:
+			'I fell in love with VS Code because of its customizability and that I can turn it into any IDE-like environment I want through extensions. One of my favorites that has a VERY SPECIAL place in my heart.',
+		icon: faLaptopCode,
 	},
 
 	{
