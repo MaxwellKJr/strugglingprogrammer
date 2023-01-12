@@ -101,6 +101,15 @@ const uses = [
 	},
 
 	{
+		type: 'IDE',
+		name: 'PhpStorm',
+		description: 'Ultimate PHP IDE',
+		whyUse:
+			'You might be wondering why I use both WebStorm and PhpStorm. Well, I believe in using the right too for the right job and so, I use this sorely for PHP and Laravel development and nothing more.',
+		icon: faCode,
+	},
+
+	{
 		type: 'Code Editor',
 		name: 'LunarVim',
 		description: 'A neovim distribution.',
