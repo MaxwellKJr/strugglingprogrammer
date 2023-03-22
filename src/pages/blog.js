@@ -4,7 +4,7 @@ import Blogs from '../components/BlogPage/Blogs';
 import Layout from '../layouts/index';
 
 const Blog = () => {
-	const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
 		query {
 			allMarkdownRemark(
 				filter: { fileAbsolutePath: { regex: "/blog/" } }
@@ -37,17 +37,17 @@ const Blog = () => {
 		}
 	`);
 
-	const posts = data.allMarkdownRemark.edges;
+  const posts = data.allMarkdownRemark.edges;
 
-	return (
-		<Layout>
-			<section id='blog'>
-				<div className='container'>
-					<Blogs posts={posts} />
-				</div>
-			</section>
-		</Layout>
-	);
+  return (
+    <Layout>
+      <section id='blog'>
+        <div className='container'>
+          <Blogs posts={posts} />
+        </div>
+      </section>
+    </Layout>
+  );
 };
 
 export default Blog;

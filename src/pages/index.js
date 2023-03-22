@@ -4,16 +4,6 @@ import '../styles/global.css';
 import Layout from '../layouts/index';
 import Showcase from '../components/HomePage/Showcase';
 
-const IndexPage = () => {
-	return (
-		<Layout>
-			<Showcase />
-		</Layout>
-	);
-};
-
-export default IndexPage;
-
 export const query = graphql`
 	query {
 		allSite {
@@ -28,14 +18,24 @@ export const query = graphql`
 	}
 `;
 
-export const Head = ({ data }) => {
-	const seo = data.allSite.nodes[0];
-	const { title, description } = seo.siteMetadata;
+const IndexPage = () => {
+  return (
+    <Layout>
+      <Showcase />
+    </Layout>
+  );
+};
 
-	return (
-		<>
-			<title>{title}</title>
-			<metal name='description' content={description} />
-		</>
-	);
+export default IndexPage;
+
+export const Head = ({ data }) => {
+  const seo = data.allSite.nodes[0];
+  const { title, description } = seo.siteMetadata;
+
+  return (
+    <>
+      <title>{title}</title>
+      <metal name='description' content={description} />
+    </>
+  );
 };
