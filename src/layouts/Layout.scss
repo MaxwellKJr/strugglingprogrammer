@@ -14,11 +14,12 @@
 		width: calc(100% - 1rem);
 		min-height: 100%;
 		padding: 2rem 0;
-    	margin: auto;
+		margin: auto;
 	}
 }
 
-#blog {
+#blog,
+#skills {
 	.container {
 		width: 90%;
 		max-width: breakpoints.$xl;

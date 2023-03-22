@@ -4,8 +4,8 @@ import { faCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 const toolsList = () => [
 	{
 		type: 'Operating System',
-		name: 'EndeavourOS',
-		description: 'An Arch Based Linux Distribution',
+		name: 'Arch Linux',
+		description: 'A minimal Linux Distribution',
 		whyUse:
 			'Since 2019, I have fallen in love with the Linux ecosystem and emphasis of FREE and OPEN SOURCE SOFTWARE (FOSS).',
 		icon: faLinux,
