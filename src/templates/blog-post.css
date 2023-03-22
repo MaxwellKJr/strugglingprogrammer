@@ -34,7 +34,8 @@
   text-decoration: underline;
 }
 .post-wrapper p {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  font-size: 15px;
 }
 .post-wrapper blockquote {
   border-color: #ff0077;
@@ -43,13 +44,16 @@
   .post-wrapper {
     width: 75%;
   }
+  .post-wrapper p {
+    font-size: 13px;
+  }
   .post-wrapper .blog-nav ul {
     width: 100%;
   }
 }
 @media (max-width: 600px) {
   .post-wrapper {
-    width: calc(100% - 2rem);
+    width: calc(100% - 1rem);
   }
 }
 

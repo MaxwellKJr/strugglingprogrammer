@@ -43,7 +43,8 @@
 	}
 
 	p {
-		margin: 0.5rem 0;
+		margin: 1rem 0;
+		font-size: 15px;
 	}
 
 	blockquote {
@@ -53,14 +54,19 @@
 	@media (max-width: breakpoints.$lg) {
 		width: 75%;
 
+		p {
+			font-size: 13px;
+		}
+
 		.blog-nav {
 			ul {
 				width: 100%;
 			}
 		}
 	}
+
 	@media (max-width: 600px) {
-		width: calc(100% - 2rem);
+		width: calc(100% - 1rem);
 	}
 }
 
