@@ -3,7 +3,7 @@
   margin-bottom: 5rem;
 }
 #projects .container h1 {
-  text-align: center;
+  text-align: center !important;
   margin-bottom: 2rem;
 }
 #projects .container .projects-container {

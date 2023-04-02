@@ -19,23 +19,30 @@ export const query = graphql`
 `;
 
 const IndexPage = () => {
-  return (
-    <Layout>
-      <Showcase />
-    </Layout>
-  );
+	return (
+		<Layout>
+			<Showcase />
+		</Layout>
+	);
 };
 
 export default IndexPage;
 
 export const Head = ({ data }) => {
-  const seo = data.allSite.nodes[0];
-  const { title, description } = seo.siteMetadata;
+	const seo = data.allSite.nodes[0];
+	const { title, description, siteUrl } = seo.siteMetadata;
 
-  return (
-    <>
-      <title>{title}</title>
-      <metal name='description' content={description} />
-    </>
-  );
+	return (
+		<>
+			<title>{title}</title>
+			<meta name='description' content={description} />
+			<meta name='og:title' content={title} />
+			<meta name='og:description' content={description} />
+			<meta name='og:url' content={siteUrl} />
+			<meta name='og:type' content='website' />
+			<meta name='twitter:title' content={title} />
+			<meta name='twitter:description' content={description} />
+			<meta name='twitter:card' content='summary' />
+		</>
+	);
 };

@@ -6,6 +6,7 @@ module.exports = {
 		title: `Struggling Programmer`,
 		siteUrl: `https://strugglingprogrammer.netlify.app`,
 		description: `Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows.`,
+		about: `Maxwell Kapezi Jr. is a Software Developer, Graphic Designer, and Writer from the Warm Heart of Africa,	Malawi 🇲🇼.`,
 	},
 	plugins: [
 		'gatsby-plugin-netlify-cms',
