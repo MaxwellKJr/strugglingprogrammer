@@ -1,61 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap');
 #bio .container {
-  height: auto;
-  padding-top: 3rem;
-  padding-bottom: 6rem;
+	height: auto;
+	padding-top: 3rem;
+	padding-bottom: 6rem;
 }
 #bio .container .bio-details {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
 }
 #bio .container .bio-details img {
-  border-radius: 50%;
-  border: 2px solid #fff;
+	border-radius: 50%;
+	border: 2px solid #fff;
 }
 #bio .container .bio-details h1 {
-  text-align: left;
-  margin-bottom: 1rem;
+	text-align: left;
+	margin-bottom: 1rem;
 }
 @media (max-width: 968px) {
-  #bio .container .bio-details h1 {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
+	#bio .container .bio-details h1 {
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
 }
 #bio .container .bio-details .twitter-badge {
-  border-radius: 0;
-  border: 1px solid #ff0077;
+	border-radius: 0;
+	border: 1px solid #ff0077;
 }
 #bio .container .bio-details p {
-  font-size: 14px;
-  margin: 1rem 0;
+	font-size: 14px;
+	margin: 1rem 0;
 }
 #bio .container .bio-details p a {
-  color: #ff0077;
-  font-weight: 600;
-  transition: all ease-in-out 100ms;
+	color: #ff0077;
+	font-weight: 600;
+	transition: all ease-in-out 100ms;
 }
 #bio .container .bio-details p a:hover {
-  color: #ebebeb;
-  opacity: 0.9;
-  text-decoration: underline;
+	color: #ebebeb;
+	opacity: 0.9;
+	text-decoration: underline;
 }
 @media (max-width: 968px) {
-  #bio .container .bio-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-  }
-  #bio .container .bio-details .gatsby-image-wrapper {
-    text-align: center;
-    width: 200px !important;
-    height: 200px !important;
-  }
-}/*# sourceMappingURL=about.css.map */
+	#bio .container .bio-details {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		text-align: center;
+	}
+	#bio .container .bio-details .gatsby-image-wrapper {
+		text-align: center;
+		width: 200px !important;
+		height: 200px !important;
+	}
+} /*# sourceMappingURL=about.css.map */

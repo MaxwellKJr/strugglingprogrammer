@@ -37,11 +37,13 @@
 			.uses-grid {
 				display: flex;
 				flex-direction: column;
+				flex-wrap: wrap;
 				width: 100%;
 			}
 
 			.use-card {
 				padding: 1rem;
+				padding-left: 0.4rem;
 				border-bottom: 1px solid index.$primary-border;
 
 				&:last-child {
@@ -77,7 +79,7 @@
 				flex-direction: column;
 				justify-content: start;
 				align-items: start;
-				font-size: 12px;
+				font-size: 14px;
 			}
 		}
 	}

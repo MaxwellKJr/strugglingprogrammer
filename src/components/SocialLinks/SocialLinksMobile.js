@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const links = socialLinkData;
 
-const SocialLinks = () => (
-	<ul id='social-links'>
+const SocialLinksMobile = () => (
+	<ul id='social-links-mobile'>
 		{links.map(link => (
 			<li key={link.url} className='social-link'>
 				<a
@@ -23,4 +23,4 @@ const SocialLinks = () => (
 	</ul>
 );
 
-export default SocialLinks;
+export default SocialLinksMobile;

@@ -32,10 +32,12 @@
 #skills .container .split .uses-grid {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
 }
 #skills .container .split .use-card {
   padding: 1rem;
+  padding-left: 0.4rem;
   border-bottom: 1px solid rgba(255, 0, 102, 0.4588235294);
 }
 #skills .container .split .use-card:last-child {
@@ -65,6 +67,6 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    font-size: 12px;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=SkillsList.css.map */

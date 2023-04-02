@@ -1,4 +1,5 @@
 @use 'index.scss';
+@use 'breakpoints';
 
 ::-webkit-scrollbar {
 	background: index.$primary-background !important;
@@ -127,5 +128,9 @@ a {
 			text-decoration: none;
 			border-radius: 10px;
 		}
+	}
+
+	@media (max-width: breakpoints.$lg) {
+		padding-bottom: 2rem;
 	}
 }

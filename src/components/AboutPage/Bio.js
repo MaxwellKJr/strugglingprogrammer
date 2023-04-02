@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-// import SocialLinks from '../SocialLinks/SocialLinks';
+import SocialLinksMobile from '../SocialLinks/SocialLinksMobile';
 import './about.css';
 
 const Bio = () => (
@@ -22,13 +22,13 @@ const Bio = () => (
 				</div>
 				<div className='details'>
 					<h1>About Me</h1>
-					<a href='https://www.twitter.com/maxwellKJr' target='_blank' rel='noreferrer'>
+					{/* <a href='https://www.twitter.com/maxwellKJr' target='_blank' rel='noreferrer'>
 						<img
 							src='https://img.shields.io/twitter/follow/maxwellKJr?logo=twitter&style=for-the-badge&color=ff0077&labelColor=181818'
 							alt='Twitter Badge'
 							className='twitter-badge'
 						/>
-					</a>
+					</a> */}
 					<p>
 						My name is Maxwell Kapezi Jr., a Software Developer from the Warm Heart of Africa,
 						Malawi 🇲🇼, currently focusing on{' '}
@@ -83,6 +83,7 @@ const Bio = () => (
 							My Resume
 						</a>
 					</div>
+					<SocialLinksMobile />
 				</div>
 			</div>
 		</div>

@@ -127,4 +127,10 @@ a {
   width: 100%;
   text-decoration: none;
   border-radius: 10px;
+}
+@media (max-width: 968px) {
+  .ctas,
+  .professional-btns {
+    padding-bottom: 2rem;
+  }
 }/*# sourceMappingURL=global.css.map */
