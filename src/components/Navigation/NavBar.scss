@@ -59,10 +59,11 @@
 
 		.nav-link {
 			list-style: none;
-
+			text-align: center;
 			a {
 				display: flex;
 				flex-direction: column;
+				align-items: center;
 				padding: 1rem 2rem;
 				width: 100%;
 				font-size: 0.75rem;
@@ -77,6 +78,9 @@
 					display: none;
 					@media (max-width: breakpoints.$lg) {
 						display: inline-block;
+						align-items: center;
+						width: 14px;
+						height: 14px;
 					}
 				}
 

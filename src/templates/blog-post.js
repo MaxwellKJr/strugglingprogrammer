@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../layouts/index';
 import './blog-post.css';
@@ -8,7 +8,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 	const post = data.markdownRemark;
 	const image = getImage(post.frontmatter.featuredImage);
 	const { siteTitle } = data.site.siteMetadata;
-	const { previous, next } = pageContext;
+	// const { previous, next } = pageContext;
 
 	return (
 		<Layout title={siteTitle}>

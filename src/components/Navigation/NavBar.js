@@ -19,7 +19,7 @@ const NavBar = () => {
 					{links.map(link => (
 						<li key={link.name} className='nav-link'>
 							<Link to={link.route} activeClassName='active' title={link.title}>
-								<FontAwesomeIcon icon={link.icon} size='lg' className='route-icon' />
+								<FontAwesomeIcon icon={link.icon} className='route-icon' />
 								<span className='route-text'>{link.name}</span>
 							</Link>
 						</li>
