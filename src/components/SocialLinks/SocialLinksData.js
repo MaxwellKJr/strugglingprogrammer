@@ -20,7 +20,7 @@ const socialLinkData = [
 	},
 	{
 		name: 'Facebook',
-		url: 'https://web.facebook.com/maxwellkapezijr',
+		url: 'https://facebook.com/maxwellkapezijr',
 		icon: faFacebook,
 	},
 	{

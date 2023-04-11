@@ -4,6 +4,32 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../layouts/index';
 import './blog-post.css';
 
+export const pageQuery = graphql`
+	query BlogPostBySlug($slug: String!) {
+		site {
+			siteMetadata {
+				title
+			}
+		}
+
+		markdownRemark(fields: { slug: { eq: $slug } }) {
+			id
+			excerpt(pruneLength: 160)
+			html
+			frontmatter {
+				title
+				date(formatString: "dddd, DD MMMM, YYYY")
+				description
+				featuredImage {
+					childImageSharp {
+						gatsbyImageData(placeholder: BLURRED)
+					}
+				}
+			}
+		}
+	}
+`;
+
 const BlogPostTemplate = ({ data, pageContext }) => {
 	const post = data.markdownRemark;
 	const image = getImage(post.frontmatter.featuredImage);
@@ -50,28 +76,24 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
 export default BlogPostTemplate;
 
-export const pageQuery = graphql`
-	query BlogPostBySlug($slug: String!) {
-		site {
-			siteMetadata {
-				title
-			}
-		}
+export const Head = ({ data }) => {
+	const post = data.markdownRemark;
+	const { title, description, date } = post.frontmatter;
+	const image = getImage(post.frontmatter.featuredImage);
+	const { siteTitle } = data.site.siteMetadata;
 
-		markdownRemark(fields: { slug: { eq: $slug } }) {
-			id
-			excerpt(pruneLength: 160)
-			html
-			frontmatter {
-				title
-				date(formatString: "dddd, DD MMMM, YYYY")
-				description
-				featuredImage {
-					childImageSharp {
-						gatsbyImageData(placeholder: BLURRED)
-					}
-				}
-			}
-		}
-	}
-`;
+	return (
+		<>
+			<title>{title}</title>
+			<meta name='title' content={title} />
+			<meta name='description' content={description} />
+			<meta name='og:title' content={title} />
+			<meta name='og:description' content={description} />
+			{/* <meta name='og:url' content={`https://strugglingprogrammer.netlify.app/${slug}`} /> */}
+			<meta name='og:type' content='website' />
+			<meta name='twitter:title' content={title} />
+			<meta name='twitter:description' content={description} />
+			<meta name='twitter:card' content='summary' />
+		</>
+	);
+};
