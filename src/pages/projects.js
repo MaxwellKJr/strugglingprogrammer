@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../layouts/index';
 import ProjectsList from '../components/ProjectsPage/ProjectsList';
+import { motion } from 'framer-motion'
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -43,10 +44,26 @@ const Projects = () => {
   return (
     <Layout>
       <section id='projects'>
-        <div className='container'>
+        <motion.div
+          className='container'
+          initial='hidden'
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 1,
+              y: 50,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              y: 0,
+              opacity: 1,
+            },
+          }}
+        >
           <h1>My Work</h1>
           <ProjectsList projects={projects} />
-        </div>
+        </motion.div>
       </section>
     </Layout>
   );

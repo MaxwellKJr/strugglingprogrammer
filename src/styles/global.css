@@ -2,7 +2,6 @@
 ::-webkit-scrollbar {
   background: #181818 !important;
   width: 14px !important;
-  -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
 
@@ -133,4 +132,6 @@ a {
   .professional-btns {
     padding-bottom: 2rem;
   }
-}/*# sourceMappingURL=global.css.map */
+}
+
+/*# sourceMappingURL=global.css.map */

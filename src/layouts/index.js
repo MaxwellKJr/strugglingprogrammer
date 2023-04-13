@@ -8,25 +8,9 @@ export default function Layout({ children }) {
     <>
       <NavBar />
       <main>
-        <motion.div
-          className='container'
-          initial='hidden'
-          animate="visible"
-          variants={{
-            hidden: {
-              scale: 1,
-              y: 50,
-              opacity: 0,
-            },
-            visible: {
-              scale: 1,
-              y: 0,
-              opacity: 1,
-            },
-          }}
-        >
+        <div className='container'>
           {children}
-        </motion.div>
+        </div>
       </main>
     </>
   );

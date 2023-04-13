@@ -21,9 +21,24 @@ const occupations = [
 const Showcase = () => (
   <section id='showcase'>
     <div className='container'>
-      <h1 id='slogan' style={{ textAlign: 'start' }}>
+      <motion.h1 id='slogan' style={{ textAlign: 'start' }}
+        initial='hidden'
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 1,
+            y: 50,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            y: 0,
+            opacity: 1,
+          },
+        }}
+      >
         The Struggling Programmer
-      </h1>
+      </motion.h1>
       <motion.ul className='occupations'
         initial="hidden"
         animate="visible"

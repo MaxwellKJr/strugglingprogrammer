@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../layouts/index';
 import './blog-post.css';
+import { motion } from 'framer-motion';
 
 export const pageQuery = graphql`
 	query BlogPostBySlug($slug: String!) {
@@ -31,26 +32,43 @@ export const pageQuery = graphql`
 `;
 
 const BlogPostTemplate = ({ data, pageContext }) => {
-	const post = data.markdownRemark;
-	const image = getImage(post.frontmatter.featuredImage);
-	const { siteTitle } = data.site.siteMetadata;
-	// const { previous, next } = pageContext;
+  const post = data.markdownRemark;
+  const image = getImage(post.frontmatter.featuredImage);
+  const { siteTitle } = data.site.siteMetadata;
+  // const { previous, next } = pageContext;
 
-	return (
-		<Layout title={siteTitle}>
-			<div id='blog-post' className='post-wrapper'>
-				<article>
-					<GatsbyImage image={image} alt={post.frontmatter.title} />
-					<header>
-						<h3>{post.frontmatter.title}</h3>
-						<p>{post.frontmatter.date}</p>
-					</header>
-					<section dangerouslySetInnerHTML={{ __html: post.html }} />
-					<hr />
-				</article>
-			</div>
+  return (
+    <Layout title={siteTitle}>
+      <div id='blog-post'
+        className='post-wrapper'
+      >
+        <motion.article
+          initial='hidden'
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 1,
+              y: 50,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              y: 0,
+              opacity: 1,
+            },
+          }}
+        >
+          <GatsbyImage image={image} alt={post.frontmatter.title} />
+          <header>
+            <h3>{post.frontmatter.title}</h3>
+            <p>{post.frontmatter.date}</p>
+          </header>
+          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <hr />
+        </motion.article>
+      </div>
 
-			{/* <h2 className='other-posts-heading'>Other Recent Posts</h2>
+      {/* <h2 className='other-posts-heading'>Other Recent Posts</h2>
 
 			<nav className='blog-nav'>
 				<ul>
@@ -70,30 +88,30 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 					</li>
 				</ul>
 			</nav> */}
-		</Layout>
-	);
+    </Layout>
+  );
 };
 
 export default BlogPostTemplate;
 
 export const Head = ({ data }) => {
-	const post = data.markdownRemark;
-	const { title, description, date } = post.frontmatter;
-	const image = getImage(post.frontmatter.featuredImage);
-	const { siteTitle } = data.site.siteMetadata;
+  const post = data.markdownRemark;
+  const { title, description, date } = post.frontmatter;
+  const image = getImage(post.frontmatter.featuredImage);
+  const { siteTitle } = data.site.siteMetadata;
 
-	return (
-		<>
-			<title>{title}</title>
-			<meta name='title' content={title} />
-			<meta name='description' content={description} />
-			<meta name='og:title' content={title} />
-			<meta name='og:description' content={description} />
-			{/* <meta name='og:url' content={`https://strugglingprogrammer.netlify.app/${slug}`} /> */}
-			<meta name='og:type' content='website' />
-			<meta name='twitter:title' content={title} />
-			<meta name='twitter:description' content={description} />
-			<meta name='twitter:card' content='summary' />
-		</>
-	);
+  return (
+    <>
+      <title>{title}</title>
+      <meta name='title' content={title} />
+      <meta name='description' content={description} />
+      <meta name='og:title' content={title} />
+      <meta name='og:description' content={description} />
+      {/* <meta name='og:url' content={`https://strugglingprogrammer.netlify.app/${slug}`} /> */}
+      <meta name='og:type' content='website' />
+      <meta name='twitter:title' content={title} />
+      <meta name='twitter:description' content={description} />
+      <meta name='twitter:card' content='summary' />
+    </>
+  );
 };
