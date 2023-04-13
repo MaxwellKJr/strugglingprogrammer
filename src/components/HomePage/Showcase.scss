@@ -2,6 +2,7 @@
 @use '../../styles/breakpoints';
 
 #showcase {
+  overflow-y: hidden;
 	.container {
 		min-height: 80vh;
 	}

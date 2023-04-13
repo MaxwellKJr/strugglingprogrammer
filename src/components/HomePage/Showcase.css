@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
+#showcase {
+  overflow-y: hidden;
+}
 #showcase .container {
   min-height: 80vh;
 }
@@ -43,4 +46,6 @@
     max-width: 100%;
     font-size: 14px;
   }
-}/*# sourceMappingURL=Showcase.css.map */
+}
+
+/*# sourceMappingURL=Showcase.css.map */

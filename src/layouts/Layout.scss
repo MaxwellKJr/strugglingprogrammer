@@ -1,5 +1,9 @@
 @use '../styles/breakpoints';
 
+body {
+  scroll-behavior: smooth;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -31,4 +35,10 @@
 			padding: 2rem 0;
 		}
 	}
+}
+
+#projects {
+  .container {
+    align-items: center;
+  }
 }
