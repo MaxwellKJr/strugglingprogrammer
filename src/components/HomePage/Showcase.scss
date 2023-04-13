@@ -2,10 +2,9 @@
 @use '../../styles/breakpoints';
 
 #showcase {
-  overflow-y: hidden;
+  overflow: hidden;
 	.container {
 		min-height: 80vh;
-	}
 
 	#slogan {
 		font-family: index.$poppins;
@@ -41,12 +40,18 @@
 	}
 
 	p {
-		margin: 1.4rem 0;
-		max-width: 60%;
+		margin: 1rem 0;
+		max-width: 75%;
 
 		@media (max-width: breakpoints.$lg) {
 			max-width: 100%;
 			font-size: 14px;
 		}
 	}
+
+  .ctas {
+    margin: 0.6rem 0;
+  }
+	}
+
 }

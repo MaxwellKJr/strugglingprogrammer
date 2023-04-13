@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
 #showcase {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 #showcase .container {
   min-height: 80vh;
 }
-#showcase #slogan {
+#showcase .container #slogan {
   font-family: "Poppins";
   font-size: 2.4rem;
   font-weight: 900;
@@ -14,38 +14,41 @@
   text-align: start !important;
 }
 @media (max-width: 968px) {
-  #showcase #slogan {
+  #showcase .container #slogan {
     font-size: 2.2rem;
   }
 }
 @media (max-width: 480px) {
-  #showcase #slogan {
+  #showcase .container #slogan {
     font-size: 2rem;
   }
 }
-#showcase .occupations {
+#showcase .container .occupations {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-#showcase .occupations .occupation {
+#showcase .container .occupations .occupation {
   color: #8f8f8f;
   font-size: 14px;
   padding-right: 0.8rem;
   transition: color ease-in-out 200ms;
 }
-#showcase .occupations .occupation:hover {
+#showcase .container .occupations .occupation:hover {
   color: #ff0077;
 }
-#showcase p {
-  margin: 1.4rem 0;
-  max-width: 60%;
+#showcase .container p {
+  margin: 1rem 0;
+  max-width: 75%;
 }
 @media (max-width: 968px) {
-  #showcase p {
+  #showcase .container p {
     max-width: 100%;
     font-size: 14px;
   }
+}
+#showcase .container .ctas {
+  margin: 0.6rem 0;
 }
 
 /*# sourceMappingURL=Showcase.css.map */
