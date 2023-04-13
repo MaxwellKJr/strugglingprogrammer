@@ -22,6 +22,16 @@
   width: 100%;
   color: #ff0077;
   background: rgba(255, 0, 119, 0.1);
+  position: relative;
+  transition: all 750ms ease-in-out;
+}
+#main-nav .logo:hover .logo-text {
+  color: white;
+  transition: all 750ms ease-in-out;
+  transform: rotateY(360deg) !important;
+  -webkit-transform: rotateY(360deg) !important;
+  -moz-transform: rotateY(360deg) !important;
+  -ms-transform: rotateY(360deg) !important;
 }
 @media (max-width: 968px) {
   #main-nav .logo {
@@ -126,4 +136,6 @@
   #main-nav #header-footer {
     display: none;
   }
-}/*# sourceMappingURL=NavBar.css.map */
+}
+
+/*# sourceMappingURL=NavBar.css.map */

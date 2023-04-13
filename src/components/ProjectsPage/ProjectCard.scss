@@ -6,7 +6,6 @@
 		margin-bottom: 5rem;
 
 		h1 {
-			text-align: center !important;
 			margin-bottom: 2rem;
 		}
 
@@ -59,7 +58,9 @@
 					h3 {
 						a {
 							color: index.$primary-white;
+              transition: all ease-in-out 300ms;
 							&:hover {
+                color: index.$primary-color;
 								opacity: 0.845;
 							}
 

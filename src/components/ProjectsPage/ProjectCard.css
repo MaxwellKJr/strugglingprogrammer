@@ -3,7 +3,6 @@
   margin-bottom: 5rem;
 }
 #projects .container h1 {
-  text-align: center !important;
   margin-bottom: 2rem;
 }
 #projects .container .projects-container {
@@ -52,8 +51,10 @@
 }
 #projects .container .projects-container .project .project-details h3 a {
   color: #ebebeb;
+  transition: all ease-in-out 300ms;
 }
 #projects .container .projects-container .project .project-details h3 a:hover {
+  color: #ff0077;
   opacity: 0.845;
 }
 #projects .container .projects-container .project .project-details h3 a .ext-link-icon {
@@ -106,4 +107,6 @@
   #projects .container .projects-container .project-desc {
     font-size: 1rem;
   }
-}/*# sourceMappingURL=ProjectCard.css.map */
+}
+
+/*# sourceMappingURL=ProjectCard.css.map */
