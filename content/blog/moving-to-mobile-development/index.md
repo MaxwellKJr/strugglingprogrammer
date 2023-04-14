@@ -9,21 +9,26 @@ description: The struggle continues and I have made the painful yet satisfying
 tags:
   - Kotlin
   - Flutter
+  - Native
   - Mobile Development
 ---
-### There is nothing wrong with Web Development
+Web Development is like the Universe. It is vast and one can easily get lost in it with the overwhelming choices at their fingertips.
+
+#### There is nothing wrong with Web Development
 
 Since I started coding in 2017, I never thought I would become a Mobile App Developer. But I was certain that I wanted to write code and I won't say that if I were to start over then I would choose something different. No. I **DEFINITELY** would start with web development.
 
-Web development remains to be the cheapest and most accessible way to get started with coding anyway. And to be frank, software development and mobile development do borrow a lot from web development. Some like web development so much that they decided to build everything with a single code base using web technologies (looking at you React, Electron, and React Native). That's how accessible web development is.
+Web development remains to be the cheapest and most accessible way to get started with coding anyway. And to be frank, both software and mobile development do borrow a lot from web development. In fact, some people like web development so much that they decided to build everything (Desktop, Mobile, Web) with a single code base using web technologies (looking at you React, Electron, and React Native). That's how accessible web development is.
 
-### Then Why Move?
+#### Then Why Move? 💁‍♂️
 
 I actually thought mobile development was as difficult as game development. Yes, I will admit it sounds dumb saying that but that's what I thought.
 
-So I was shocked to see that mobile development is not as hard as game development (unless the app is a game then... well 🤯). Anyway, I won't deny that my web dev knowledge helped me significantly with learning mobile development. I actually started web development with React Native because of my knowledge of React.js. I was blown away and couldn't believe what my eyes were seeing. Running a Native app with web development knowledge was something I was both glad for and took time to accept. So I stopped. Yes. The Irony.
+So I was shocked to see that mobile development is not as hard as game development (unless the app is a game then... well 🤯).
 
-#### Mobile Development Course
+Anyway, I won't deny that my web dev knowledge helped me significantly with learning mobile development. I actually started web development with React Native because of my knowledge of React.js. I was blown away and couldn't believe what my eyes were seeing. Running a Native app with web development knowledge was something I was both glad for and took time to accept. So I stopped. Yes. The Irony.
+
+##### Mobile Development Course
 
 Then the time came for me to learn mobile development whether I liked it or not. My Mobile Development 4th-year course played a huge part in persuading me to make the shift. It was the most fun and frustrating experience I have had while learning a course and man, it was **WORTH IT!**.
 
@@ -31,7 +36,7 @@ We were given the liberty to build the app of our choice with the technology of 
 
 I chose Kotlin because of its `data class` feature and simplicity. I have nothing against Java (lies) but I wanted to expand my knowledge. Okay here is a side-by-side equivalent of user class in Kotlin and Java.
 
-#### Kotlin User Class:
+##### Kotlin User Class:
 
 ```
 data class User(
@@ -52,7 +57,7 @@ data class User(
 
 Now here is the same class in Java 😢
 
-#### Java User Class:
+##### Java User Class:
 
 ```
 public class User {
@@ -109,20 +114,20 @@ public class User {
 
 Now you know why I chose Kotlin over Java. I really have nothing against Java and its code *legacy*.
 
-But Kotlin is just a small part of why I chose it. As a developer who aims and creating visually appealing and welcoming user experiences, I feel like my skills will be best utilized and goals achieved at the same time with mobile development. With mobile development, one can easily become Full-Stack.
+But Kotlin is just a small part of why I chose it. As a developer who aims at creating visually appealing and welcoming user experiences, I feel like my skills will be best utilized and goals achieved at the same time with mobile development. With mobile development, one can easily become Full-Stack. I want to build apps that people can easily use and bond with by having them on their smartphones. I mean it doesn't get better than that. I want to build experiences that will make people say, "Yeah, I am going to pay for more features".
 
-### What does mobile development have that web development doesn't?
+#### What does mobile development have that web development doesn't?
 
 To explain this, I will have to divide this into the technical advantages and the personal advantages (monetization and all) but first, let's start with the former.
 
-#### Advantages of Mobile Development (App Perspective)
+##### Advantages of Mobile Development (App Perspective)
 
 1. Better Performance += Better User Experience
 2. Accessibility
 3. Ease-of-use (Depends on the app really)
 4. Take Advantage of Hardware Resources
 
-#### Advantages of Mobile Development (Developer's Perspective)
+##### Advantages of Mobile Development (Developer's Perspective)
 
 1. High Industry Demand for Mobile Developers
 2. Better Salaries (Mostly but not always)
