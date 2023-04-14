@@ -45,7 +45,7 @@
     width: 75%;
   }
   .post-wrapper p {
-    font-size: 13px;
+    font-size: 14px;
   }
   .post-wrapper .blog-nav ul {
     width: 100%;
@@ -95,4 +95,6 @@
   .blog-nav ul a {
     margin-bottom: 1rem;
   }
-}/*# sourceMappingURL=blog-post.css.map */
+}
+
+/*# sourceMappingURL=blog-post.css.map */

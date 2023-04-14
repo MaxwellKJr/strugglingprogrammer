@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from '../components/Navigation/NavBar';
 import './Layout.css';
-import { motion } from 'framer-motion'
 
 export default function Layout({ children }) {
   return (

@@ -27,6 +27,7 @@ export const pageQuery = graphql`
 					}
 				}
 			}
+      timeToRead
 		}
 	}
 `;
@@ -61,7 +62,10 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <GatsbyImage image={image} alt={post.frontmatter.title} />
           <header>
             <h3>{post.frontmatter.title}</h3>
-            <p>{post.frontmatter.date}</p>
+            <div className='article-details'>
+              <small>{post.frontmatter.date}</small>
+              <small>{`> ${post.timeToRead} minute read`}</small>
+            </div>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr />
@@ -96,7 +100,7 @@ export default BlogPostTemplate;
 
 export const Head = ({ data }) => {
   const post = data.markdownRemark;
-  const { title, description, date } = post.frontmatter;
+  const { title, description, date, slug } = post.frontmatter;
   const image = getImage(post.frontmatter.featuredImage);
   const { siteTitle } = data.site.siteMetadata;
 
@@ -107,7 +111,8 @@ export const Head = ({ data }) => {
       <meta name='description' content={description} />
       <meta name='og:title' content={title} />
       <meta name='og:description' content={description} />
-      {/* <meta name='og:url' content={`https://strugglingprogrammer.netlify.app/${slug}`} /> */}
+      <meta name='og:image' content={image} />
+      {/* <meta name='og:url' content={`https://strugglingprogrammer.netlify.app/blog/${slug}`} /> */}
       <meta name='og:type' content='website' />
       <meta name='twitter:title' content={title} />
       <meta name='twitter:description' content={description} />
