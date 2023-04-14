@@ -68,6 +68,9 @@
   .post-wrapper p {
     font-size: 14px;
   }
+  .post-wrapper code {
+    font-size: 13px;
+  }
   .post-wrapper .blog-nav ul {
     width: 100%;
   }
