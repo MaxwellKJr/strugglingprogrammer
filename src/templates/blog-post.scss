@@ -84,7 +84,7 @@
 		}
 
     code {
-      font-size: 13px;
+      font-size: 12px;
     }
 
 		.blog-nav {
@@ -96,6 +96,10 @@
 
 	@media (max-width: 600px) {
 		width: calc(100% - 1rem);
+    
+    code {
+      font-size: 12px;
+    }
 	}
 }
 
