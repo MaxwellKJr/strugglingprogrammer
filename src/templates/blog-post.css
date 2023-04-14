@@ -24,6 +24,7 @@
   font-size: 2rem;
 }
 .post-wrapper h4 {
+  color: white;
   font-size: 1.6rem;
 }
 .post-wrapper h5 {
@@ -39,6 +40,26 @@
 }
 .post-wrapper blockquote {
   border-color: #ff0077;
+}
+.post-wrapper ul {
+  list-style: square;
+}
+.post-wrapper ol {
+  font-size: 14px;
+  list-style-type: decimal !important;
+}
+.post-wrapper ol li {
+  padding-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+.post-wrapper .article-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.post-wrapper .article-details small {
+  margin-bottom: 0.5rem;
+  opacity: 70%;
 }
 @media (max-width: 968px) {
   .post-wrapper {

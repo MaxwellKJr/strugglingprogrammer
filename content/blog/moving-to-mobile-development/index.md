@@ -38,7 +38,7 @@ I chose Kotlin because of its `data class` feature and simplicity. I have nothin
 
 ##### Kotlin User Class:
 
-```
+```kotlin
 data class User(
     val id: Int,
     val name: String,
@@ -59,7 +59,7 @@ Now here is the same class in Java 😢
 
 ##### Java User Class:
 
-```
+```java
 public class User {
     private int id;
     private String name;

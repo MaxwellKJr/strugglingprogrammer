@@ -63,7 +63,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <header>
             <h3>{post.frontmatter.title}</h3>
             <div className='article-details'>
-              <small>{post.frontmatter.date}</small>
+              <small>{`Published On: ${post.frontmatter.date}`}</small>
               <small>{`> ${post.timeToRead} minute read`}</small>
             </div>
           </header>
