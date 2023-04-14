@@ -3,12 +3,11 @@ title: Why Mobile Development?
 date: 2023-04-14T14:22:53.434Z
 featuredImage: from-web-to-mobile-dev.jpg
 description: Remember the time we used Facebook and Twitter by going to their
-  dedicated "mobile" web versions? If you can't remember I dare you to go visit
-  them. Don't get me wrong, they are MUCH better than they were in 2014 thanks
-  to a lot web technologies that have emerged along the way. But this is about
-  why mobile development is just better.
+  dedicated "mobile" web versions? Don't get me wrong, they are MUCH better than
+  they were in 2014 thanks to a lot web technologies that have emerged along the
+  way. But this is about why mobile development is just better.
 tags:
-  - Tech
+  - Mobile Development
 ---
 The world has witnessed a massive technological advancement in recent times, and mobile devices have become a major part of this advancement. With the increasing number of mobile devices, the demand for mobile apps has also increased exponentially. This has resulted in a significant rise in the field of web development, specifically mobile development.
 
@@ -44,7 +43,7 @@ Mobile developers are paid well due to the high demand for their services. The a
 
 ##### 3. Easy to Monetize Apps
 
-![Vince McMahon Money](vince-mcmahon.gif "Vince McMahone Money")
+![Vince McMahon Money](vince-mcmahon.gif)
 
 Mobile apps are easy to monetize compared to web applications. Mobile apps can be monetized through various means such as in-app purchases, advertisements, and subscriptions. This makes mobile apps a lucrative business for developers.
 
