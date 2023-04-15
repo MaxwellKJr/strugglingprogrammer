@@ -1,38 +1,38 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import Layout from '../layouts/index';
-import './blog-post.css';
-import { motion } from 'framer-motion';
+import React from "react";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Layout from "../layouts/index";
+import "./blog-post.css";
+import { motion } from "framer-motion";
 
 export const pageQuery = graphql`
-	query BlogPostBySlug($slug: String!) {
-		site {
-			siteMetadata {
-				title
-			}
-		}
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
 
-		markdownRemark(fields: { slug: { eq: $slug } }) {
-			id
-			excerpt(pruneLength: 160)
-			html
-			frontmatter {
-				title
-				date(formatString: "dddd, DD MMMM, YYYY")
-				description
-				featuredImage {
-					childImageSharp {
-						gatsbyImageData(placeholder: BLURRED)
-					}
-				}
-			}
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt(pruneLength: 160)
+      html
+      frontmatter {
+        title
+        date(formatString: "dddd, DD MMMM, YYYY")
+        description
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED)
+          }
+        }
+      }
       timeToRead
-		}
-	}
+    }
+  }
 `;
 
-const BlogPostTemplate = ({ data, pageContext }) => {
+const BlogPostTemplate = ({ data, pageContext }: any) => {
   const post = data.markdownRemark;
   const image = getImage(post.frontmatter.featuredImage);
   const { siteTitle } = data.site.siteMetadata;
@@ -40,11 +40,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout title={siteTitle}>
-      <div id='blog-post'
-        className='post-wrapper'
-      >
+      <div id="blog-post" className="post-wrapper">
         <motion.article
-          initial='hidden'
+          initial="hidden"
           animate="visible"
           variants={{
             hidden: {
@@ -62,7 +60,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <GatsbyImage image={image} alt={post.frontmatter.title} />
           <header>
             <h3>{post.frontmatter.title}</h3>
-            <div className='article-details'>
+            <div className="article-details">
               <small>{`Published On: ${post.frontmatter.date}`}</small>
               <small>{`> ${post.timeToRead} minute read`}</small>
             </div>
@@ -98,7 +96,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
 export default BlogPostTemplate;
 
-export const Head = ({ data }) => {
+export const Head = ({ data }: any) => {
   const post = data.markdownRemark;
   const { title, description, date, slug } = post.frontmatter;
   const image = getImage(post.frontmatter.featuredImage);
@@ -107,16 +105,16 @@ export const Head = ({ data }) => {
   return (
     <>
       <title>{title}</title>
-      <meta name='title' content={title} />
-      <meta name='description' content={description} />
-      <meta name='og:title' content={title} />
-      <meta name='og:description' content={description} />
-      <meta name='og:image' content={image} />
+      <meta name="title" content={title} />
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:image" content={image} />
       {/* <meta name='og:url' content={`https://strugglingprogrammer.netlify.app/blog/${slug}`} /> */}
-      <meta name='og:type' content='website' />
-      <meta name='twitter:title' content={title} />
-      <meta name='twitter:description' content={description} />
-      <meta name='twitter:card' content='summary' />
+      <meta name="og:type" content="website" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:card" content="summary" />
     </>
   );
 };
