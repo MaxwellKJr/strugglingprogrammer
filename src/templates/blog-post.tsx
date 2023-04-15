@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../layouts/index";
 import "./blog-post.css";
@@ -36,7 +36,7 @@ const BlogPostTemplate = ({ data, pageContext }: any) => {
   const post = data.markdownRemark;
   const image = getImage(post.frontmatter.featuredImage);
   const { siteTitle } = data.site.siteMetadata;
-  // const { previous, next } = pageContext;
+  const { previous, next } = pageContext;
 
   return (
     <Layout title={siteTitle}>
@@ -70,26 +70,26 @@ const BlogPostTemplate = ({ data, pageContext }: any) => {
         </motion.article>
       </div>
 
-      {/* <h2 className='other-posts-heading'>Other Recent Posts</h2>
+      <h2 className="other-posts-heading">Other Recent Posts</h2>
 
-			<nav className='blog-nav'>
-				<ul>
-					<li>
-						{previous && (
-							<Link to={previous.fields.slug} rel='prev'>
-								← {previous.frontmatter.title}
-							</Link>
-						)}
-					</li>
-					<li>
-						{next && (
-							<Link to={next.fields.slug} rel='next'>
-								{next.frontmatter.title} →
-							</Link>
-						)}
-					</li>
-				</ul>
-			</nav> */}
+      <nav className="blog-nav">
+        <ul>
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
     </Layout>
   );
 };
