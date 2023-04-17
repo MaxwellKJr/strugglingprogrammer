@@ -63,6 +63,14 @@
 					.type {
 						margin-right: 1rem;
 					}
+
+          .use-link {
+              color: index.$primary-white;
+              text-decoration: underline;
+              &:hover {
+                color: index.$primary-color;
+              }
+          }
 				}
 
 				.use-description {

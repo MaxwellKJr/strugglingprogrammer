@@ -56,6 +56,13 @@
 #skills .container .split .use-card .use-type .type {
   margin-right: 1rem;
 }
+#skills .container .split .use-card .use-type .use-link {
+  color: #ebebeb;
+  text-decoration: underline;
+}
+#skills .container .split .use-card .use-type .use-link:hover {
+  color: #ff0077;
+}
 #skills .container .split .use-card .use-description li {
   list-style: symbols("+") !important;
   margin-left: 2rem;
@@ -69,4 +76,6 @@
     align-items: start;
     font-size: 14px;
   }
-}/*# sourceMappingURL=SkillsList.css.map */
+}
+
+/*# sourceMappingURL=SkillsList.css.map */
