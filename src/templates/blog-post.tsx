@@ -66,11 +66,10 @@ const BlogPostTemplate = ({ data, pageContext }: any) => {
             </div>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
         </motion.article>
       </div>
 
-      <h2 className="other-posts-heading">Other Recent Posts</h2>
+      <h3 className="other-posts-heading">Other Recent Posts</h3>
 
       <nav className="blog-nav">
         <ul>

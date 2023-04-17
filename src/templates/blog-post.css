@@ -3,7 +3,7 @@
   max-width: 1024px;
   width: 40%;
   margin: 0 auto;
-  padding: 6rem 0;
+  padding: 6rem 0 3rem 0;
 }
 .post-wrapper h1,
 .post-wrapper h2,
@@ -86,7 +86,6 @@
 
 .other-posts-heading {
   text-align: center;
-  margin: 1rem 0;
 }
 
 .blog-nav {
@@ -95,6 +94,7 @@
   background: #181818;
   box-shadow: none;
   margin: 1rem auto 12vh auto;
+  padding-bottom: 4rem;
 }
 .blog-nav ul {
   display: flex;
@@ -109,18 +109,21 @@
   color: #ebebeb;
   font-weight: 600;
   display: inline-flex;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.8rem;
   transition: all ease-in-out 300ms;
 }
 .blog-nav ul a:hover {
-  opacity: 0.8;
+  background: #ebebeb;
+  color: #ff0077;
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .blog-nav ul {
     flex-direction: column;
+    width: calc(100% - 1rem);
   }
   .blog-nav ul a {
     margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
