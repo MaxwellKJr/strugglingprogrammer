@@ -25,7 +25,7 @@ const socialLinkData = [
 	},
 	{
 		name: 'Instagram',
-		url: 'https://instagram.com/_maxwellKJr',
+		url: 'https://instagram.com/maxwellKJr_',
 		icon: faInstagram,
 	},
 	{

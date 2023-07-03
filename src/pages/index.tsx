@@ -34,8 +34,8 @@ export const Head = ({ data }: PageProps) => {
 
   return (
     <>
-      <title>{title}</title>
-      <meta name="title" content={title} />
+      <title>{`${title} | Home`}</title>
+      <meta name="title" content={`${title} | Home`} />
       <meta name="description" content={description} />
       <meta name="og:title" content={title} />
       <meta name="og:description" content={description} />

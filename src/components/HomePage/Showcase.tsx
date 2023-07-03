@@ -14,7 +14,7 @@ const occupations = [
   },
   {
     name: 'Graphic Designer🖌️',
-    url: 'https://instagram.com/_maxwellkjr',
+    url: 'https://instagram.com/maxwellkjr_',
   },
 ];
 
