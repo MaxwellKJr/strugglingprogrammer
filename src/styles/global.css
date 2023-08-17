@@ -32,19 +32,20 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
-a {
+html a,
+body a {
   text-decoration: none;
 }
-
-.tags {
+html .tags,
+body .tags {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   border-top: 1px solid rgba(255, 0, 102, 0.4588235294);
   padding-top: 0.5rem;
 }
-.tags .tag {
+html .tags .tag,
+body .tags .tag {
   display: inline-flex;
   background: rgba(255, 0, 102, 0.4588235294);
   font-size: 14px;
@@ -55,13 +56,16 @@ a {
   border-radius: 16px;
   opacity: 0.8;
 }
-
-.ctas,
-.professional-btns {
+html .ctas,
+html .professional-btns,
+body .ctas,
+body .professional-btns {
   margin: 1rem 0;
 }
-.ctas .btn,
-.professional-btns .btn {
+html .ctas .btn,
+html .professional-btns .btn,
+body .ctas .btn,
+body .professional-btns .btn {
   display: inline-flex;
   width: 140px;
   height: 40px;
@@ -72,14 +76,18 @@ a {
   position: relative;
   transition: all ease-in-out 300ms;
 }
-.ctas .btn-primary,
-.professional-btns .btn-primary {
+html .ctas .btn-primary,
+html .professional-btns .btn-primary,
+body .ctas .btn-primary,
+body .professional-btns .btn-primary {
   background: #ff0077;
   color: #ebebeb;
   border-radius: 10px;
 }
-.ctas .btn-primary:after,
-.professional-btns .btn-primary:after {
+html .ctas .btn-primary:after,
+html .professional-btns .btn-primary:after,
+body .ctas .btn-primary:after,
+body .professional-btns .btn-primary:after {
   background: #ebebeb;
   position: absolute;
   content: "";
@@ -91,24 +99,32 @@ a {
   transition: all ease-in-out 400ms;
   border-radius: 10px 10px;
 }
-.ctas .btn-primary:hover,
-.professional-btns .btn-primary:hover {
+html .ctas .btn-primary:hover,
+html .professional-btns .btn-primary:hover,
+body .ctas .btn-primary:hover,
+body .professional-btns .btn-primary:hover {
   color: #181818;
 }
-.ctas .btn-primary:hover::after,
-.professional-btns .btn-primary:hover::after {
+html .ctas .btn-primary:hover::after,
+html .professional-btns .btn-primary:hover::after,
+body .ctas .btn-primary:hover::after,
+body .professional-btns .btn-primary:hover::after {
   width: 100%;
   text-decoration: none;
   border-radius: 10px;
 }
-.ctas .btn-secondary,
-.professional-btns .btn-secondary {
+html .ctas .btn-secondary,
+html .professional-btns .btn-secondary,
+body .ctas .btn-secondary,
+body .professional-btns .btn-secondary {
   background: #ebebeb;
   color: #181818;
   border-radius: 10px;
 }
-.ctas .btn-secondary:before,
-.professional-btns .btn-secondary:before {
+html .ctas .btn-secondary:before,
+html .professional-btns .btn-secondary:before,
+body .ctas .btn-secondary:before,
+body .professional-btns .btn-secondary:before {
   background: #ff0077;
   position: absolute;
   content: "";
@@ -120,19 +136,25 @@ a {
   transition: all ease-in-out 400ms;
   border-radius: 10px 0 0 10px;
 }
-.ctas .btn-secondary:hover,
-.professional-btns .btn-secondary:hover {
+html .ctas .btn-secondary:hover,
+html .professional-btns .btn-secondary:hover,
+body .ctas .btn-secondary:hover,
+body .professional-btns .btn-secondary:hover {
   color: #ebebeb;
 }
-.ctas .btn-secondary:hover::before,
-.professional-btns .btn-secondary:hover::before {
+html .ctas .btn-secondary:hover::before,
+html .professional-btns .btn-secondary:hover::before,
+body .ctas .btn-secondary:hover::before,
+body .professional-btns .btn-secondary:hover::before {
   width: 100%;
   text-decoration: none;
   border-radius: 10px;
 }
 @media (max-width: 968px) {
-  .ctas,
-  .professional-btns {
+  html .ctas,
+  html .professional-btns,
+  body .ctas,
+  body .professional-btns {
     padding-bottom: 2rem;
   }
 }

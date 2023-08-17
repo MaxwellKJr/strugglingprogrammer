@@ -13,9 +13,9 @@ const toolsList = () => [
 	// },
 	{
 		type: 'Operating System',
-		name: 'Arch Linux',
-		link: 'https://archlinux.org/',
-		description: 'A minimal Linux Distribution',
+		name: 'Nobara OS',
+		link: 'https://fedoraproject.org/',
+		description: `Gamer Centred OS based on Fedora Workstation`,
 		whyUse:
 			'Since 2019, I have fallen in love with the Linux ecosystem and emphasis of FREE and OPEN SOURCE SOFTWARE (FOSS).',
 		icon: faLinux,
