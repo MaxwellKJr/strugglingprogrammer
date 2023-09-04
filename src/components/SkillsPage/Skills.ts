@@ -1,79 +1,121 @@
 import {
-	faAndroid,
-	faCss3,
-	faGitAlt,
-	faHtml5,
-	faJava,
-	faJs,
-	faLaravel,
-	faPhp,
-	faReact,
-	faSass,
-	faWordpress,
+  faAndroid,
+  faBootstrap,
+  faCss3,
+  faFortAwesome,
+  faGitAlt,
+  faHtml5,
+  faJava,
+  faJs,
+  faLaravel,
+  faPhp,
+  faReact,
+  faSass,
+  faWordpress,
 } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faDatabase, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsH, faCircleNodes, faCode, faDatabase, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 const skillsList = () => [
-	{
-		name: 'JavaScript',
-		icon: faJs,
-	},
-	{
-		name: 'TypeScript',
-		icon: faCode,
-	},
-	{
-		name: 'React.js',
-		icon: faReact,
-	},
-	{
-		name: 'PHP',
-		icon: faPhp,
-	},
-	{
-		name: 'Laravel',
-		icon: faLaravel,
-	},
-	{
-		name: 'Java',
-		icon: faJava,
-	},
-	{
-		name: 'Kotlin',
-		icon: faAndroid,
-	},
-	{
-		name: 'Flutter',
-		icon: faMobileAlt,
-	},
-	{
-		name: 'React Native',
-		icon: faReact,
-	},
-	{
-		name: 'HTML5',
-		icon: faHtml5,
-	},
-	{
-		name: 'CSS3',
-		icon: faCss3,
-	},
-	{
-		name: 'Sass',
-		icon: faSass,
-	},
-	{
-		name: 'SQL',
-		icon: faDatabase,
-	},
-	{
-		name: 'WordPress',
-		icon: faWordpress,
-	},
-	{
-		name: 'Git',
-		icon: faGitAlt,
-	},
+  {
+    name: 'JavaScript',
+    skill: 1,
+    icon: faJs,
+  },
+  {
+    name: 'TypeScript',
+    skill: 1,
+    icon: faCode,
+  },
+  {
+    name: 'React.js',
+    skill: 2,
+    icon: faReact,
+  },
+  {
+    name: 'PHP',
+    skill: 1,
+    icon: faPhp,
+  },
+  {
+    name: 'Laravel',
+    skill: 2,
+    icon: faLaravel,
+  },
+  {
+    name: 'Tailwind CSS',
+    skill: 2,
+    icon: faFortAwesome
+  },
+  {
+    name: 'Bootstrap',
+    skill: 2,
+    icon: faBootstrap
+  },
+  {
+    name: 'Java',
+    skill: 1,
+    icon: faJava,
+  },
+  {
+    name: 'Kotlin',
+    skill: 1,
+    icon: faAndroid,
+  },
+  {
+    name: 'Dart',
+    skill: 1,
+    icon: faCode,
+  },
+  {
+    name: 'Native + Jetpack Compose',
+    skill: 3,
+    icon: faAndroid,
+  },
+  {
+    name: 'Flutter',
+    skill: 3,
+    icon: faMobileAlt,
+  },
+  {
+    name: 'React Native',
+    skill: 3,
+    icon: faReact,
+  },
+  {
+    name: 'HTML',
+    skill: 1,
+    icon: faHtml5,
+  },
+  {
+    name: 'CSS',
+    skill: 1,
+    icon: faCss3,
+  },
+  {
+    name: 'Sass',
+    skill: 2,
+    icon: faSass,
+  },
+  {
+    name: 'SQL',
+    skill: 4,
+    icon: faDatabase,
+  },
+  {
+    name: 'GraphQL',
+    skill: 4,
+    icon: faCircleNodes,
+  },
+  {
+    name: 'Git',
+    skill: 5,
+    icon: faGitAlt,
+  },
+  {
+    name: 'WordPress',
+    skill: 5,
+    icon: faWordpress,
+  },
 ];
 
 export default skillsList();

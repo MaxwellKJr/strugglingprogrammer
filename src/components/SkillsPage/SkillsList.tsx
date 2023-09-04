@@ -11,13 +11,68 @@ const SkillsList = () => {
   return (
     <div className="split">
       <div className="skills">
-        <p>Languages/Technologies:</p>
+        <p>Programming Languages:</p>
         <ul className="skills-grid">
-          {skills.map((skill) => (
-            <li key={skill.name} className="card-dark">
-              {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
-            </li>
-          ))}
+          {skills.map((skill) => {
+            if (skill.skill === 1) // Replace 'return' with 'return null' to skip rendering
+              return (
+                <li key={skill.name} className="card-dark">
+                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                </li>
+              );
+          })}
+        </ul>
+      </div>
+      <div className="skills">
+        <p>Web Libraries & Frameworks:</p>
+        <ul className="skills-grid">
+          {skills.map((skill) => {
+            if (skill.skill === 2) // Replace 'return' with 'return null' to skip rendering
+              return (
+                <li key={skill.name} className="card-dark">
+                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                </li>
+              );
+          })}
+        </ul>
+      </div>
+      <div className="skills">
+        <p>Mobile Development:</p>
+        <ul className="skills-grid">
+          {skills.map((skill) => {
+            if (skill.skill === 3) // Replace 'return' with 'return null' to skip rendering
+              return (
+                <li key={skill.name} className="card-dark">
+                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                </li>
+              );
+          })}
+        </ul>
+      </div>
+      <div className="skills">
+        <p>Query Languages:</p>
+        <ul className="skills-grid">
+          {skills.map((skill) => {
+            if (skill.skill === 4) // Replace 'return' with 'return null' to skip rendering
+              return (
+                <li key={skill.name} className="card-dark">
+                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                </li>
+              );
+          })}
+        </ul>
+      </div>
+      <div className="skills">
+        <p>Other Technologies:</p>
+        <ul className="skills-grid">
+          {skills.map((skill) => {
+            if (skill.skill === 5) // Replace 'return' with 'return null' to skip rendering
+              return (
+                <li key={skill.name} className="card-dark">
+                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                </li>
+              );
+          })}
         </ul>
       </div>
 

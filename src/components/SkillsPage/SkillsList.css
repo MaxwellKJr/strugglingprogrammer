@@ -3,14 +3,17 @@
   padding-top: 2rem;
   padding-bottom: 7rem;
 }
-#skills .container .split .skills-grid {
-  margin: 2rem 3rem 0 0;
+#skills .container .split .skills {
+  padding: 1rem 0;
+}
+#skills .container .split .skills .skills-grid {
+  margin: 0.5rem 3rem 0 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   gap: 1rem;
 }
-#skills .container .split .skills-grid .card-dark {
+#skills .container .split .skills .skills-grid .card-dark {
   border: 1px solid rgba(255, 0, 102, 0.4588235294);
   border-radius: 10px;
   display: inline-flex;
@@ -22,7 +25,7 @@
   background: url("./js.png") no-repeat center/cover;
 }
 @media (max-width: 968px) {
-  #skills .container .split .skills-grid {
+  #skills .container .split .skills .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }

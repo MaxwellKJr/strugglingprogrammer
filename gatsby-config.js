@@ -4,8 +4,8 @@
 module.exports = {
   graphqlTypegen: true,
   siteMetadata: {
-    title: `Struggling Programmer`,
-    siteUrl: `https://strugglingprogrammer.netlify.app`,
+    title: `MJ Codes`,
+    siteUrl: `https://bymjcodes.com`,
     description: `Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows.`,
     about: `Maxwell Kapezi Jr. is a Software Developer, Graphic Designer, and Writer from the Warm Heart of Africa,	Malawi 🇲🇼.`,
   },

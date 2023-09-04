@@ -38,13 +38,13 @@ const Bio = () => (
         </div>
         <div className='details'>
           <h1>About Me</h1>
-          {/* <a href='https://www.twitter.com/maxwellKJr' target='_blank' rel='noreferrer'>
-						<img
-							src='https://img.shields.io/twitter/follow/maxwellKJr?logo=twitter&style=for-the-badge&color=ff0077&labelColor=181818'
-							alt='Twitter Badge'
-							className='twitter-badge'
-						/>
-					</a> */}
+          <a href='https://www.twitter.com/maxwellKJr' target='_blank' rel='noreferrer'>
+            <img
+              src='https://img.shields.io/twitter/follow/maxwellKJr?logo=twitter&style=for-the-badge&color=ff0077&labelColor=181818'
+              alt='Twitter Badge'
+              className='twitter-badge'
+            />
+          </a>
           <p>
             My name is Maxwell Kapezi Jr., a Software Developer from the Warm Heart of Africa,
             Malawi 🇲🇼, currently focusing on{' '}
@@ -90,14 +90,14 @@ const Bio = () => (
             <Link to='/skills' className='btn btn-primary'>
               My Skills
             </Link>
-            <a
-              href='https://maxwellkapezi-resume.netlify.app'
-              className='btn btn-secondary'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              My Resume
-            </a>
+            {/* <a */}
+            {/*   href='https://maxwellkapezi-resume.netlify.app' */}
+            {/*   className='btn btn-secondary' */}
+            {/*   target='_blank' */}
+            {/*   rel='noopener noreferrer' */}
+            {/* > */}
+            {/*   My Resume */}
+            {/* </a> */}
           </div>
           <SocialLinksMobile />
         </div>
