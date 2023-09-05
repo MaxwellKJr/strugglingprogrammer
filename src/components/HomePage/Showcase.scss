@@ -1,19 +1,35 @@
 @use '../../styles/index';
 @use '../../styles/breakpoints';
 
+$blinking-duration: 2.3s;
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 #showcase {
   position: relative;
   overflow: hidden;
+  .logo {
+    display: none;
+  }
 
   @media screen and (max-width: breakpoints.$lg) {
     .logo {
+      animation: blink $blinking-duration infinite;
+      opacity: 0.5;
       position: absolute;
-      top: -50px;
-      left: 0;
+      top: 0px;
+      left: 5px;
 
 		display: inline-block;
 		font-family: index.$odibee;
-		font-size: 2rem;
+		font-size: 1.6rem;
     width: 100%;
 		color: index.$primary-color;
     position: relative;
@@ -29,10 +45,21 @@
         -ms-transform: rotateY(360deg) !important;
       }
     }
+
+    /* &::after { */
+    /*     position: absolute; */
+    /*     content: 'Codes'; */
+    /*     top: 10vh; */
+    /*     left: 100px; */
+    /*     font-size: 10rem; */
+    /*     z-index: 1; */
+    /*     transform: rotateX(); */
+    /*   } */
     }
   }
 
 	.container {
+    z-index: 10;
 		min-height: 80vh;
 
 	#slogan {

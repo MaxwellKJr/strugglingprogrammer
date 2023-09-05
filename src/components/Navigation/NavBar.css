@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 #main-nav {
   position: fixed;
   background: #111111;
@@ -24,6 +32,7 @@
   background: rgba(255, 0, 119, 0.1);
   position: relative;
   transition: all 750ms ease-in-out;
+  animation: blink 2.3s infinite;
 }
 #main-nav .logo:hover .logo-text {
   color: white;

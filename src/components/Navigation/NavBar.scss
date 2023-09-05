@@ -1,6 +1,17 @@
 @use '../../styles/index';
 @use '../../styles/breakpoints';
 
+$blinking-duration: 2.3s;
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 #main-nav {
 	position: fixed;
 	background: index.$primary-background;
@@ -28,6 +39,7 @@
 		background: rgba($color: #ff0077, $alpha: 0.1);
     position: relative;
     transition: all 750ms ease-in-out;
+    animation: blink $blinking-duration infinite;
 
     &:hover {
       .logo-text {
