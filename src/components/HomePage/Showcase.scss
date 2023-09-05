@@ -2,7 +2,36 @@
 @use '../../styles/breakpoints';
 
 #showcase {
+  position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: breakpoints.$lg) {
+    .logo {
+      position: absolute;
+      top: -50px;
+      left: 0;
+
+		display: inline-block;
+		font-family: index.$odibee;
+		font-size: 2rem;
+    width: 100%;
+		color: index.$primary-color;
+    position: relative;
+    transition: all 750ms ease-in-out;
+
+    &:hover {
+      .logo-text {
+        color: white;
+        transition: all 750ms ease-in-out;
+        transform: rotateY(360deg) !important;
+        -webkit-transform: rotateY(360deg) !important;
+        -moz-transform: rotateY(360deg) !important;
+        -ms-transform: rotateY(360deg) !important;
+      }
+    }
+    }
+  }
+
 	.container {
 		min-height: 80vh;
 

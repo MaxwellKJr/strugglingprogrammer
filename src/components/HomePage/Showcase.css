@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
 #showcase {
+  position: relative;
   overflow: hidden;
+}
+@media screen and (max-width: 968px) {
+  #showcase .logo {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    display: inline-block;
+    font-family: "Odibee Sans";
+    font-size: 2rem;
+    width: 100%;
+    color: #ff0077;
+    position: relative;
+    transition: all 750ms ease-in-out;
+  }
+  #showcase .logo:hover .logo-text {
+    color: white;
+    transition: all 750ms ease-in-out;
+    transform: rotateY(360deg) !important;
+    -webkit-transform: rotateY(360deg) !important;
+    -moz-transform: rotateY(360deg) !important;
+    -ms-transform: rotateY(360deg) !important;
+  }
 }
 #showcase .container {
   min-height: 80vh;

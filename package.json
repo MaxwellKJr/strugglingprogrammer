@@ -1,11 +1,12 @@
 {
-	"name": "struggling-programmer",
-	"version": "1.0.0",
+	"name": "mj-codes",
+	"version": "2.0.0",
 	"private": true,
-	"description": "struggling-programmer",
+	"description": "mj-codes",
 	"author": "Maxwell Kapezi, Jr",
 	"keywords": [
-		"gatsby"
+		"gatsby",
+		"react"
 	],
 	"scripts": {
 		"develop": "gatsby develop",

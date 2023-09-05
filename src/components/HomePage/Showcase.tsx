@@ -21,6 +21,7 @@ const occupations = [
 const Showcase = () => (
   <section id='showcase'>
     <div className='container'>
+      <span className="logo">MJ Codes</span>
       <motion.h1 id='slogan' style={{ textAlign: 'start' }}
         initial='hidden'
         animate="visible"

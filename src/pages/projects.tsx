@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, PageProps } from 'gatsby';
 import Layout from '../layouts/index';
 import ProjectsList from '../components/ProjectsPage/ProjectsList';
 import { motion } from 'framer-motion'
@@ -71,4 +71,21 @@ const Projects = () => {
 
 export default Projects;
 
-export const Head = () => <title>Projects | Struggling Programmer</title>;
+export const Head = () => {
+  return (
+    <>
+      <title>{`MJ Codes | Projects`}</title>
+      <meta name="title" content={`MJ Codes | Projects`} />
+      <meta name="description" content={`See what Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years.`} />
+      <meta name="og:title" content={`MJ Codes | Projects`} />
+      <meta name="og:description" content={`See what Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years.`} />
+      <meta name="og:url" content={`https://bymjcodes.com/blog/`} />
+      <meta name="og:type" content="website" />
+      <meta name="twitter:title" content={`MJ Codes | Projects`} />
+      <meta name="twitter:description" content={`See what Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years.`} />
+      <meta name="twitter:card" content="summary" />
+    </>
+  );
+};
+
+

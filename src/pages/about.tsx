@@ -37,7 +37,7 @@ export const Head = ({ data }: any) => {
 
   return (
     <>
-      <title>{`About Maxwell Kapezi | ${title}`}</title>
+      <title>{`About Maxwell Kapezi Jr | ${title}`}</title>
       <meta name="title" content={`About Maxwell Kapezi Jr | ${title}`} />
       <meta name="description" content={about} />
       <meta name="og:title" content={title} />
