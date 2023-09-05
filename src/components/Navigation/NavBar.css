@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
 #main-nav {
   position: fixed;
-  background: #181818;
+  background: #111111;
   bottom: 0;
   left: 0;
   width: 10vw;
@@ -78,10 +78,9 @@
   width: 100%;
   font-size: 0.75rem;
   text-transform: uppercase;
-  transition: color 3000 ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 #main-nav .nav-links .nav-link a:hover {
-  background-color: rgba(26, 26, 26, 0.9);
   color: #ff0077;
 }
 #main-nav .nav-links .nav-link a .route-icon {

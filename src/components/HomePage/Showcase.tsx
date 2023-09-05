@@ -37,7 +37,7 @@ const Showcase = () => (
           },
         }}
       >
-        The Struggling Programmer
+        The Developing Programmer
       </motion.h1>
       <motion.ul className='occupations'
         initial="hidden"

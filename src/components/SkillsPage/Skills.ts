@@ -6,6 +6,7 @@ import {
   faGitAlt,
   faHtml5,
   faJava,
+  faJira,
   faJs,
   faLaravel,
   faPhp,
@@ -67,7 +68,7 @@ const skillsList = () => [
     icon: faCode,
   },
   {
-    name: 'Native + Jetpack Compose',
+    name: 'Native (Compose)',
     skill: 3,
     icon: faAndroid,
   },
@@ -110,6 +111,11 @@ const skillsList = () => [
     name: 'Git',
     skill: 5,
     icon: faGitAlt,
+  },
+  {
+    name: 'Jira',
+    skill: 5,
+    icon: faJira
   },
   {
     name: 'WordPress',

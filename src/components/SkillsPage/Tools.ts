@@ -1,12 +1,12 @@
 import { faAndroid, faFirefoxBrowser, faLinux } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faLaptop, faLaptopCode, faTerminal } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faTerminal } from '@fortawesome/free-solid-svg-icons';
 
 const toolsList = () => [
   // {
   //   type: "Laptop",
   //   name: "HP 250 G6 Notebook PC",
   //   link: "https://www.amazon.com/hp-250-g6/s?k=hp+250+g6",
-  //   description: "A basic i3 6th-Gen latop with 8GB DDR4 RAM and a 256GB SSD, nothing fancy here",
+  //   description: "A basic i3 6th-Gen laptop with 8GB DDR4 RAM and a 256GB SSD, nothing fancy here",
   //   whyUse:
   //     "It was what I could afford then (around 2019/2020) but it still gets the job done. No excuses.",
   //   icon: faLaptop,
@@ -43,7 +43,7 @@ const toolsList = () => [
     name: 'Android Studio',
     link: 'https://developer.android.com/studio',
     description: 'The official Integrated Development Environment for Android app development',
-    whyUse: 'I think this self explanatory.',
+    whyUse: 'I think this self explanatory. However, for months now, Android Studio has just been something I use because it provides the necessary tools (SDKs and the like) to develop android apps, I do most of my Flutter and RN development in LunarVim rather than Android Studio.',
     icon: faAndroid,
   },
   {

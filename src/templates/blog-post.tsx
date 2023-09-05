@@ -109,7 +109,7 @@ export const Head = ({ data }: any) => {
       <meta name="og:title" content={title} />
       <meta name="og:description" content={description} />
       <meta name="og:image" content={image} />
-      {/* <meta name='og:url' content={`https://strugglingprogrammer.netlify.app/blog/${slug}`} /> */}
+      <meta name='og:url' content={`https://bymjcodes.com/blog/${slug}`} />
       <meta name="og:type" content="website" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
