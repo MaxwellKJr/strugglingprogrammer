@@ -25,6 +25,8 @@ Like most of my classmates, I resorted to just building the UI first and then wr
 
 #### Initial Idea
 
+![Original Figma design and prototype](screenshot-from-2023-09-08-17-32-41.png "Original Figma design for Relate")
+
 By the time we were going for our mid-semester break, my idea was fleshed out and the name Relate was born. Relate was going to be an app for introverts. People who, like me, don't want to be seen on the internet but freely express themselves. It worked. Or so I thought.
 
 #### The Second Idea
