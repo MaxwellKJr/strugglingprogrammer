@@ -3,9 +3,9 @@ title: Building Relate - Part 1 (Origins)
 date: 2023-09-08T14:40:39.428Z
 featuredImage: building-relate.png
 description: It has almost been a year since I started my mobile development
-  journey and I must say that I am impressed with eveything I that I have
-  learned along the way. This blog post, however, is not about me. It is about
-  Relate - The Mental Social Media app
+  journey and I must say that I am impressed with everything that I have learned
+  along the way. This blog post, however, is not about me. It is about Relate -
+  The Mental Health Social Media app
 tags:
   - Relate
   - Start Up
