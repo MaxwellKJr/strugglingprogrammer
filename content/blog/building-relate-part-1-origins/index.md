@@ -13,7 +13,7 @@ tags:
 ---
 #### Background
 
-The year is 2022, finally in my final year at the University of Malawi. I could now register for one of the courses I was always looking forward to. COM411 - Mobile Application Development. As a requirement (or routine) each one of us will have to develop a mini-project by applying everything that they will learn in the course. To be honest, I was both excited and nervous. Excited because it was something I was looking forward to, nervous because I did not want to fuck up both my grades and the app.
+The year is 2022, finally in my final year at the University of Malawi. I could now register for one of the courses I was always looking forward to. COM411 - Mobile Application Development. As a requirement (or routine) each one of us will have to develop a mini-project by applying everything that they will learn in the course. To be honest, I was both excited and nervous. Excited because it was something I was looking forward to, nervous because I did not want to mess up both my grades and the app.
 
 Before all that, I only had a narrow background in mobile development with React Native. React Native was not allowed to be used nor was Flutter at first. So, what did I do? I had two options left. Java or Kotlin. I had heard a lot about Kotlin and the fact that Google considers it as the recommended language for Mobile Development, I had no other choice. No, Java was really not an option for me. I don't hate Java but I love making fun of it though.
 
