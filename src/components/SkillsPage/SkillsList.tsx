@@ -11,7 +11,7 @@ const SkillsList = () => {
   return (
     <div className="split">
       <div className="skills">
-        <p>Programming Languages:</p>
+        <h4 className="category-headline">Programming Languages:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 1) // Replace 'return' with 'return null' to skip rendering
@@ -24,7 +24,7 @@ const SkillsList = () => {
         </ul>
       </div>
       <div className="skills">
-        <p>Web Libraries & Frameworks:</p>
+        <h4 className="category-headline">Web Libraries & Frameworks:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 2) // Replace 'return' with 'return null' to skip rendering
@@ -37,7 +37,7 @@ const SkillsList = () => {
         </ul>
       </div>
       <div className="skills">
-        <p>Mobile Development:</p>
+        <h4 className="category-headline">Mobile Development:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 3) // Replace 'return' with 'return null' to skip rendering
@@ -50,7 +50,7 @@ const SkillsList = () => {
         </ul>
       </div>
       <div className="skills">
-        <p>Query Languages:</p>
+        <h4 className="category-headline">Query Languages:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 4) // Replace 'return' with 'return null' to skip rendering
@@ -63,7 +63,7 @@ const SkillsList = () => {
         </ul>
       </div>
       <div className="skills">
-        <p>Other Technologies:</p>
+        <h4 className="category-headline">Other Technologies:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 5) // Replace 'return' with 'return null' to skip rendering

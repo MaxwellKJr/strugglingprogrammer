@@ -32,7 +32,6 @@
   background: rgba(255, 0, 119, 0.1);
   position: relative;
   transition: all 750ms ease-in-out;
-  animation: blink 2.3s infinite;
 }
 #main-nav .logo:hover .logo-text {
   color: white;
@@ -41,6 +40,10 @@
   -webkit-transform: rotateY(360deg) !important;
   -moz-transform: rotateY(360deg) !important;
   -ms-transform: rotateY(360deg) !important;
+  animation: blink 2.3s infinite;
+}
+#main-nav .logo .logo-text {
+  animation: blink 2.3s infinite;
 }
 @media (max-width: 968px) {
   #main-nav .logo {

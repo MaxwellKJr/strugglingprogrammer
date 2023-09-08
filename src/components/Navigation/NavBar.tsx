@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <nav id='main-nav'>
       <div className='container'>
-        <Link to='/' className='logo'>
+        <Link to='/' className='logo' title='Maxwell Kapezi Jr'>
           <span className='logo-text'>MJ <br /> Codes</span>
         </Link>
         <ul className='nav-links'>
