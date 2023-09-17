@@ -63,16 +63,16 @@ const Bio = () => (
             <a href='http://flutter.dev' target='_blank' rel='noopener noreferrer'>
               Flutter
             </a>{' '}
-            for mobile app development. I am also a fourth year Bachelor of Education (BEd) in
-            Computer Science student at the{' '}
-            <a href='https://unima.ac.mw' target='_blank' rel='noopener noreferrer'>
-              Univeristy of Malawi
-            </a>
-            {'.'}
+            for mobile app development. {/* I am also a fourth year Bachelor of Education (BEd) in */}
+            {/* Computer Science student at the{' '} */}
+            {/* <a href='https://unima.ac.mw' target='_blank' rel='noopener noreferrer'> */}
+            {/*   Univeristy of Malawi */}
+            {/* </a> */}
+            {/* {'.'} */}
           </p>
           <p>
             I strive and enjoy: <strong>1. building things that work</strong>,{' '}
-            <strong>2. with a welcoming user experience</strong>, and{' '}
+            <strong>2. a welcoming user experience</strong>, and{' '}
             <strong>3. appealing/attractive design</strong> whether I am working solo or with a
             team.
           </p>
