@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import './Showcase.css';
 import { motion } from 'framer-motion'
+import OccupationsList from './OccupationsList';
 
 const occupations = [
   {
@@ -18,7 +19,18 @@ const occupations = [
   },
 ];
 
-const Showcase = () => (
+const occupationsList = OccupationsList;
+
+const Showcase = () => {
+const [randomWord, setRandomWord] = useState("");
+
+useEffect(() => {
+  const randomIndex = Math.floor(Math.random() * occupationsList.length)
+  const selectedWord = occupationsList[randomIndex];
+
+  setRandomWord(selectedWord);
+}, []);
+return(
   <section id='showcase'>
     <span className="logo">{`MJ Codes_`}</span>
     <div className='container'>
@@ -38,7 +50,7 @@ const Showcase = () => (
           },
         }}
       >
-        The Developing Programmer
+        The {randomWord} Programmer
       </motion.h1>
       <motion.ul className='occupations'
         initial="hidden"
@@ -121,5 +133,5 @@ const Showcase = () => (
     </div>
   </section>
 );
-
+      }
 export default Showcase;
