@@ -1,7 +1,13 @@
-@use '../../styles/index';
-@use '../../styles/breakpoints';
+@use '../../styles/index' as index;
+@use '../../styles/breakpoints' as breakpoints;
 
 $blinking-duration: 2.3s;
+
+$slogan-glitch-color: index.$primary-border;
+$slogan-glitch-displacement: 4px;
+$slogan-animation-duration: 0.2s;
+$slogan-animation-delay-start: 0.25s;
+$slogan-animation-delay-end: 0.3s;
 
 @keyframes blink {
   0%, 100% {
@@ -12,11 +18,143 @@ $blinking-duration: 2.3s;
   }
 }
 
+@keyframes wobble {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  15%, 30%, 45%, 60%, 75% {
+    transform: translateX(-4px);
+  }
+  10%, 25%, 40%, 55%, 70% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  15%, 30%, 45%, 60%, 75% {
+    transform: translateX($slogan-glitch-displacement);
+  }
+  10%, 25%, 40%, 55%, 70% {
+    transform: translateX(-$slogan-glitch-displacement);
+  }
+}
+
 #showcase {
   position: relative;
   overflow: hidden;
+
   .logo {
     display: none;
+  }
+
+  .container {
+    z-index: 10;
+    min-height: 80vh;
+
+    /* #slogan { */
+    /*   font-family: index.$poppins; */
+    /*   font-size: 2.4rem; */
+    /*   font-weight: 900; */
+    /*   line-height: 1; */
+    /*   margin-bottom: 1rem; */
+    /*   text-align: start !important; */
+    /*   transition: transform 1000ms ease-in-out; */
+    /*   cursor: default; */
+
+    /*   &:hover { */
+    /*     animation: wobble 3000ms ease-in-out infinite; */
+    /*   } */
+
+    /*   @media (max-width: breakpoints.$sm) { */
+    /*     font-size: 2rem; */
+    /*   } */
+    /* } */
+
+    #slogan {
+      color: $slogan-glitch-color;
+      position: relative;
+      font-family: index.$poppins;
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 1rem;
+      text-align: start !important;
+      transition: transform 1000ms ease-in-out;
+      cursor: default;
+
+      &::before,
+      &::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        color: $slogan-glitch-color;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      &::before {
+        z-index: -1;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        opacity: 1;
+        transform: translateY($slogan-glitch-displacement);
+      }
+
+      &:hover::before {
+        animation: glitch $slogan-animation-duration infinite;
+        animation-delay: $slogan-animation-delay-start;
+      }
+
+      &:hover::after {
+        animation: glitch $slogan-animation-duration infinite;
+        animation-delay: $slogan-animation-delay-end;
+      }
+    }
+
+    .progressBar {
+      height: 2px; // Adjust the height as needed
+      color: index.$primary-border; // Adjust the color as needed
+      opacity: 0.8;
+      bottom: '0';
+      left: '0';
+      margin-bottom: 1rem;
+    }
+
+    .occupations {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .occupation {
+        color: index.$secondary-white;
+        font-size: 14px;
+        padding-right: 0.8rem;
+        transition: color ease-in-out 200ms;
+        &:hover {
+          color: index.$primary-color;
+        }
+      }
+    }
+
+    p {
+      margin: 1rem 0;
+      max-width: 75%;
+
+      @media (max-width: breakpoints.$lg) {
+        max-width: 100%;
+        font-size: 14px;
+      }
+    }
+
+    .ctas {
+      margin: 0.6rem 0;
+    }
   }
 
   @media screen and (max-width: breakpoints.$lg) {
@@ -26,88 +164,30 @@ $blinking-duration: 2.3s;
       position: absolute;
       top: 0px;
       left: 5px;
+      display: inline-block;
+      font-family: index.$odibee;
+      font-size: 1.6rem;
+      width: 100%;
+      color: index.$primary-color;
+      position: relative;
+      transition: all 750ms ease-in-out;
 
-		display: inline-block;
-		font-family: index.$odibee;
-		font-size: 1.6rem;
-    width: 100%;
-		color: index.$primary-color;
-    position: relative;
-    transition: all 750ms ease-in-out;
-
-    &:hover {
-      .logo-text {
-        color: white;
-        transition: all 750ms ease-in-out;
-        transform: rotateY(360deg) !important;
-        -webkit-transform: rotateY(360deg) !important;
-        -moz-transform: rotateY(360deg) !important;
-        -ms-transform: rotateY(360deg) !important;
+      &:hover {
+        .logo-text {
+          color: white;
+          transition: all 750ms ease-in-out;
+          transform: rotateY(360deg) !important;
+          -webkit-transform: rotateY(360deg) !important;
+          -moz-transform: rotateY(360deg) !important;
+          -ms-transform: rotateY(360deg) !important;
+        }
       }
     }
 
-    /* &::after { */
-    /*     position: absolute; */
-    /*     content: 'Codes'; */
-    /*     top: 10vh; */
-    /*     left: 100px; */
-    /*     font-size: 10rem; */
-    /*     z-index: 1; */
-    /*     transform: rotateX(); */
-    /*   } */
+    .container {
+      #slogan {
+        font-size: 2.2rem;
+      }
     }
   }
-
-	.container {
-    z-index: 10;
-		min-height: 80vh;
-
-	#slogan {
-		font-family: index.$poppins;
-		font-size: 2.4rem;
-		font-weight: 900;
-		line-height: 1;
-		margin-bottom: 1rem;
-		text-align: start !important;
-
-		@media (max-width: breakpoints.$lg) {
-			font-size: 2.2rem;
-		}
-
-		@media (max-width: breakpoints.$sm) {
-			font-size: 2rem;
-		}
-	}
-
-	.occupations {
-		display: flex;
-		justify-content: flex-start;
-		flex-wrap: wrap;
-
-		.occupation {
-			color: index.$secondary-white;
-			font-size: 14px;
-			padding-right: 0.8rem;
-			transition: color ease-in-out 200ms;
-			&:hover {
-				color: index.$primary-color;
-			}
-		}
-	}
-
-	p {
-		margin: 1rem 0;
-		max-width: 75%;
-
-		@media (max-width: breakpoints.$lg) {
-			max-width: 100%;
-			font-size: 14px;
-		}
-	}
-
-  .ctas {
-    margin: 0.6rem 0;
-  }
-	}
-
 }
