@@ -39,7 +39,7 @@ const Showcase = () => {
           animate="visible"
           variants={{
             hidden: {
-              scale: 0.8,
+              scale: 1,
               opacity: 0,
             },
             visible: {

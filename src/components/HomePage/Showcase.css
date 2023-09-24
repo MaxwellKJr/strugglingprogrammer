@@ -93,11 +93,12 @@
   animation-delay: 0.3s;
 }
 #showcase .container .progressBar {
-  height: 2px;
+  height: 1px;
   color: rgba(255, 0, 102, 0.4588235294);
-  opacity: 0.8;
+  border: 1px solid rgba(255, 0, 102, 0.4588235294);
   bottom: "0";
   left: "0";
+  margin-left: 2px;
   margin-bottom: 1rem;
 }
 #showcase .container .occupations {
