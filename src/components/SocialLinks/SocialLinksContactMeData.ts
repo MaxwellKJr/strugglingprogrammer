@@ -1,5 +1,5 @@
 import {
-  faTwitter,
+  faXTwitter,
   faFacebook,
   faInstagram,
   faLinkedin,
@@ -10,7 +10,7 @@ const socialLinksContactMeData = [
   {
     name: 'Twitter',
     url: 'https://twitter.com/maxwellKJr',
-    icon: faTwitter,
+    icon: faXTwitter,
   },
   {
     name: 'Facebook',
