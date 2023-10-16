@@ -2,6 +2,21 @@ import React, { useState } from "react";
 import Layout from "../layouts";
 import { WebDevelopment } from "../components/Services/WebDevelopment";
 import { MobileDevelopment } from "../components/Services/MobileDevelopment";
+import { PageProps, graphql } from "gatsby";
+
+export const query = graphql`
+  query {
+    allSite {
+      nodes {
+        siteMetadata {
+          siteUrl
+          title
+          description
+        }
+      }
+    }
+  }
+`;
 
 const ServicesPage = () => {
 
@@ -25,3 +40,23 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
+
+export const Head = ({ data }: PageProps) => {
+  const seo = data.allSite.nodes[0];
+  const { title, description, siteUrl } = seo.siteMetadata;
+
+  return (
+    <>
+      <title>{`What I offer | ${title} | Services`}</title>
+      <meta name="title" content={`What I offer | ${title} | Services`} />
+      <meta name="description" content={description} />
+      <meta name="og:title" content={title} />
+      <meta name="og:description" content={description} />
+      <meta name="og:url" content={siteUrl} />
+      <meta name="og:type" content="website" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:card" content="summary" />
+    </>
+  );
+};
