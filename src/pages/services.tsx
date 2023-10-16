@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Layout from "../layouts";
-import { WebDevelopment } from "../components/Services/WebDevelopment";
-import { MobileDevelopment } from "../components/Services/MobileDevelopment";
+import { WebDevelopment } from "../components/ServicesPage/WebDevelopment";
+import { MobileDevelopment } from "../components/ServicesPage/MobileDevelopment";
 import { PageProps, graphql } from "gatsby";
 
 export const query = graphql`

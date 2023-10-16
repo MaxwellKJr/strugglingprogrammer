@@ -53,3 +53,26 @@
 		}
 	}
 }
+
+#social-links-contactme {
+		/* border-top: 1px solid index.$secondary-white; */
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		width: 100%;
+		.social-link {
+			/* width: 80px; */
+			a {
+				color: index.$secondary-white;
+				display: inline-block;
+				padding: 0.5rem 0;
+				transition: all ease-in-out 300ms;
+				&:hover {
+					color: index.$primary-color;
+					transform: translateY(-8px);
+				}
+			}
+		}
+}

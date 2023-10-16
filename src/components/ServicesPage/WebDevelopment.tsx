@@ -1,6 +1,7 @@
 import React from "react";
 import "./Services.css";
 import { motion } from 'framer-motion'
+import SocialLinksContactMe from "../SocialLinks/SocialLinksContactMe";
 
 export const WebDevelopment = () => {
 
@@ -16,6 +17,7 @@ export const WebDevelopment = () => {
         "No database",
         "No admin priveleges",
         "1 year free domain",
+        "No discounts",
       ]
     },
     {
@@ -29,10 +31,11 @@ export const WebDevelopment = () => {
         "Some admin priveleges",
         "2 year free domain",
         "Recommended for most people such as independent startups, writers, creatives, NGOs",
+        "No discounts",
       ]
     },
     {
-      name: "Newsletter/Media",
+      name: "Media & eCommerce",
       price: "500,000",
       isRecommended: false,
       features: [
@@ -41,6 +44,19 @@ export const WebDevelopment = () => {
         "Fast delivery of updates post deployment",
         "Admin priveleges are available",
         "5 year free domain",
+        "Discounts are considered",
+      ]
+    },
+    {
+      name: "Corporate Plan",
+      price: "1,500,000",
+      isRecommended: false,
+      features: [
+        "System development and integration",
+        "Fast delivery of updates post deployment",
+        "Consultations post deployment",
+        "Admin priveleges are available",
+        "10+ years free domain registration",
       ]
     },
   ];
@@ -65,12 +81,12 @@ export const WebDevelopment = () => {
       <div className='services-flex'>
         {WebDevelopmentServicesList.map((service) => (
           <div className="service-card" key={service.name}>
-            {service.isRecommended ? <small className="service-recommended-pill">Recommended</small> : ""}
             <h4 className="service-name">
               {service.name}
+              {service.isRecommended ? <small className="service-recommended-pill">Recommended</small> : ""}
             </h4>
             <h3 className='service-price'>
-              <span className="currency">MWK</span>{`${service.price}`}
+              <span className="currency">MWK</span>{`${service.price} `}<small className="per-something">per site</small>
             </h3>
             <ul className="features">
               {service.features.map(feature => (
@@ -79,6 +95,7 @@ export const WebDevelopment = () => {
                 </li>
               ))}
             </ul>
+            {/* <SocialLinksContactMe /> */}
           </div>
         ))}
       </div>

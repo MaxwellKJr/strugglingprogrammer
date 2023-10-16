@@ -13,6 +13,7 @@ export const MobileDevelopment = () => {
       features: [
         "Maximum of 10 Screens",
         "Database is available if needed",
+        "Snappy and responsive"
       ]
     },
     {
@@ -20,12 +21,11 @@ export const MobileDevelopment = () => {
       price: "500,000",
       isRecommended: true,
       features: [
-        "Unlimited Pages",
-        "Database",
+        "Unlimited Screens",
+        "Database is available if needed",
         "Fast delivery of updates post deployment",
-        "Admin priveleges",
-        "2 year free domain",
         "Recommended for independent startups, writers, creatives, NGOs",
+        "Cross-platform app that runs on both Android and iOS",
       ]
     },
   ];
@@ -50,12 +50,12 @@ export const MobileDevelopment = () => {
       <div className='services-flex'>
         {MobileDevelopmentServicesList.map((service) => (
           <div className="service-card" key={service.name}>
-            {service.isRecommended ? <small className="service-recommended-pill">Recommended</small> : ""}
             <h4 className="service-name">
               {service.name}
+              {service.isRecommended ? <small className="service-recommended-pill">Recommended</small> : ""}
             </h4>
             <h3 className='service-price'>
-              <span className="currency">MWK</span>{`${service.price}`}
+              <span className="currency">MWK</span>{`${service.price} `} <small className="per-something">per app</small>
             </h3>
             <ul className="features">
               {service.features.map(feature => (

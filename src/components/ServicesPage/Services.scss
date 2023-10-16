@@ -17,6 +17,13 @@
       color: $primary-background;
     }
 
+
+    .service-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+
     .service-recommended-pill {
       display: inline-block;
       background: #910a41;
@@ -24,11 +31,7 @@
       padding: 0 0.3rem;
       border-radius: 10px;
       font-size: 12px;
-      margin-bottom: 0.4rem;
     }
-
-    .service-name {
-      font-weight: 600;
     }
 
     .service-price {
@@ -38,6 +41,11 @@
 
       .currency {
         font-size: 1rem;
+      }
+
+      .per-something {
+        font-weight: 400;
+        font-size: 0.9rem;
       }
     }
 

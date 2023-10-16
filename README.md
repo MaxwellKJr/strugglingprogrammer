@@ -17,10 +17,12 @@ This project is not for beginners in Web Development.
 Prerequisite knowledge:
 
 - HTML, CSS, JavaScript
-- Materialize CSS (Not really needed)
-- React.js (Specifically Gatsby.js)
+- Sass/SCSS was heavily used in the styling of the website
+- React.js (Specifically GatsbyJS)
 - GraphQL
 - Yaml
+
+Needed tools: git, nodejs, npm, and gatsby-cli
 
 ## 🚀 Getting Started
 
@@ -30,18 +32,24 @@ Prerequisite knowledge:
 
     ```shell
     # create a new Gatsby site using the blog starter
-    git clone https://github.com/MaxwellKJr/mjcodes.git
+    git clone https://github.com/MaxwellKJr/strugglingprogrammer.git
     ```
 
 2.  **Install Dependecies.**
 
+    Make sure that you have the gatsby-cli installed
+    ```
+    $ npm install -g gatsby-cli
+    ```
     Navigate into your new site’s directory and run npm install or yarn install
 
     ```shell
-    cd mjcodes/
+    cd strugglingprogrammer/
 
     # npm
     $ npm install
+
+    # OR
 
     # yarn
     $ yarn install

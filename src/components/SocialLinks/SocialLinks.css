@@ -49,4 +49,29 @@
     color: #ff0077;
     transform: translateY(-8px);
   }
-}/*# sourceMappingURL=SocialLinks.css.map */
+}
+
+#social-links-contactme {
+  /* border-top: 1px solid index.$secondary-white; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+}
+#social-links-contactme .social-link {
+  /* width: 80px; */
+}
+#social-links-contactme .social-link a {
+  color: #8f8f8f;
+  display: inline-block;
+  padding: 0.5rem 0;
+  transition: all ease-in-out 300ms;
+}
+#social-links-contactme .social-link a:hover {
+  color: #ff0077;
+  transform: translateY(-8px);
+}
+
+/*# sourceMappingURL=SocialLinks.css.map */
