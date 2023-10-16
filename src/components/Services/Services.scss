@@ -1,0 +1,61 @@
+@import '../../styles/index';
+@import '../../styles/breakpoints';
+
+.services-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+
+  .service-card {
+    background: $primary-border;
+    padding: 1rem;
+    border-radius: 10px;
+
+    &:nth-child(even) {
+      background: $primary-white;
+      color: $primary-background;
+    }
+
+    .service-recommended-pill {
+      display: inline-block;
+      background: #910a41;
+      color: $primary-white;
+      padding: 0 0.3rem;
+      border-radius: 10px;
+      font-size: 12px;
+      margin-bottom: 0.4rem;
+    }
+
+    .service-name {
+      font-weight: 600;
+    }
+
+    .service-price {
+      font-size: 1.5rem;
+      border-bottom: 1px solid;
+      padding-bottom: 0.5rem;
+
+      .currency {
+        font-size: 1rem;
+      }
+    }
+
+    .features {
+      opacity: 0.9;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      list-style: disc;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: $lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $sm) {
+    display: flex;
+    flex-direction: column;
+  }
+}

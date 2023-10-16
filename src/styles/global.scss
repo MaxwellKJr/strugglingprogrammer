@@ -1,4 +1,4 @@
-@use 'index.scss';
+@use 'index';
 @use 'breakpoints';
 
 ::-webkit-scrollbar {
@@ -57,33 +57,33 @@ body {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 
-a {
-	text-decoration: none;
-}
+  a {
+	  text-decoration: none;
+  }
 
-.tags {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	border-top: 1px solid index.$primary-border;
-	padding-top: 0.5rem;
+  .tags {
+	  display: flex;
+	  flex-wrap: wrap;
+	  width: 100%;
+	  border-top: 1px solid index.$primary-border;
+	  padding-top: 0.5rem;
 
-	.tag {
-		display: inline-flex;
-		background: index.$primary-border;
-		font-size: 14px;
-		font-weight: 600;
-		margin-right: 0.5rem;
-		margin-top: 0.5rem;
-		padding: 0 1rem;
-		border-radius: 16px;
-		opacity: 0.8;
-	}
-}
+	  .tag {
+		  display: inline-flex;
+		  background: index.$primary-border;
+		  font-size: 14px;
+		  font-weight: 600;
+		  margin-right: 0.5rem;
+		  margin-top: 0.5rem;
+		  padding: 0 1rem;
+		  border-radius: 16px;
+		  opacity: 0.8;
+	  }
+  }
 
-.ctas,
-.professional-btns {
-	margin: 1rem 0;
+  .ctas,
+  .professional-btns {
+	  margin: 1rem 0;
 
 	.btn {
 		display: inline-flex;

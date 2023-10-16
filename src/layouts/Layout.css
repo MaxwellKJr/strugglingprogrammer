@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
 body {
   scroll-behavior: smooth;
 }
@@ -37,4 +38,74 @@ body {
 
 #projects .container {
   align-items: center;
-}/*# sourceMappingURL=Layout.css.map */
+}
+
+#services .tabs {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+}
+#services .tabs .tab {
+  background: #ebebeb;
+  color: #111111;
+  opacity: 0.9;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  transition: all 500ms ease-in-out;
+}
+#services .tabs .tab:after {
+  background: #ff0077;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all ease-in-out 400ms;
+  border-radius: 10px 10px;
+}
+#services .tabs .tab:hover {
+  color: #ebebeb;
+}
+#services .tabs .tab:hover::after {
+  width: 100%;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#services .tabs .active-tab {
+  background: #ff0077;
+  color: #ebebeb;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+#services .tabs .active-tab:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  z-index: -1;
+  transition: all ease-in-out 400ms;
+  border-radius: 10px 0 0 10px;
+}
+#services .tabs .active-tab:hover::before {
+  width: 100%;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=Layout.css.map */

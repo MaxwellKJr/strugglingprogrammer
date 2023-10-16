@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
+.services-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.services-flex .service-card {
+  background: rgba(255, 0, 102, 0.4588235294);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.services-flex .service-card:nth-child(even) {
+  background: #ebebeb;
+  color: #111111;
+}
+.services-flex .service-card .service-recommended-pill {
+  display: inline-block;
+  background: #910a41;
+  color: #ebebeb;
+  padding: 0 0.3rem;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-bottom: 0.4rem;
+}
+.services-flex .service-card .service-name {
+  font-weight: 600;
+}
+.services-flex .service-card .service-price {
+  font-size: 1.5rem;
+  border-bottom: 1px solid;
+  padding-bottom: 0.5rem;
+}
+.services-flex .service-card .service-price .currency {
+  font-size: 1rem;
+}
+.services-flex .service-card .features {
+  opacity: 0.9;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  list-style: disc;
+  font-size: 14px;
+}
+@media (max-width: 968px) {
+  .services-flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .services-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=Services.css.map */

@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import './Showcase.css';
 import { motion } from 'framer-motion'
 import OccupationsList from './OccupationsList';
+import { GatsbyImageProps } from 'gatsby-plugin-image';
 
 const occupations = [
   {
@@ -21,15 +22,15 @@ const occupations = [
 
 const occupationsList = OccupationsList;
 
-const Showcase = () => {
+const Showcase = (): any => {
   const [randomWord, setRandomWord] = useState("");
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * occupationsList.length)
     const selectedWord = occupationsList[randomIndex];
-
     setRandomWord(selectedWord);
   }, []);
+
   return (
     <section id='showcase'>
       <span className="logo">{`MJ Codes_`}</span>
