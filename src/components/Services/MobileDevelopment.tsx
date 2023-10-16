@@ -1,21 +1,24 @@
 
 import React from "react";
 import "./Services.css";
+import { motion } from "framer-motion";
 
 export const MobileDevelopment = () => {
 
   const MobileDevelopmentServicesList = [
     {
       name: "Simple Utility App",
-      price: 200000.00,
+      price: "250,000",
+      isRecommended: false,
       features: [
         "Maximum of 10 Screens",
-        "No database",
+        "Database is available if needed",
       ]
     },
     {
       name: "Brand App",
-      price: 400000.00,
+      price: "500,000",
+      isRecommended: true,
       features: [
         "Unlimited Pages",
         "Database",
@@ -28,10 +31,26 @@ export const MobileDevelopment = () => {
   ];
 
   return (
-    <div id="mobile-development-services">
+    <motion.div id="mobile-development-services"
+      initial='hidden'
+      animate="visible"
+      variants={{
+        hidden: {
+          scale: 1,
+          y: 50,
+          opacity: 0,
+        },
+        visible: {
+          scale: 1,
+          y: 0,
+          opacity: 1,
+        },
+      }}
+    >
       <div className='services-flex'>
         {MobileDevelopmentServicesList.map((service) => (
           <div className="service-card" key={service.name}>
+            {service.isRecommended ? <small className="service-recommended-pill">Recommended</small> : ""}
             <h4 className="service-name">
               {service.name}
             </h4>
@@ -48,6 +67,6 @@ export const MobileDevelopment = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };

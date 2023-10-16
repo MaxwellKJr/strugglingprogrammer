@@ -1,11 +1,12 @@
 import React from "react";
 import "./Services.css";
+import { motion } from 'framer-motion'
 
 export const WebDevelopment = () => {
 
   const WebDevelopmentServicesList = [
     {
-      name: "Static Website",
+      name: "Static Plan",
       price: "100,000",
       isRecommended: false,
       features: [
@@ -18,7 +19,7 @@ export const WebDevelopment = () => {
       ]
     },
     {
-      name: "Simple Blogging Website",
+      name: "Startup Plan",
       price: "200,000",
       isRecommended: true,
       features: [
@@ -45,7 +46,22 @@ export const WebDevelopment = () => {
   ];
 
   return (
-    <div id="web-development-services">
+    <motion.div id="web-development-services"
+      initial='hidden'
+      animate="visible"
+      variants={{
+        hidden: {
+          scale: 1,
+          y: 50,
+          opacity: 0,
+        },
+        visible: {
+          scale: 1,
+          y: 0,
+          opacity: 1,
+        },
+      }}
+    >
       <div className='services-flex'>
         {WebDevelopmentServicesList.map((service) => (
           <div className="service-card" key={service.name}>
@@ -66,6 +82,6 @@ export const WebDevelopment = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };

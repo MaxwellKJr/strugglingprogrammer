@@ -22,14 +22,16 @@ body {
 }
 
 #blog .container,
-#skills .container {
+#skills .container,
+#services .container {
   width: 90%;
   max-width: 1200px;
   margin-bottom: 5rem;
 }
 @media (max-width: 968px) {
   #blog .container,
-  #skills .container {
+  #skills .container,
+  #services .container {
     width: calc(100% - 1rem);
     min-height: 100%;
     padding: 2rem 0;
