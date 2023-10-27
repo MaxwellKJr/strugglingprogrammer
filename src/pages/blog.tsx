@@ -54,15 +54,15 @@ export default Blog;
 export const Head = () => {
   return (
     <>
-      <title>{`MJ Codes | Blog`}</title>
-      <meta name="title" content={`MJ Codes | Blog`} />
-      <meta name="description" content={`Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows.`} />
-      <meta name="og:title" content={`MJ Codes | Blog`} />
-      <meta name="og:description" content={`Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows.`} />
-      <meta name="og:url" content={`https://bymjcodes.com/blog/`} />
+      <title>{"MJ Codes | Blog"}</title>
+      <meta name="title" content={"MJ Codes | Blog"} />
+      <meta name="description" content={"Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows."} />
+      <meta name="og:title" content={"MJ Codes | Blog"} />
+      <meta name="og:description" content={"Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows."} />
+      <meta name="og:url" content={"https://bymjcodes.com/blog/"} />
       <meta name="og:type" content="website" />
-      <meta name="twitter:title" content={`MJ Codes | Blog`} />
-      <meta name="twitter:description" content={`Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows.`} />
+      <meta name="twitter:title" content={"MJ Codes | Blog"} />
+      <meta name="twitter:description" content={"Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows."} />
       <meta name="twitter:card" content="summary" />
     </>
   );

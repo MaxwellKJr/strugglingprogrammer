@@ -50,8 +50,8 @@ ul {
 }
 
 html,
-body {
-	background: index.$primary-background;
+	body {
+		background: index.$primary-background;
 	color: index.$primary-white;
 	font-family: index.$poppins;
 	scroll-behavior: smooth;
@@ -126,38 +126,38 @@ body {
 		}
 	}
 
-	.btn-secondary {
-		background: index.$primary-white;
-		color: index.$primary-background;
-		border-radius: 10px;
-
-		&:before {
-			background: index.$primary-color;
-			position: absolute;
-			content: '';
-			left: 0;
-			top: 0;
-			width: 10px;
-			height: 100%;
-			z-index: -1;
-			transition: all ease-in-out 400ms;
-			border-radius: 10px 0 0 10px;
-		}
-
-		&:hover {
-			color: index.$primary-white;
-		}
-
-		&:hover::before {
-			width: 100%;
-			text-decoration: none;
+		.btn-secondary {
+			background: index.$primary-white;
+			color: index.$primary-background;
 			border-radius: 10px;
+
+			&:before {
+				background: index.$primary-color;
+				position: absolute;
+				content: '';
+				left: 0;
+				top: 0;
+				width: 10px;
+				height: 100%;
+				z-index: -1;
+				transition: all ease-in-out 400ms;
+				border-radius: 10px 0 0 10px;
+			}
+
+			&:hover {
+				color: index.$primary-white;
+			}
+
+			&:hover::before {
+				width: 100%;
+				text-decoration: none;
+				border-radius: 10px;
+			}
+		}
+
+		@media (max-width: breakpoints.$lg) {
+			padding-bottom: 2rem;
 		}
 	}
-
-	@media (max-width: breakpoints.$lg) {
-		padding-bottom: 2rem;
-	}
-}
 }
 

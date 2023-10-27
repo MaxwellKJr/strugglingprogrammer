@@ -22,7 +22,7 @@ const ServicesPage = () => {
 
   const [toggle, setToggle] = useState(1);
 
-  const toggleTab = (index) => setToggle(index);
+  const toggleTab = (index: React.SetStateAction<number>) => setToggle(index);
   return (
     <Layout>
       <section id="services">

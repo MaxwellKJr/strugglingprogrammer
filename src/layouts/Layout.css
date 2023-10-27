@@ -49,6 +49,7 @@ body {
   flex-direction: row;
   width: 100%;
 }
+
 #services .tabs .tab {
   background: #ebebeb;
   color: #111111;
