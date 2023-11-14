@@ -1,9 +1,9 @@
-import React from 'react';
-import BlogCard from './BlogCard';
-import './Blogs.css';
-import { motion } from 'framer-motion'
+import React from "react";
+import BlogCard from "./BlogCard";
+import "./Blogs.css";
+import { motion } from "framer-motion";
 
-const Blogs = ({ posts }) => (
+const Blogs = ({ posts }: Array): React.FC => (
   <motion.div id='blogs'
     initial='hidden'
     animate="visible"
@@ -22,7 +22,7 @@ const Blogs = ({ posts }) => (
   >
     <h1>Read Something</h1>
     <div className='blogs-grid'>
-      {posts.map(post => (
+      {posts.map((post: unknown) => (
         <BlogCard key={post.node.fields.slug} post={post} />
       ))}
     </div>
