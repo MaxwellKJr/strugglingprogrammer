@@ -73,7 +73,7 @@
 @media (max-width: 968px) {
   #main-nav .nav-links {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-grow: 0;
     width: 100%;
   }
@@ -147,4 +147,6 @@
   #main-nav #header-footer {
     display: none;
   }
-}/*# sourceMappingURL=NavBar.css.map */
+}
+
+/*# sourceMappingURL=NavBar.css.map */

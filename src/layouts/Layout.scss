@@ -45,12 +45,16 @@ body {
 }
 
 #services {
+  position: relative;
   .tabs {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: inline-flex;
     flex-direction: row;
     width: 100%;
+    position: sticky;
+    top: 0;
+    
     // padding: 0.2rem;
     // border: 1px solid index.$primary-border;
     // border-radius: 14px
@@ -65,8 +69,6 @@ body {
       margin-right: 0.5rem;
       border-radius: 30px;
       cursor: pointer;
-      position: sticky;
-      top: 0;
       transition: all 500ms ease-in-out;
 
 		&:after {
@@ -99,7 +101,7 @@ body {
       font-size: 0.8rem;
       font-weight: 600;
       padding: 0.4rem 0.8rem;
-      margin-right: 0.8rem;
+      margin-right: 0.5rem;
       border-radius: 30px;
       cursor: pointer;
       position: relative;

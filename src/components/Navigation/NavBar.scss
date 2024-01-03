@@ -83,7 +83,7 @@ $blinking-duration: 2.3s;
 
 		@media (max-width: breakpoints.$lg) {
 			flex-direction: row;
-			justify-content: space-around;
+			justify-content: space-evenly;
 			flex-grow: 0;
 			width: 100%;
 		}

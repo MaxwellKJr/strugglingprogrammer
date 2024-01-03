@@ -42,12 +42,17 @@ body {
   align-items: center;
 }
 
+#services {
+  position: relative;
+}
 #services .tabs {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: inline-flex;
   flex-direction: row;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 #services .tabs .tab {
   background: #ebebeb;
@@ -58,8 +63,6 @@ body {
   margin-right: 0.5rem;
   border-radius: 30px;
   cursor: pointer;
-  position: sticky;
-  top: 0;
   transition: all 500ms ease-in-out;
 }
 #services .tabs .tab:after {
@@ -88,7 +91,7 @@ body {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0.4rem 0.8rem;
-  margin-right: 0.8rem;
+  margin-right: 0.5rem;
   border-radius: 30px;
   cursor: pointer;
   position: relative;
