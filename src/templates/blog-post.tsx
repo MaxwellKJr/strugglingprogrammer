@@ -103,6 +103,8 @@ export const Head = ({ data }: any) => {
   const { title, description, date } = post.frontmatter;
   const slug = post.fields.slug;
   const image = getImage(post.frontmatter.featuredImage);
+  const featuredImageAbsolutePath = image?.images.fallback?.src;
+  const featuredImageURL = `https://bymjcodes.com${featuredImageAbsolutePath}`;
 
   return (
     <>
@@ -111,12 +113,11 @@ export const Head = ({ data }: any) => {
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image?.images.fallback?.src} />
+      <meta property="og:image" content={featuredImageURL} />
       <meta property='og:url' content={`https://bymjcodes.com${slug}`} />
-      <meta property="og:type" content="website" />
-      <meta property="og:article:published_time" content={date} />
-      {/* <meta property="og:article:modified_time" content="2023-01-01T18:00:00Z" /> <!-- For articles --> */}
-      <meta property="og:article:author" content="Maxwell Kapezi Jr." />
+      <meta property="og:type" content="article" />
+      <meta property="article:published_time" content={date} />
+      <meta property="article:author" content="Maxwell Kapezi Jr." />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:card" content="summary" />
