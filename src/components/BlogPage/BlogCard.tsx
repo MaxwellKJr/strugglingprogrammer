@@ -20,7 +20,7 @@ const BlogCard = ({ post }: any) => {
         <small className='date'>{date}</small>
         <p>{description}</p>
         <ul className='tags'>
-          {tags.map((tag: any) => (
+          {tags.map((tag: string) => (
             <li key={tag} className='tag'>
               <small>{tag}</small>
             </li>
