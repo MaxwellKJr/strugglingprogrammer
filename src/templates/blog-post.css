@@ -36,7 +36,8 @@
 }
 .post-wrapper p {
   margin: 1rem 0;
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .post-wrapper blockquote {
   border-color: #ff0077;
