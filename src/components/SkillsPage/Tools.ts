@@ -1,5 +1,5 @@
 import { faAndroid, faFirefoxBrowser, faLinux } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faTerminal } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faGlobe, faTerminal } from '@fortawesome/free-solid-svg-icons';
 
 const toolsList = () => [
   // {
@@ -47,13 +47,13 @@ const toolsList = () => [
     icon: faAndroid,
   },
   {
-    type: 'Internet Browser',
-    name: 'Firefox',
-    link: 'https://www.mozilla.org/en-US/firefox/new/',
-    description: 'The BEST browser out there.',
+    type: "Internet Browser",
+    name: "Vivaldi",
+    link: "https://vivaldi.com/",
+    description: "Powerful. Personal. Private.",
     whyUse:
-      'It is free and open source, secure, and BLAZINGLY faster than any chromium based browser out there.',
-    icon: faFirefoxBrowser,
+      "Vivaldi Browser is chromium based and is for power users who spend most of their time on the web/browser. As someone who always has about 20+ tabs open, Vivaldi great tab management tools that I could not find anywhere else. Sorry, Firefox.",
+    icon: faGlobe,
   },
 ];
 
