@@ -1,5 +1,3 @@
-
-import React from "react";
 import "./Services.css";
 import { motion } from "framer-motion";
 
@@ -8,17 +6,17 @@ export const MobileDevelopment = () => {
   const MobileDevelopmentServicesList = [
     {
       name: "Simple Utility App",
-      price: "250,000",
+      price: "349,999",
       isRecommended: false,
       features: [
         "Maximum of 10 Screens",
         "Database is available if needed",
-        "Snappy and responsive"
+        "Snappy and responsive",
       ]
     },
     {
       name: "Brand App",
-      price: "500,000",
+      price: "649,999",
       isRecommended: true,
       features: [
         "Unlimited Screens",

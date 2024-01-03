@@ -1,17 +1,17 @@
 import React from "react";
 import "./Services.css";
-import { motion } from 'framer-motion'
-import SocialLinksContactMe from "../SocialLinks/SocialLinksContactMe";
+import { motion } from "framer-motion";
 
 export const WebDevelopment = () => {
 
   const WebDevelopmentServicesList = [
     {
       name: "Static Plan",
-      price: "100,000",
+      price: "149,999",
       isRecommended: false,
       features: [
-        "Maximum of 4 pages",
+        "Single Landing Page",
+        "with an option of 2 more separate pages",
         "Suitable for advertising",
         "Fast delivery of updates post deployment",
         "No database",
@@ -22,7 +22,7 @@ export const WebDevelopment = () => {
     },
     {
       name: "Startup Plan",
-      price: "200,000",
+      price: "249,999",
       isRecommended: true,
       features: [
         "Unlimited Pages",
@@ -36,7 +36,7 @@ export const WebDevelopment = () => {
     },
     {
       name: "Media & eCommerce",
-      price: "500,000",
+      price: "599,999",
       isRecommended: false,
       features: [
         "Unlimited pages",
@@ -49,7 +49,7 @@ export const WebDevelopment = () => {
     },
     {
       name: "Corporate Plan",
-      price: "1,500,000",
+      price: "1,499,999",
       isRecommended: false,
       features: [
         "System development and integration",

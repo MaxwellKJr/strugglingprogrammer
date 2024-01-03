@@ -42,28 +42,24 @@ body {
   align-items: center;
 }
 
-#services {
-  position: relative;
-}
 #services .tabs {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: inline-flex;
   flex-direction: row;
   width: 100%;
-  position: sticky;
-  top: 0;
 }
 #services .tabs .tab {
-  background: #ebebeb;
-  color: #111111;
+  color: #ebebeb;
   opacity: 0.8;
   font-size: 0.8rem;
   padding: 0.4rem 0.8rem;
   margin-right: 0.5rem;
   border-radius: 30px;
+  border: 1px solid #ebebeb;
   cursor: pointer;
-  transition: all 500ms ease-in-out;
+  position: relative;
+  transition: all 350ms ease-in-out;
 }
 #services .tabs .tab:after {
   background: #ff0077;
@@ -74,11 +70,13 @@ body {
   width: 0;
   height: 100%;
   z-index: -1;
-  transition: all ease-in-out 400ms;
+  transition: all ease-in-out 350ms;
   border-radius: 30px 30px;
 }
 #services .tabs .tab:hover {
   color: #ebebeb;
+  border: 1px solid #ff0077;
+  transform: scale(0.98);
 }
 #services .tabs .tab:hover::after {
   width: 100%;
@@ -95,7 +93,7 @@ body {
   border-radius: 30px;
   cursor: pointer;
   position: relative;
-  transition: all 500ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 #services .tabs .active-tab:before {
   position: absolute;
@@ -105,7 +103,7 @@ body {
   width: 10px;
   height: 100%;
   z-index: -1;
-  transition: all ease-in-out 400ms;
+  transition: all ease-in-out 350ms;
   border-radius: 30px 0 0 30px;
 }
 #services .tabs .active-tab:hover::before {

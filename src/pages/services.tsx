@@ -28,6 +28,7 @@ const ServicesPage = () => {
       <section id="services">
         <div className="container">
           <h1>Services & Pricing</h1>
+          <small><em>Please note that prices may change due to the scope of work.</em></small>
           <ul className="tabs">
             <li className={toggle === 1 ? "active-tab" : "tab"} onClick={() => toggleTab(1)}>Web Development</li>
             <li className={toggle === 2 ? "active-tab" : "tab"} onClick={() => toggleTab(2)}>Mobile App Development</li>
