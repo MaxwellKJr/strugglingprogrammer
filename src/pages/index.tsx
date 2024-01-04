@@ -42,9 +42,15 @@ export const Head = ({ data }: PageProps) => {
         content={`${title} | Programming and Tech Related Content 🚀`}
       />
       <meta name="description" content={description} />
-      <meta property="og:title" content={title} />
+      <meta
+        property="og:title"
+        content={`${title} | Programming and Tech Related Content 🚀`}
+      />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content="https://ibb.co/k0QyxmM" />
+      <meta
+        property="og:image"
+        content="https://i.ibb.co/QnrcfDX/Screenshot-from-2024-01-04-10-22-56.png"
+      />
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
       <meta name="twitter:title" content={title} />
