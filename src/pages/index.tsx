@@ -36,13 +36,17 @@ export const Head = ({ data }: PageProps) => {
 
   return (
     <>
-      <title>{`${title} | Home`}</title>
-      <meta name="title" content={`${title} | Home`} />
+      <title>{`${title} | Programming and Tech Related Content 🚀`}</title>
+      <meta
+        name="title"
+        content={`${title} | Programming and Tech Related Content 🚀`}
+      />
       <meta name="description" content={description} />
-      <meta name="og:title" content={title} />
-      <meta name="og:description" content={description} />
-      <meta name="og:url" content={siteUrl} />
-      <meta name="og:type" content="website" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content="https://ibb.co/k0QyxmM" />
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:type" content="website" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:card" content="summary" />
