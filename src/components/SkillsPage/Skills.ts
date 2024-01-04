@@ -13,112 +13,124 @@ import {
   faReact,
   faSass,
   faWordpress,
-} from '@fortawesome/free-brands-svg-icons';
-import { faArrowsH, faCircleNodes, faCode, faDatabase, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faArrowsH,
+  faCircleNodes,
+  faCode,
+  faDatabase,
+  faMobileAlt,
+  faNoteSticky,
+} from "@fortawesome/free-solid-svg-icons";
 
 const skillsList = () => [
   {
-    name: 'JavaScript',
+    name: "JavaScript",
     skill: 1,
     icon: faJs,
   },
   {
-    name: 'TypeScript',
+    name: "TypeScript",
     skill: 1,
     icon: faCode,
   },
   {
-    name: 'React.js',
+    name: "React.js",
     skill: 2,
     icon: faReact,
   },
   {
-    name: 'PHP',
+    name: "PHP",
     skill: 1,
     icon: faPhp,
   },
   {
-    name: 'Laravel',
+    name: "Laravel",
     skill: 2,
     icon: faLaravel,
   },
   {
-    name: 'Tailwind CSS',
+    name: "Tailwind CSS",
     skill: 2,
-    icon: faFortAwesome
+    icon: faFortAwesome,
   },
   {
-    name: 'Bootstrap',
+    name: "Bootstrap",
     skill: 2,
-    icon: faBootstrap
+    icon: faBootstrap,
   },
   {
-    name: 'Java',
+    name: "Java",
     skill: 1,
     icon: faJava,
   },
   {
-    name: 'Kotlin',
+    name: "Kotlin",
     skill: 1,
     icon: faAndroid,
   },
   {
-    name: 'Dart',
+    name: "Dart",
     skill: 1,
     icon: faCode,
   },
   {
-    name: 'Native (Compose)',
+    name: "Native (Compose)",
     skill: 3,
     icon: faAndroid,
   },
   {
-    name: 'Flutter',
+    name: "Flutter",
     skill: 3,
     icon: faMobileAlt,
   },
   {
-    name: 'React Native',
+    name: "React Native",
     skill: 3,
     icon: faReact,
   },
   {
-    name: 'HTML',
+    name: "HTML",
     skill: 1,
     icon: faHtml5,
   },
   {
-    name: 'CSS',
+    name: "CSS",
     skill: 1,
     icon: faCss3,
   },
   {
-    name: 'Sass',
+    name: "Sass",
     skill: 2,
     icon: faSass,
   },
   {
-    name: 'SQL',
+    name: "SQL",
     skill: 4,
     icon: faDatabase,
   },
   {
-    name: 'GraphQL',
+    name: "GraphQL",
     skill: 4,
     icon: faCircleNodes,
   },
   {
-    name: 'Git',
+    name: "Git",
     skill: 5,
     icon: faGitAlt,
   },
   {
-    name: 'Jira',
+    name: "Jira",
     skill: 5,
-    icon: faJira
+    icon: faJira,
   },
   {
-    name: 'WordPress',
+    name: "Notion",
+    skill: 5,
+    icon: faNoteSticky,
+  },
+  {
+    name: "WordPress",
     skill: 5,
     icon: faWordpress,
   },

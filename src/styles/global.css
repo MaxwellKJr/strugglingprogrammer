@@ -2,6 +2,7 @@
 ::-webkit-scrollbar {
   background: #111111 !important;
   width: 14px !important;
+  -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
 
@@ -177,6 +178,4 @@ body .professional-btns .btn-secondary:hover::before {
   body .professional-btns {
     padding-bottom: 2rem;
   }
-}
-
-/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=global.css.map */
