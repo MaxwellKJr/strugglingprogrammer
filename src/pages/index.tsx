@@ -1,21 +1,23 @@
-import { graphql, PageProps } from "gatsby";
-import * as React from "react";
-import Showcase from "../components/HomePage/Showcase";
-import Layout from "../layouts/index";
 import "../styles/global.css";
 
+import { PageProps, graphql } from "gatsby";
+
+import Layout from "../layouts/index";
+import React from "react";
+import Showcase from "../components/HomePage/Showcase";
+
 export const query = graphql`
-    query {
-        allSite {
-            nodes {
-                siteMetadata {
-                    siteUrl
-                    title
-                    description
-                }
-            }
+  query {
+    allSite {
+      nodes {
+        siteMetadata {
+          siteUrl
+          title
+          description
         }
+      }
     }
+  }
 `;
 
 const IndexPage = () => {

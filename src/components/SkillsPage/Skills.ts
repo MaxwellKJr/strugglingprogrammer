@@ -15,7 +15,6 @@ import {
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faArrowsH,
   faCircleNodes,
   faCode,
   faDatabase,

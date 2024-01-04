@@ -1,8 +1,10 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import Layout from "../layouts/index";
 import "./blog-post.css";
+
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Link, graphql } from "gatsby";
+
+import Layout from "../layouts/index";
+import React from "react";
 import { motion } from "framer-motion";
 
 export const pageQuery = graphql`
@@ -114,7 +116,7 @@ export const Head = ({ data }: any) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={featuredImageURL} />
-      <meta property='og:url' content={`https://bymjcodes.com${slug}`} />
+      <meta property="og:url" content={`https://bymjcodes.com${slug}`} />
       <meta property="og:type" content="article" />
       <meta property="article:published_time" content={date} />
       <meta property="article:author" content="Maxwell Kapezi Jr." />

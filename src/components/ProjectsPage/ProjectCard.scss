@@ -1,132 +1,132 @@
-@use '../../styles/index';
-@use '../../styles/breakpoints';
+@use "../../styles/index";
+@use "../../styles/breakpoints";
 
 #projects {
-	.container {
-		margin-bottom: 5rem;
+  .container {
+    margin-bottom: 5rem;
 
-		h1 {
-			margin-bottom: 2rem;
-		}
+    h1 {
+      margin-bottom: 2rem;
+    }
 
-		.projects-container {
-			display: flex;
-			flex-direction: row;
-			width: 100%;
-			flex-wrap: wrap;
+    .projects-container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: wrap;
 
-			@media (max-width: breakpoints.$lg) {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				gap: 1rem;
+      @media (max-width: breakpoints.$lg) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
 
-				@media (max-width: breakpoints.$sm) {
-					grid-template-columns: 1fr;
-				}
-			}
+        @media (max-width: breakpoints.$sm) {
+          grid-template-columns: 1fr;
+        }
+      }
 
-			.project {
-				border-radius: 16px;
-				display: flex;
-				width: 100%;
-				flex-wrap: wrap;
-				background-color: index.$card-background;
-				border: 1px solid index.$card-border;
-				transition: all 200ms ease-in-out;
-				margin-bottom: 2rem;
-				transition: all 200ms ease-in-out;
+      .project {
+        border-radius: 16px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: index.$card-background;
+        border: 1px solid index.$card-border;
+        transition: all 200ms ease-in-out;
+        margin-bottom: 2rem;
+        transition: all 200ms ease-in-out;
 
-				&:hover {
-					transform: scale(1.02);
-					border: 1px solid index.$primary-border;
-				}
+        &:hover {
+          transform: scale(1.02);
+          border: 1px solid index.$primary-border;
+        }
 
-				.btn-secondary {
-					.ext-link-icon {
-						margin-left: 5px;
-					}
-				}
+        .btn-secondary {
+          .ext-link-icon {
+            margin-left: 5px;
+          }
+        }
 
-				.project-details {
-					padding: 1rem;
-					width: 50%;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: flex-start;
+        .project-details {
+          padding: 1rem;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
 
-					h3 {
-						a {
-							color: index.$primary-white;
+          h3 {
+            a {
+              color: index.$primary-white;
               transition: all ease-in-out 300ms;
-							&:hover {
+              &:hover {
                 color: index.$primary-color;
-								opacity: 0.845;
-							}
+                opacity: 0.845;
+              }
 
-							.ext-link-icon {
-								margin: 0;
-								padding: 0;
-								margin-left: 1rem;
-								font-size: 1.274rem;
-							}
-						}
-					}
+              .ext-link-icon {
+                margin: 0;
+                padding: 0;
+                margin-left: 1rem;
+                font-size: 1.274rem;
+              }
+            }
+          }
 
-					.project-desc {
-						color: index.$secondary-white;
-						margin-top: 0.5rem;
-						font-size: 0.8rem;
-					}
-				}
+          .project-desc {
+            color: index.$secondary-white;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+          }
+        }
 
-				.img-link {
-					width: 50%;
-					max-width: 500px;
-					margin: 0;
+        .img-link {
+          width: 50%;
+          max-width: 500px;
+          margin: 0;
 
-					.project-img {
-						height: 100%;
-						border-radius: 0 16px 16px 0;
-					}
-				}
+          .project-img {
+            height: 100%;
+            border-radius: 0 16px 16px 0;
+          }
+        }
 
-				@media (max-width: breakpoints.$lg) {
-					display: flex;
-					flex-wrap: wrap-reverse;
+        @media (max-width: breakpoints.$lg) {
+          display: flex;
+          flex-wrap: wrap-reverse;
 
-					.img-link {
-						width: 100%;
-						margin: 0;
+          .img-link {
+            width: 100%;
+            margin: 0;
 
-						.project-img {
-							border-radius: 16px 16px 0 0;
-							width: 100%;
-						}
-					}
+            .project-img {
+              border-radius: 16px 16px 0 0;
+              width: 100%;
+            }
+          }
 
-					.project-details {
-						padding-bottom: 2rem;
-						width: 100%;
-					}
-				}
-			}
+          .project-details {
+            padding-bottom: 2rem;
+            width: 100%;
+          }
+        }
+      }
 
-			@media (max-width: 750px) {
-				.projects {
-					width: 90%;
-				}
-			}
+      @media (max-width: 750px) {
+        .projects {
+          width: 90%;
+        }
+      }
 
-			@media (max-width: 600px) {
-				.projects {
-					grid-template-columns: 1fr;
-				}
+      @media (max-width: 600px) {
+        .projects {
+          grid-template-columns: 1fr;
+        }
 
-				.project-desc {
-					font-size: 1rem;
-				}
-			}
-		}
-	}
+        .project-desc {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }
