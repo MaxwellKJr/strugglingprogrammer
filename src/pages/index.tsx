@@ -3,7 +3,7 @@ import "../styles/global.css";
 import { PageProps, graphql } from "gatsby";
 
 import Layout from "../layouts/index";
-import React from "react";
+import React, { ReactElement } from "react";
 import Showcase from "../components/HomePage/Showcase";
 
 export const query = graphql`
@@ -20,18 +20,17 @@ export const query = graphql`
   }
 `;
 
-const IndexPage = () => {
-  return (
-    <Layout>
-      <Showcase />
-    </Layout>
-  );
-};
+const IndexPage = (): ReactElement => (
+  <Layout>
+    <Showcase />
+  </Layout>
+);
 
 export default IndexPage;
 
 export const Head = ({ data }: PageProps) => {
   const seo = data.allSite.nodes[0];
+
   const { title, description, siteUrl } = seo.siteMetadata;
 
   return (

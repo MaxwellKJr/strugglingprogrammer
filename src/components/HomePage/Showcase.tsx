@@ -21,7 +21,7 @@ const occupations = [
 
 const occupationsList = OccupationsList;
 
-const Showcase = (): React.FC => {
+const Showcase = (): React.ReactElement => {
   const [randomWord, setRandomWord] = useState("");
 
   useEffect(() => {
@@ -35,7 +35,9 @@ const Showcase = (): React.FC => {
       <span className="logo">MJ Codes_</span>
       <div className="container">
         <motion.h1
-          id="slogan" data-text={`The ${randomWord} Developer`} style={{ textAlign: "start" }}
+          id="slogan"
+          data-text={`The ${randomWord} Developer`}
+          style={{ textAlign: "start" }}
           initial="hidden"
           animate="visible"
           variants={{
@@ -48,7 +50,7 @@ const Showcase = (): React.FC => {
               opacity: 1,
               transition: {
                 delay: 0,
-              }
+              },
             },
           }}
         >
@@ -80,7 +82,7 @@ const Showcase = (): React.FC => {
             },
           }}
         >
-          {occupations.map(occupation => (
+          {occupations.map((occupation) => (
             <li key={occupation.name}>
               <a
                 href={occupation.url}
@@ -111,7 +113,9 @@ const Showcase = (): React.FC => {
               },
             },
           }}
-        >A platform to showcase my software development journey and share the few things I know.
+        >
+          A platform to showcase my software development journey and share the
+          few things I know.
         </motion.p>
 
         <motion.div
