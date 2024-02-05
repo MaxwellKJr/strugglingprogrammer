@@ -13,4 +13,4 @@ tags:
   - Sanity.io
   - Chakra UI
 ---
-Eldridge Finance Limited gave me and Edson Magombo of *Gomboz Tech* to develop a website that was in inline with their business goals and needs. It was designed to be as straightforward as possible and allow loan applicants to do that as quickly as possible.
+Eldridge Finance Limited gave me and Edson Magombo, of *Gomboz Tech*, a chance to develop a website that was in line with their business goals and needs. It was designed to be as straightforward as possible and allow loan applicants to do that as quickly as possible.
