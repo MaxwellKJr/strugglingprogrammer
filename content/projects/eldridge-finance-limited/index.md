@@ -9,7 +9,7 @@ projectDescription: Eldridge Finance Limited gave me and Edson Magombo of Gomboz
   needs. It was designed to be as straightforward as possible and allow loan
   applicants to do that as quickly as possible.
 tags:
-  - Next,js
+  - Next.js
   - Sanity.io
   - Chakra UI
 ---
