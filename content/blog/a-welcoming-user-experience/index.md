@@ -6,7 +6,7 @@ description: "“One cannot design a user experience, only design for a user
   experience. In particular, one cannot design a sensual experience, but only
   create the design features that can evoke it.” "
 tags:
-  - Tech
+  - UX Design
 ---
 “One cannot design a user experience, only design for a user experience. In particular, one cannot design a sensual experience, but only create the design features that can evoke it.” 
 
