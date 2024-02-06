@@ -10,27 +10,27 @@ tags:
   - Software Development
   - Development
 ---
-A couple of years ago, before I started my Computer Science journey, I really did not care about how the things I was using looked or how the games I was forcing on my potato PCs ran. All I cared about was if they worked.
+A couple of years ago, before I started my Computer Science journey, I did not care about how the things I was using looked or how the games I was forcing on my potato PCs ran. All I cared about was if they worked.
 
-"Does it work?" that is now the main thing that I usually ask myself when I use software today. And now that I have more knowledge on how software is developed, I have more sympathy of the apps and software that don't work.
+"Does it work?" that is the main thing that I usually ask myself when I use software today. And now that I have more knowledge of how software is developed, I have more sympathy for the apps and software that don't work.
 
-I have sympathy because I am a software developer myself but I am certain that majority of Facebook's **3.05 Billion** monthly users are not tech people like me.
+I have sympathy because I am a software developer myself but I am certain that the majority of Facebook's **3.05 Billion** monthly users are not tech people like me.
 
-And since they are not like me, that is why the Facebook app on the Play Store is currently at ```3.6``` rating and swarming with negative reviews.
+And since they are not like me, that is why the Facebook app on the Play Store is currently at a ```3.6``` rating and swarming with negative reviews.
 
-#### What is software that works?
+#### What Is Software That Works?
 
-What do I really mean when I say "**Works**"? Software is all about solving a problem. Whether it is a small problem like the exchange rates of the Malawi Kwacha to other currencies or a big problem like visualizing the internal organs of a patient just about to undergo surgery, software is there to solve those problems.
+What do I mean when I say "**Works**"? Software is all about solving a problem. Whether it is a small problem like the exchange rates of the Malawi Kwacha to other currencies or a big problem like visualizing the internal organs of a patient just about to undergo surgery, software is there to solve those problems.
 
 An easier explanation that applies to me goes like this: When I am on YouTube, I want to watch (long form) videos to either be entertained or be informed or educated. When I am on X/Twitter I just want to see the weirdness and toxicity from Twitter Malawi and the rest of the world and funny enough X does this so well and the algorithm knows this too. And when I am on Pinterest, I just want to be inspired. All these platforms know what the problems the users have and they certainly mastered how to solve those problems.
 
-The apps I have mentioned above **work**. But let's give X two more years because to be honest, Elon Musk is unpredictable.
+The apps I have mentioned above **work**. *But let's give X two more years because, to be honest, Elon Musk is unpredictable.*
 
-#### Facebook works, sort of
+#### Facebook Works, Sort Of
 
 From my point of view, I am pretty sure that Facebook **works**. Sure it has bugs but what matters to me is that it works and on top of that it works so well that it fulfills Facebook's goal of connecting people.
 
-"Connecting People" has been Facebook's goal from the beginning and it does that so well that we forget about this. In fact, Facebook solved this problem so well that they got bored and started focusing on other areas that they never intended on doing.
+"Connecting People" has been Facebook's goal from the beginning and it does that flawlessly that we forget about this. In fact, Facebook perfectly solved this problem and got bored, and decided to diversify, focusing on other areas that they never intended on doing.
 
 Facebook gaming for example. No one cared whether we had this on the platform or not but we still got it anyway.
 
@@ -47,7 +47,7 @@ Their strategies on how to achieve "Connecting People" however, have changed. Th
 Facebook's timeline went like something this:
 
 ```typescript
-solveProblem()
+solvedAProblem()
 	-> gotBored()
 	-> diversified()
 		-> console.log("Created more problems")
@@ -55,16 +55,16 @@ solveProblem()
 
 They created more problems that affected Facebook's pure intentions and that is why it is sitting at ```3.6 out of 5``` rating on the Play Store.
 
-#### Other Factors
-I realized that as much as I want to write beautiful code, it will never be perfect. And after this realization, I made it my goal to focus on the main thing that I am trying to solve and solve it in the simplest form as possible and refactor from there.
+#### Make It Work, Refactor Later
+I realized that as much as I want to write beautiful code, it will never be perfect. And after this realization, I now focus on the main thing that I am trying to solve by solving it in the simplest form as possible and refactor from there.
 
 The users who will be using my products will not be wowed with my code, they will be wowed by what I have managed to solve with the software that I have made that **works**!
 
-The CEO (who is not tech savvy) of a company will care less about how the code was written and will only care about the question I asked earlier: "Does it work?"
+The CEO of a company (who is not tech savvy) will care less about how the code was written and will only care about the question I asked earlier: "Does it work?"
 
 That is just the reality of things.
 
-HOLD ON! This is not an excuse to write sloppy code. Don't sacrifice performance, security, and privacy in the name of making it work. *Sure the website loads but it just used up 10 MB and my browser froze while it was loading.*
+HOLD ON! This is not an excuse to write sloppy code. Don't sacrifice performance, security, and privacy in the name of making it work. *Sure the website loads but it just used up 10 MB and my browser froze while it was loading.* Don't do this.
 
 #### What I Learned From This
 
@@ -75,7 +75,7 @@ That is why as a developer, I have to be clear about the goals I am trying to ac
 
 Being a pantser doesn't always work with software development. No matter how small the problem is. I don't always have to write it down but if I have a proper roadmap/timeline in my head I am much better off than jumping straight to the code. I understand. I get it, writing code is the fan part but it is worth the wait.
 
-##### Narrowing the scope of the project
+##### Narrowing The Scope of The Project
 
 Unrealistically big apps (on day one) are bound to fail (eventually) if there are no resources to support the project. As video gamer myself, I have seen games being launched so broken that they were literally unplayable.
 
@@ -96,6 +96,6 @@ It might sound funny and odd but the number of developers don't even test their 
 If you are a developer and you are reading this, I have one word for you!
 
 ##### Build an MVP
-What is an MVP you ask? Well I explain more about this here: <Link to="https://bymjcodes/blog/a-welcoming-user-experience">**A Welcoming User Experience**</Link>.
+What is an MVP you ask? Well, I explain more about this here: <a href="/blog/a-welcoming-user-experience">**A Welcoming User Experience**</a>.
 
 If you enjoyed this article, feel free to share this wherever you can and I will see you in the next one!
