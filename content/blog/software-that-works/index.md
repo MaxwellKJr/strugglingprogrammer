@@ -8,7 +8,6 @@ description: A couple of years ago, before I started my Computer Science
   worked.
 tags:
   - Software Development
-  - Development
 ---
 A couple of years ago, before I started my Computer Science journey, I did not care about how the things I was using looked or how the games I was forcing on my potato PCs ran. All I cared about was if they worked.
 
@@ -96,6 +95,6 @@ It might sound funny and odd but the number of developers who don't even test th
 If you are a developer and you are reading this, I have one word for you!
 
 ##### Build an MVP
-What is an MVP you ask? Well, I explain more about this here: <a href="/blog/a-welcoming-user-experience">**A Welcoming User Experience**</a>.
+What is an MVP you ask? Well, I explain more about this here: [A Welcoming User Experience](/blog/a-welcoming-user-experience)
 
 If you enjoyed this article, feel free to share this wherever you can and I will see you in the next one!
