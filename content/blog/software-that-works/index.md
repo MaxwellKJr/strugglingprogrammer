@@ -3,8 +3,8 @@ title: Software That Works
 date: 2024-02-06T20:20:56.326Z
 featuredImage: it-works-on-my-machine.jpg
 description: A couple of years ago, before I started my Computer Science
-  journey, I really did not care about how the things I was using looked or how
-  the games I was forcing on my potato PCs ran. All I cared about was if they
+  journey, I did not care about how the things I was using looked or how the
+  games I was forcing on my potato PCs ran. All I cared about was if they
   worked.
 tags:
   - Software Development
