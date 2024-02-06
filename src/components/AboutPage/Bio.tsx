@@ -91,8 +91,10 @@ const Bio = () => (
           </p>
           <p>
             I strive and enjoy: <br />{" "}
-            <strong>1. building things that work</strong>,<br />{" "}
-            <strong>2. a welcoming user experience</strong>, and <br />{" "}
+            <Link to="/blog/software-that-works">
+              1. building things that work
+            </Link>
+            ,<br /> <strong>2. a welcoming user experience</strong>, and <br />{" "}
             <strong>3. appealing/attractive design</strong> whether I am working
             solo or with a team.
           </p>
