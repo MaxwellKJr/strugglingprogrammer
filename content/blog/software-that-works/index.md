@@ -43,7 +43,7 @@ But why is this the case? Do the developers at Facebook not care anymore? I am s
 
 Their strategies on how to achieve "Connecting People" however, have changed. They want to connect people in so many different ways as possible. And with the Marketplace, they want to connect the buyer to the seller.
 
-Facebook's timeline went like something this:
+Facebook's timeline went something like this:
 
 ```typescript
 solvedAProblem()
