@@ -60,6 +60,12 @@ html .underlined-link,
 body .underlined-link {
   text-decoration: underline;
 }
+html .blog-tags,
+body .blog-tags {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
 html .tags,
 body .tags {
   display: flex;
