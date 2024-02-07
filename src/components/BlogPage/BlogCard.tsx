@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import "./BlogCard.css";
+import { PostProps } from "../../models/post";
 
-const BlogCard = ({ post }: any) => {
-  const { title, date, featuredImage, description, tags } =
+const BlogCard = ({ post }: PostProps) => {
+  const { title, date, featuredImage, description, tags, timeToRead } =
     post.node.frontmatter;
   const { slug } = post.node.fields;
 
@@ -19,7 +20,7 @@ const BlogCard = ({ post }: any) => {
           />
         </Link>
         <div className="blog-details">
-          <small className="timeToRead">{`> ${post.node.timeToRead} minute read`}</small>
+          <small className="timeToRead">{`> ${timeToRead} minute read`}</small>
           <h3>
             <Link to={`${slug}`}>{title}</Link>
           </h3>

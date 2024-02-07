@@ -2,10 +2,12 @@ import React from "react";
 import BlogCard from "./BlogCard";
 import "./Blogs.css";
 import { motion } from "framer-motion";
+import { BlogPosts, PostProps } from "../../models/post";
 
-const Blogs = ({ posts }: Array): React.FC => (
-  <motion.div id='blogs'
-    initial='hidden'
+const Blogs = ({ posts }: BlogPosts) => (
+  <motion.div
+    id="blogs"
+    initial="hidden"
     animate="visible"
     variants={{
       hidden: {
@@ -21,8 +23,8 @@ const Blogs = ({ posts }: Array): React.FC => (
     }}
   >
     <h1>Read Something</h1>
-    <div className='blogs-grid'>
-      {posts.map((post: unknown) => (
+    <div className="blogs-grid">
+      {posts.map((post: PostProps) => (
         <BlogCard key={post.node.fields.slug} post={post} />
       ))}
     </div>
