@@ -90,13 +90,21 @@ const Bio = () => (
             {/* {'.'} */}
           </p>
           <p>
-            I strive and enjoy: <br />{" "}
-            <Link to="/blog/software-that-works">
+            I strive and enjoy:{" "}
+            <Link to="/blog/software-that-works" className="underlined-link">
               1. building things that work
             </Link>
-            ,<br /> <strong>2. a welcoming user experience</strong>, and <br />{" "}
-            <strong>3. appealing/attractive design</strong> whether I am working
-            solo or with a team.
+            ,{" "}
+            <Link
+              to="/blog/a-welcoming-user-experience"
+              className="underlined-link"
+            >
+              2. a welcoming user experience
+            </Link>
+            , and{" "}
+            <strong className="underlined-link">
+              3. appealing/attractive design
+            </strong>
           </p>
           <p>
             I started learning how to code in 2017 because I wanted to make my

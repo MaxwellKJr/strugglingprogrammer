@@ -56,6 +56,10 @@ html a,
 body a {
   text-decoration: none;
 }
+html .underlined-link,
+body .underlined-link {
+  text-decoration: underline;
+}
 html .tags,
 body .tags {
   display: flex;
