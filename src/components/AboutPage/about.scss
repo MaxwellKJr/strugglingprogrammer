@@ -1,71 +1,71 @@
-@use '../../styles/index';
-@use '../../styles/breakpoints';
+@import "../../styles/breakpoints";
+@import "../../styles/index";
 
 #bio {
-	.container {
-		height: auto;
-		padding-top: 3rem;
-		padding-bottom: 6rem;
+  .container {
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
 
-		.bio-details {
-			display: grid;
-			grid-template-columns: 1fr 2fr;
-			gap: 1rem;
-			justify-content: center;
-			align-items: center;
+    .bio-details {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
 
-			img {
-				border-radius: 50%;
-				border: 2px solid #fff;
-			}
+      img {
+        border-radius: 50%;
+        border: 2px solid #fff;
+      }
 
-			h1 {
-				text-align: left;
-				margin-bottom: 1rem;
+      h1 {
+        text-align: left;
+        margin-bottom: 1rem;
 
-				@media (max-width: breakpoints.$lg) {
-					text-align: center;
-					margin-top: 0;
-					margin-bottom: 1rem;
-				}
-			}
+        @media (max-width: $lg) {
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 1rem;
+        }
+      }
 
-			.twitter-badge {
-				border-radius: 0;
-				border: 1px solid index.$primary-color;
-			}
+      .twitter-badge {
+        border-radius: 0;
+        border: 1px solid $primary-color;
+      }
 
-			p {
-				font-size: 15px;
-				margin: 1rem 0;
+      p {
+        font-size: 15px;
+        margin: 1rem 0;
 
-				a {
-					color: index.$primary-color;
-					font-weight: 600;
-					transition: all ease-in-out 100ms;
+        a {
+          color: $primary-color;
+          font-weight: 600;
+          transition: all ease-in-out 100ms;
 
-					&:hover {
-						color: index.$primary-white;
-						opacity: 0.9;
-						text-decoration: underline;
-					}
-				}
-			}
+          &:hover {
+            color: $primary-white;
+            opacity: 0.9;
+            text-decoration: underline;
+          }
+        }
+      }
 
-			@media (max-width: breakpoints.$lg) {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				width: 100%;
-				text-align: center;
+      @media (max-width: $lg) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
 
-				.gatsby-image-wrapper {
-					text-align: center;
-					width: 200px !important;
-					height: 200px !important;
-				}
-			}
-		}
-	}
+        .gatsby-image-wrapper {
+          text-align: center;
+          width: 200px !important;
+          height: 200px !important;
+        }
+      }
+    }
+  }
 }

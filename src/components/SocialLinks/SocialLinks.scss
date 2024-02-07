@@ -1,78 +1,78 @@
-@use '../../styles/index';
-@use '../../styles/breakpoints';
+@import "../../styles/breakpoints";
+@import "../../styles/index";
 
 #social-links {
-	border-bottom: 1px solid index.$secondary-white;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 100%;
-	padding: 0.5rem 1rem;
+  border-bottom: 1px solid $secondary-white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 0.5rem 1rem;
 
-	.social-link {
-		a {
-			color: index.$secondary-white;
-			display: inline-block;
-			padding: 0.5rem 0;
-			transition: all ease-in-out 300ms;
-			&:hover {
-				color: index.$primary-color;
-				transform: translateY(-8px);
-			}
-		}
-	}
+  .social-link {
+    a {
+      color: $secondary-white;
+      display: inline-block;
+      padding: 0.5rem 0;
+      transition: all ease-in-out 300ms;
+      &:hover {
+        color: $primary-color;
+        transform: translateY(-8px);
+      }
+    }
+  }
 
-	@media (max-width: breakpoints.$lg) {
-		display: none;
-	}
+  @media (max-width: $lg) {
+    display: none;
+  }
 }
 
 #social-links-mobile {
-	display: none;
-	@media (max-width: breakpoints.$lg) {
-		border-top: 1px solid index.$secondary-white;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		padding: 2rem 1rem 0.5rem 1rem;
+  display: none;
+  @media (max-width: $lg) {
+    border-top: 1px solid $secondary-white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 1rem 0.5rem 1rem;
 
-		.social-link {
-			width: 80px;
-			a {
-				color: index.$secondary-white;
-				display: inline-block;
-				padding: 0.5rem 0;
-				transition: all ease-in-out 300ms;
-				&:hover {
-					color: index.$primary-color;
-					transform: translateY(-8px);
-				}
-			}
-		}
-	}
+    .social-link {
+      width: 80px;
+      a {
+        color: $secondary-white;
+        display: inline-block;
+        padding: 0.5rem 0;
+        transition: all ease-in-out 300ms;
+        &:hover {
+          color: $primary-color;
+          transform: translateY(-8px);
+        }
+      }
+    }
+  }
 }
 
 #social-links-contactme {
-		/* border-top: 1px solid index.$secondary-white; */
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		align-items: flex-start;
-		width: 100%;
-		.social-link {
-			/* width: 80px; */
-			a {
-				color: index.$secondary-white;
-				display: inline-block;
-				padding: 0.5rem 0;
-				transition: all ease-in-out 300ms;
-				&:hover {
-					color: index.$primary-color;
-					transform: translateY(-8px);
-				}
-			}
-		}
+  /* border-top: 1px solid index.$secondary-white; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  .social-link {
+    /* width: 80px; */
+    a {
+      color: $secondary-white;
+      display: inline-block;
+      padding: 0.5rem 0;
+      transition: all ease-in-out 300ms;
+      &:hover {
+        color: $primary-color;
+        transform: translateY(-8px);
+      }
+    }
+  }
 }

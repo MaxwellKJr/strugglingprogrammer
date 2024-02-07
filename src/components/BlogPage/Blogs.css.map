@@ -1,1 +1,1 @@
-{"version":3,"sources":["Blogs.scss","Blogs.css"],"names":[],"mappings":"AAEA;EACC,gBAAA;ACDD;;ADIA;EACC,aAAA;EACA,kCAAA;ACDD;ADEC;EACC,SAAA;ACAF;ADGC;EAPD;IAQE,8BAAA;ECAA;AACF;ADEC;EAXD;IAYE,0BAAA;ECCA;AACF","file":"Blogs.css"}
+{"version":3,"sourceRoot":"","sources":["Blogs.scss"],"names":[],"mappings":"AAEA;EACE;;;AAGF;EACE;EACA;;AAEA;EACE;;AAGF;EARF;IASI;;;AAGF;EAZF;IAaI","file":"Blogs.css"}

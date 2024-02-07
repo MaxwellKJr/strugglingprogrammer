@@ -6,9 +6,12 @@ module.exports = {
   siteMetadata: {
     title: "MJ Codes",
     siteUrl: "https://bymjcodes.com",
-    description: "Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows.",
-    about: "Maxwell Kapezi Jr. is a Software Developer, Graphic Designer, and Writer from the Warm Heart of Africa,	Malawi  🇲🇼",
-    projectsPageDescription: "See what Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years.",
+    description:
+      "Maxwell Kapezi Jr's official website to showcase his software development journey and share the few things he knows.",
+    about:
+      "Maxwell Kapezi Jr. is a Software Developer, Graphic Designer, and Writer from the Warm Heart of Africa,	Malawi  🇲🇼",
+    projectsPageDescription:
+      "See what Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years.",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
@@ -25,23 +28,23 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 590,
             },
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: "gatsby-remark-responsive-iframe",
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: "margin-bottom: 1.0725rem",
             },
           },
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: "gatsby-remark-prismjs",
             options: {
               inlineCodeMarker: null,
               aliases: {},
@@ -49,7 +52,7 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
-          `gatsby-plugin-netlify-cms`,
+          "gatsby-plugin-netlify-cms",
         ],
       },
     },
@@ -70,9 +73,9 @@ module.exports = {
       __key: "pages",
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `content`,
+        name: "content",
         path: `${__dirname}/content`,
       },
     },

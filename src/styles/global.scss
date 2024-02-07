@@ -1,29 +1,29 @@
-@use 'index';
-@use 'breakpoints';
+@import "breakpoints";
+@import "index";
 
 ::-webkit-scrollbar {
-	background: index.$primary-background !important;
-	width: 14px !important;
-	transition: all 400ms ease-in-out;
+  background: $primary-background !important;
+  width: 14px !important;
+  transition: all 400ms ease-in-out;
 }
 
 ::-webkit-scrollbar:hover,
 ::-webkit-scrollbar:focus {
-	width: 15px !important;
+  width: 15px !important;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: index.$primary-color !important;
+  background: $primary-color !important;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 .back-link {
@@ -31,7 +31,7 @@ ul {
   align-items: center;
   padding-top: 0;
   margin-bottom: 1rem;
-  color: index.$primary-white;
+  color: $primary-white;
   transition: all 300ms ease-in-out;
 
   .back-arrow {
@@ -50,114 +50,113 @@ ul {
 }
 
 html,
-	body {
-		background: index.$primary-background;
-	color: index.$primary-white;
-	font-family: index.$poppins;
-	scroll-behavior: smooth;
-	overflow-x: hidden;
+body {
+  background: $primary-background;
+  color: $primary-white;
+  font-family: $poppins;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 
   a {
-	  text-decoration: none;
+    text-decoration: none;
   }
 
   .tags {
-	  display: flex;
-	  flex-wrap: wrap;
-	  width: 100%;
-	  border-top: 1px solid index.$primary-border;
-	  padding-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 1px solid $primary-border;
+    padding-top: 0.5rem;
 
-	  .tag {
-		  display: inline-flex;
-		  background: index.$primary-border;
-		  font-size: 14px;
-		  font-weight: 600;
-		  margin-right: 0.5rem;
-		  margin-top: 0.5rem;
-		  padding: 0 1rem;
-		  border-radius: 16px;
-		  opacity: 0.8;
-	  }
+    .tag {
+      display: inline-flex;
+      background: $primary-border;
+      font-size: 14px;
+      font-weight: 600;
+      margin-right: 0.5rem;
+      margin-top: 0.5rem;
+      padding: 0 1rem;
+      border-radius: 16px;
+      opacity: 0.8;
+    }
   }
 
   .ctas,
   .professional-btns {
-	  margin: 1rem 0;
+    margin: 1rem 0;
 
-	.btn {
-		display: inline-flex;
-		width: 140px;
-		height: 40px;
-		justify-content: center;
-		align-items: center;
-		margin-right: 1rem;
-		z-index: 1;
-		position: relative;
-		transition: all ease-in-out 300ms;
-	}
+    .btn {
+      display: inline-flex;
+      width: 140px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      z-index: 1;
+      position: relative;
+      transition: all ease-in-out 300ms;
+    }
 
-	.btn-primary {
-		background: index.$primary-color;
-		color: index.$primary-white;
-		border-radius: 10px;
+    .btn-primary {
+      background: $primary-color;
+      color: $primary-white;
+      border-radius: 10px;
 
-		&:after {
-			background: index.$primary-white;
-			position: absolute;
-			content: '';
-			left: 0;
-			top: 0;
-			width: 0;
-			height: 100%;
-			z-index: -1;
-			transition: all ease-in-out 400ms;
-			border-radius: 10px 10px;
-		}
+      &:after {
+        background: $primary-white;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        transition: all ease-in-out 400ms;
+        border-radius: 10px 10px;
+      }
 
-		&:hover {
-			color: index.$primary-background;
-		}
+      &:hover {
+        color: $primary-background;
+      }
 
-		&:hover::after {
-			width: 100%;
-			text-decoration: none;
-			border-radius: 10px;
-		}
-	}
+      &:hover::after {
+        width: 100%;
+        text-decoration: none;
+        border-radius: 10px;
+      }
+    }
 
-		.btn-secondary {
-			background: index.$primary-white;
-			color: index.$primary-background;
-			border-radius: 10px;
+    .btn-secondary {
+      background: $primary-white;
+      color: $primary-background;
+      border-radius: 10px;
 
-			&:before {
-				background: index.$primary-color;
-				position: absolute;
-				content: '';
-				left: 0;
-				top: 0;
-				width: 10px;
-				height: 100%;
-				z-index: -1;
-				transition: all ease-in-out 400ms;
-				border-radius: 10px 0 0 10px;
-			}
+      &:before {
+        background: $primary-color;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 10px;
+        height: 100%;
+        z-index: -1;
+        transition: all ease-in-out 400ms;
+        border-radius: 10px 0 0 10px;
+      }
 
-			&:hover {
-				color: index.$primary-white;
-			}
+      &:hover {
+        color: $primary-white;
+      }
 
-			&:hover::before {
-				width: 100%;
-				text-decoration: none;
-				border-radius: 10px;
-			}
-		}
+      &:hover::before {
+        width: 100%;
+        text-decoration: none;
+        border-radius: 10px;
+      }
+    }
 
-		@media (max-width: breakpoints.$lg) {
-			padding-bottom: 2rem;
-		}
-	}
+    @media (max-width: $lg) {
+      padding-bottom: 2rem;
+    }
+  }
 }
-

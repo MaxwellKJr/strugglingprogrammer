@@ -1,5 +1,5 @@
-@import '../../styles/index';
-@import '../../styles/breakpoints';
+@import "../../styles/breakpoints";
+@import "../../styles/index";
 
 .services-flex {
   display: grid;
@@ -17,21 +17,20 @@
       color: $primary-background;
     }
 
-
     .service-name {
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-weight: 600;
 
-    .service-recommended-pill {
-      display: inline-block;
-      background: #910a41;
-      color: $primary-white;
-      padding: 0 0.3rem;
-      border-radius: 10px;
-      font-size: 12px;
-    }
+      .service-recommended-pill {
+        display: inline-block;
+        background: #910a41;
+        color: $primary-white;
+        padding: 0 0.3rem;
+        border-radius: 10px;
+        font-size: 12px;
+      }
     }
 
     .service-price {

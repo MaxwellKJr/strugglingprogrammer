@@ -1,16 +1,17 @@
-@use '../../styles/index' as index;
-@use '../../styles/breakpoints' as breakpoints;
+@import "../../styles/breakpoints";
+@import "../../styles/index";
 
 $blinking-duration: 2.3s;
 
-$slogan-glitch-color: index.$primary-border;
+$slogan-glitch-color: $primary-border;
 $slogan-glitch-displacement: 4px;
 $slogan-animation-duration: 0.2s;
 $slogan-animation-delay-start: 0.25s;
 $slogan-animation-delay-end: 0.3s;
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -19,13 +20,22 @@ $slogan-animation-delay-end: 0.3s;
 }
 
 @keyframes wobble {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
   }
-  15%, 30%, 45%, 60%, 75% {
+  15%,
+  30%,
+  45%,
+  60%,
+  75% {
     transform: translateX(-4px);
   }
-  10%, 25%, 40%, 55%, 70% {
+  10%,
+  25%,
+  40%,
+  55%,
+  70% {
     transform: translateX(0px);
   }
 }
@@ -34,10 +44,18 @@ $slogan-animation-delay-end: 0.3s;
   0% {
     transform: translate(0);
   }
-  15%, 30%, 45%, 60%, 75% {
+  15%,
+  30%,
+  45%,
+  60%,
+  75% {
     transform: translateX($slogan-glitch-displacement);
   }
-  10%, 25%, 40%, 55%, 70% {
+  10%,
+  25%,
+  40%,
+  55%,
+  70% {
     transform: translateX(-$slogan-glitch-displacement);
   }
 }
@@ -76,7 +94,7 @@ $slogan-animation-delay-end: 0.3s;
     #slogan {
       color: $slogan-glitch-color;
       position: relative;
-      font-family: index.$poppins;
+      font-family: $poppins;
       font-size: 2.4rem;
       font-weight: 900;
       line-height: 1;
@@ -119,10 +137,10 @@ $slogan-animation-delay-end: 0.3s;
 
     .progressBar {
       height: 1px;
-      color: index.$primary-border;
-      border: 1px solid index.$primary-border;
-      bottom: '0';
-      left: '0';
+      color: $primary-border;
+      border: 1px solid $primary-border;
+      bottom: "0";
+      left: "0";
       margin-left: 2px;
       margin-bottom: 1rem;
     }
@@ -133,12 +151,12 @@ $slogan-animation-delay-end: 0.3s;
       flex-wrap: wrap;
 
       .occupation {
-        color: index.$secondary-white;
+        color: $secondary-white;
         font-size: 14px;
         padding-right: 0.8rem;
         transition: color ease-in-out 200ms;
         &:hover {
-          color: index.$primary-color;
+          color: $primary-color;
         }
       }
     }
@@ -147,7 +165,7 @@ $slogan-animation-delay-end: 0.3s;
       margin: 1rem 0;
       max-width: 75%;
 
-      @media (max-width: breakpoints.$lg) {
+      @media (max-width: $lg) {
         max-width: 100%;
         font-size: 14px;
       }
@@ -158,7 +176,7 @@ $slogan-animation-delay-end: 0.3s;
     }
   }
 
-  @media screen and (max-width: breakpoints.$lg) {
+  @media screen and (max-width: $lg) {
     .logo {
       animation: blink $blinking-duration infinite;
       opacity: 0.5;
@@ -166,10 +184,10 @@ $slogan-animation-delay-end: 0.3s;
       top: 0px;
       left: 5px;
       display: inline-block;
-      font-family: index.$odibee;
+      font-family: $odibee;
       font-size: 1.6rem;
       width: 100%;
-      color: index.$primary-color;
+      color: $primary-color;
       position: relative;
       transition: all 750ms ease-in-out;
 

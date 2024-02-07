@@ -1,5 +1,5 @@
-@use "../../styles/index";
-@use "../../styles/breakpoints";
+@import "../../styles/breakpoints";
+@import "../../styles/index";
 
 #projects {
   .container {
@@ -15,12 +15,12 @@
       width: 100%;
       flex-wrap: wrap;
 
-      @media (max-width: breakpoints.$lg) {
+      @media (max-width: $lg) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
 
-        @media (max-width: breakpoints.$sm) {
+        @media (max-width: $sm) {
           grid-template-columns: 1fr;
         }
       }
@@ -30,15 +30,15 @@
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        background-color: index.$card-background;
-        border: 1px solid index.$card-border;
+        background-color: $card-background;
+        border: 1px solid $card-border;
         transition: all 200ms ease-in-out;
         margin-bottom: 2rem;
         transition: all 200ms ease-in-out;
 
         &:hover {
           transform: scale(1.02);
-          border: 1px solid index.$primary-border;
+          border: 1px solid $primary-border;
         }
 
         .btn-secondary {
@@ -57,10 +57,10 @@
 
           h3 {
             a {
-              color: index.$primary-white;
+              color: $primary-white;
               transition: all ease-in-out 300ms;
               &:hover {
-                color: index.$primary-color;
+                color: $primary-color;
                 opacity: 0.845;
               }
 
@@ -74,7 +74,7 @@
           }
 
           .project-desc {
-            color: index.$secondary-white;
+            color: $secondary-white;
             margin-top: 0.5rem;
             font-size: 0.8rem;
           }
@@ -91,7 +91,7 @@
           }
         }
 
-        @media (max-width: breakpoints.$lg) {
+        @media (max-width: $lg) {
           display: flex;
           flex-wrap: wrap-reverse;
 

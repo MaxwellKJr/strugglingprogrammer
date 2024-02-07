@@ -1,97 +1,97 @@
-@use '../../styles/index';
-@use '../../styles/breakpoints';
+@import "../../styles/breakpoints";
+@import "../../styles/index";
 
 #skills {
-	.container {
-		padding-top: 5rem;
-		padding-bottom: 7rem;
-		.split {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    .split {
       .skills {
         padding: 1rem 0;
-	  		.skills-grid {
-		  		margin: 0.5rem 3rem 0 0;
-			  	display: grid;
-				  grid-template-columns: repeat(3, 1fr);
-				  width: 100%;
-				  gap: 1rem;
+        .skills-grid {
+          margin: 0.5rem 3rem 0 0;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          width: 100%;
+          gap: 1rem;
 
-				  .card-dark {
-					  border: 1px solid index.$primary-border;
-					  border-radius: 10px;
-					  display: inline-flex;
-					  justify-content: space-between;
-					  align-items: center;
-					  width: 100%;
-					  height: 3rem;
-					  padding: 0 1rem;
-					  background: url('./js.png') no-repeat center/cover;
-			  	}
+          .card-dark {
+            border: 1px solid $primary-border;
+            border-radius: 10px;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 3rem;
+            padding: 0 1rem;
+            background: url("./js.png") no-repeat center/cover;
+          }
 
-				  @media (max-width: breakpoints.$lg) {
-					  grid-template-columns: repeat(2, 1fr);
-				  }
-			  }
+          @media (max-width: $lg) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
       }
 
-			h1 {
-				margin-top: 4rem;
-			}
+      h1 {
+        margin-top: 4rem;
+      }
 
-			.uses-grid {
-				display: flex;
-				flex-direction: column;
-				flex-wrap: wrap;
-				width: 100%;
-			}
+      .uses-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+      }
 
-			.use-card {
-				padding: 1rem;
-				padding-left: 0.4rem;
-				border-bottom: 1px solid index.$primary-border;
+      .use-card {
+        padding: 1rem;
+        padding-left: 0.4rem;
+        border-bottom: 1px solid $primary-border;
 
-				&:last-child {
-					border-bottom: none;
-				}
+        &:last-child {
+          border-bottom: none;
+        }
 
-				&:nth-child(even) {
-					background-color: rgba($color: index.$secondary-color, $alpha: 0.9);
-					margin: 0;
-				}
+        &:nth-child(even) {
+          background-color: rgba($color: $secondary-color, $alpha: 0.9);
+          margin: 0;
+        }
 
-				.use-type {
-					display: inline-flex;
-					justify-content: center;
-					align-items: center;
-					margin: 0.5rem 0;
-					.type {
-						margin-right: 1rem;
-					}
+        .use-type {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0.5rem 0;
+          .type {
+            margin-right: 1rem;
+          }
 
           .use-link {
-              color: index.$primary-white;
-              text-decoration: underline;
-              &:hover {
-                color: index.$primary-color;
-              }
+            color: $primary-white;
+            text-decoration: underline;
+            &:hover {
+              color: $primary-color;
+            }
           }
-				}
+        }
 
-				.use-description {
-					li {
-						list-style: symbols('+') !important;
-						margin-left: 2rem;
-						margin-bottom: 0.4rem;
-						opacity: 0.8;
-					}
-				}
-			}
+        .use-description {
+          li {
+            list-style: symbols("+") !important;
+            margin-left: 2rem;
+            margin-bottom: 0.4rem;
+            opacity: 0.8;
+          }
+        }
+      }
 
-			@media (max-width: breakpoints.$lg) {
-				flex-direction: column;
-				justify-content: start;
-				align-items: start;
-				font-size: 14px;
-			}
-		}
-	}
+      @media (max-width: $lg) {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        font-size: 14px;
+      }
+    }
+  }
 }

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@100;300;400;600;900&display=swap");
 @keyframes blink {
-  0%,
-  100% {
+  0%, 100% {
     opacity: 1;
   }
   50% {
@@ -9,22 +8,13 @@
   }
 }
 @keyframes wobble {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateX(0);
   }
-  15%,
-  30%,
-  45%,
-  60%,
-  75% {
+  15%, 30%, 45%, 60%, 75% {
     transform: translateX(-4px);
   }
-  10%,
-  25%,
-  41%,
-  55%,
-  70% {
+  10%, 25%, 40%, 55%, 70% {
     transform: translateX(0px);
   }
 }
@@ -32,18 +22,10 @@
   0% {
     transform: translate(0);
   }
-  15%,
-  30%,
-  45%,
-  60%,
-  75% {
+  15%, 30%, 45%, 60%, 75% {
     transform: translateX(4px);
   }
-  10%,
-  25%,
-  40%,
-  55%,
-  70% {
+  10%, 25%, 40%, 55%, 70% {
     transform: translateX(-4px);
   }
 }
@@ -86,8 +68,7 @@
   transition: transform 1000ms ease-in-out;
   cursor: default;
 }
-#showcase .container #slogan::before,
-#showcase .container #slogan::after {
+#showcase .container #slogan::before, #showcase .container #slogan::after {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -99,8 +80,7 @@
 #showcase .container #slogan::before {
   z-index: -1;
 }
-#showcase .container #slogan:hover::before,
-#showcase .container #slogan:hover::after {
+#showcase .container #slogan:hover::before, #showcase .container #slogan:hover::after {
   opacity: 1;
   transform: translateY(4px);
 }
@@ -174,5 +154,6 @@
   #showcase .container #slogan {
     font-size: 2.2rem;
   }
-} /*# sourceMappingURL=Showcase.css.map */
+}
 
+/*# sourceMappingURL=Showcase.css.map */
