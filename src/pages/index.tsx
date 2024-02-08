@@ -20,7 +20,7 @@ export const query = graphql`
   }
 `;
 
-const IndexPage = (): ReactElement => (
+const IndexPage = () => (
   <Layout>
     <Showcase />
   </Layout>

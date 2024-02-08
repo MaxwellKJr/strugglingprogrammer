@@ -1,9 +1,14 @@
-import React, { ReactElement } from "react";
-import { PageProps } from "gatsby";
-import NavBar from "../components/Navigation/NavBar";
 import "./Layout.css";
 
-export default function Layout({ children }: PageProps): ReactElement {
+import React, { ReactElement, ReactNode } from "react";
+
+import NavBar from "../components/Navigation/NavBar";
+
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps): ReactElement {
   return (
     <>
       <NavBar />
