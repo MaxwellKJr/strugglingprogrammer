@@ -1,17 +1,19 @@
+import { IGatsbyImageData } from "gatsby-plugin-image";
+
 export type PostProps = {
   post: {
     node: {
       frontmatter: {
         title: string;
         date: string;
-        featuredImage: object;
+        featuredImage: IGatsbyImageData | null;
         description: string;
         tags: string[];
-        timeToRead: string;
       };
       fields: {
         slug: string;
       };
+      timeToRead: string;
     };
   };
 };
