@@ -52,7 +52,7 @@ const ProjectCard = ({ project }: ProjectProps) => {
             rel="noopener noreferrer"
             className="btn btn-secondary"
           >
-            Github <FontAwesomeIcon icon={faGithub} className="ext-link-icon" />{" "}
+            GitHub <FontAwesomeIcon icon={faGithub} className="ext-link-icon" />{" "}
           </a>
         </div>
         <ul className="tags">
