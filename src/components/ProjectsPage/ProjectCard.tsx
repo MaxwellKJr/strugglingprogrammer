@@ -70,7 +70,10 @@ const ProjectCard = ({ project }: ProjectProps) => {
         rel="noopener noreferrer"
         className="img-link"
       >
-        <GatsbyImage {...imageProps} />
+        <GatsbyImage
+          {...imageProps}
+          style={{ borderRadius: "0 1rem 1rem 0" }}
+        />
       </a>
     </div>
   );
