@@ -3,6 +3,7 @@ import NavBar from "../components/Navigation/NavBar";
 import "./Layout.css";
 
 interface LayoutProps {
+  // title: string;
   children: ReactNode;
 }
 

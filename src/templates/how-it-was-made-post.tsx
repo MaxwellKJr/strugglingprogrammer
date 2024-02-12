@@ -1,7 +1,7 @@
 import "./blog-post.css";
 
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Link, graphql } from "gatsby";
+import { HeadProps, Link, graphql } from "gatsby";
 
 import Layout from "../layouts/index";
 import React from "react";
@@ -106,7 +106,7 @@ const HowItWasMadePostTemplate = ({ data, pageContext }: any) => {
 
 export default HowItWasMadePostTemplate;
 
-export const Head = ({ data }: any) => {
+export const Head = ({ data }: HeadProps) => {
   const post = data.markdownRemark;
   const { title, description, date } = post.frontmatter;
   const slug = post.fields.slug;
@@ -117,16 +117,16 @@ export const Head = ({ data }: any) => {
   return (
     <>
       <title>{title}</title>
-      <meta name="title" content={title} />
-      <meta name="description" content={description} />
-      <meta property="og:title" content={title} />
+      <meta name="title" content={`${title} | MJ Codes`} />
+      <meta name="description" content={`${description}`} />
+      <meta property="og:title" content={`${title} | MJ Codes`} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={featuredImageURL} />
       <meta property="og:url" content={`https://bymjcodes.com${slug}`} />
       <meta property="og:type" content="article" />
       <meta property="article:published_time" content={date} />
       <meta property="article:author" content="Maxwell Kapezi Jr." />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={`${title} | MJ Codes`} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:card" content="summary" />
     </>
