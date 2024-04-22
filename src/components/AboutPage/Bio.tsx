@@ -95,18 +95,18 @@ const Bio = () => (
 					<p>
 						I strive and enjoy:{" "}
 						<Link to="/blog/software-that-works" className="underlined-link">
-							1. Building Things that Work
+							Building Things that Work
 						</Link>
 						,{" "}
 						<Link
 							to="/blog/a-welcoming-user-experience"
 							className="underlined-link"
 						>
-							2. A Welcoming User Experience
+							A Welcoming User Experience
 						</Link>
 						, and{" "}
 						<strong className="underlined-link">
-							3. Appealing/Attractive Design
+							Appealing/Attractive Design
 						</strong>
 					</p>
 					<p>
