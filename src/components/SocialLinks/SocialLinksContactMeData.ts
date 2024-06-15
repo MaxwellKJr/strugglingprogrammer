@@ -22,17 +22,17 @@ const socialLinksContactMeData = [
   },
   {
     name: "Facebook",
-    url: "https://facebook.com/maxwellkapezijr",
+    url: "https://facebook.com/maxwellKJnr",
     icon: faFacebook,
   },
   {
     name: "Threads",
-    url: "https://threads.net/@maxwellkjr_",
+    url: "https://threads.net/@maxwellkjnr",
     icon: faThreads,
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/maxwellKJr_",
+    url: "https://instagram.com/maxwellKJnr",
     icon: faInstagram,
   },
   {
