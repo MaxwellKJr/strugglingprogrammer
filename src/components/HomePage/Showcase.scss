@@ -139,8 +139,8 @@ $slogan-animation-delay-end: 0.3s;
       height: 1px;
       color: $primary-border;
       border: 1px solid $primary-border;
-      bottom: "0";
-      left: "0";
+      bottom: 0;
+      left: 0;
       margin-left: 2px;
       margin-bottom: 1rem;
     }
@@ -181,14 +181,13 @@ $slogan-animation-delay-end: 0.3s;
       animation: blink $blinking-duration infinite;
       opacity: 0.5;
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 5px;
       display: inline-block;
       font-family: $odibee;
       font-size: 1.6rem;
       width: 100%;
       color: $primary-color;
-      position: relative;
       transition: all 750ms ease-in-out;
 
       &:hover {
