@@ -2,9 +2,9 @@ import "./SocialLinks.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import socialLinkData from "./SocialLinksData";
+import socialLinksData from "./SocialLinksData";
 
-const links = socialLinkData;
+const links = socialLinksData;
 
 const SocialLinks = () => (
   <ul id="social-links">

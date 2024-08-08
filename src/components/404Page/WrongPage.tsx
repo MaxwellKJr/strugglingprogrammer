@@ -8,7 +8,7 @@ const WrongPage = () => {
     <div className="container">
       <h1>Page not found. The sadness!😔</h1>
       <p>
-        Sorry, we couldn’t find what you were looking for.
+        Sorry, we couldn&apos;t find what you were looking for.
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
