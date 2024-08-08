@@ -33,8 +33,7 @@
         background-color: $card-background;
         border: 1px solid $card-border;
         transition: all 200ms ease-in-out;
-        margin-bottom: 2rem;
-        transition: all 200ms ease-in-out;
+        margin-bottom: 2.5rem;
 
         &:hover {
           transform: scale(1.02);
@@ -65,9 +64,8 @@
               }
 
               .ext-link-icon {
-                margin: 0;
                 padding: 0;
-                margin-left: 1rem;
+                margin: 0 0 0 1rem;
                 font-size: 1.274rem;
               }
             }

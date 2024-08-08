@@ -81,14 +81,14 @@ export const Head = () => {
       <meta
         name="description"
         content={
-          "See what Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years."
+          "See Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years."
         }
       />
       <meta name="og:title" content={"MJ Codes | Projects"} />
       <meta
         name="og:description"
         content={
-          "See what Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years."
+          "See Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years."
         }
       />
       <meta name="og:url" content={"https://bymjcodes.com/blog/"} />
@@ -97,7 +97,7 @@ export const Head = () => {
       <meta
         name="twitter:description"
         content={
-          "See what Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years."
+          "See Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years."
         }
       />
       <meta name="twitter:card" content="summary" />

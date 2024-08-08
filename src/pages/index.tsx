@@ -1,12 +1,12 @@
 import "../styles/global.css";
 
-import { graphql, PageProps } from "gatsby";
+import { graphql, PageProps, StaticQueryDocument } from "gatsby";
 import React from "react";
 import Showcase from "../components/HomePage/Showcase";
 
 import Layout from "../layouts/index";
 
-export const query = graphql`
+export const query: StaticQueryDocument = graphql`
   query {
     allSite {
       nodes {

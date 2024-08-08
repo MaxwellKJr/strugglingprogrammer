@@ -1,11 +1,11 @@
 import "./ProjectCard.css";
-
-import { GatsbyImage, GatsbyImageProps, getImage } from "gatsby-plugin-image";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { GatsbyImage, GatsbyImageProps, getImage } from "gatsby-plugin-image";
 import React from "react";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { ProjectProps } from "../../models/project";
 
 const ProjectCard = ({ project }: ProjectProps) => {
@@ -70,10 +70,7 @@ const ProjectCard = ({ project }: ProjectProps) => {
         rel="noopener noreferrer"
         className="img-link"
       >
-        <GatsbyImage
-          {...imageProps}
-          style={{ borderRadius: "0 1rem 1rem 0" }}
-        />
+        <GatsbyImage {...imageProps} className="project-img" />
       </a>
     </div>
   );
