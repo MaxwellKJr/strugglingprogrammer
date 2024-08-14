@@ -3,11 +3,10 @@ import "./Services.css";
 import { motion } from "framer-motion";
 
 export const WebDevelopment = () => {
-
   const WebDevelopmentServicesList = [
     {
       name: "Static Plan",
-      price: "149,999",
+      price: "174,999",
       isRecommended: false,
       features: [
         "Single Landing Page",
@@ -18,11 +17,11 @@ export const WebDevelopment = () => {
         "No admin priveleges",
         "1 year free domain",
         "No discounts",
-      ]
+      ],
     },
     {
       name: "Startup Plan",
-      price: "249,999",
+      price: "379,999",
       isRecommended: true,
       features: [
         "Unlimited Pages",
@@ -32,11 +31,11 @@ export const WebDevelopment = () => {
         "2 year free domain",
         "Recommended for most people such as independent startups, writers, creatives, NGOs",
         "No discounts",
-      ]
+      ],
     },
     {
       name: "Media & eCommerce",
-      price: "599,999",
+      price: "799,999",
       isRecommended: false,
       features: [
         "Unlimited pages",
@@ -45,7 +44,7 @@ export const WebDevelopment = () => {
         "Admin priveleges are available",
         "5 year free domain",
         "Discounts are considered",
-      ]
+      ],
     },
     {
       name: "Corporate Plan",
@@ -57,13 +56,14 @@ export const WebDevelopment = () => {
         "Consultations post deployment",
         "Admin priveleges are available",
         "10+ years free domain registration",
-      ]
+      ],
     },
   ];
 
   return (
-    <motion.div id="web-development-services"
-      initial='hidden'
+    <motion.div
+      id="web-development-services"
+      initial="hidden"
       animate="visible"
       variants={{
         hidden: {
@@ -78,18 +78,24 @@ export const WebDevelopment = () => {
         },
       }}
     >
-      <div className='services-flex'>
+      <div className="services-flex">
         {WebDevelopmentServicesList.map((service) => (
           <div className="service-card" key={service.name}>
             <h4 className="service-name">
               {service.name}
-              {service.isRecommended ? <small className="service-recommended-pill">Recommended</small> : ""}
+              {service.isRecommended ? (
+                <small className="service-recommended-pill">Recommended</small>
+              ) : (
+                ""
+              )}
             </h4>
-            <h3 className='service-price'>
-              <span className="currency">MWK</span>{`${service.price} `}<small className="per-something">per site</small>
+            <h3 className="service-price">
+              <span className="currency">MWK</span>
+              {`${service.price} `}
+              <small className="per-something">per site</small>
             </h3>
             <ul className="features">
-              {service.features.map(feature => (
+              {service.features.map((feature) => (
                 <li key={feature} className="feature">
                   {feature}
                 </li>

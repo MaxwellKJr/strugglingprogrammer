@@ -7,17 +7,17 @@ export const MobileDevelopment = () => {
   const MobileDevelopmentServicesList = [
     {
       name: "Simple Utility App",
-      price: "349,999",
+      price: "499,999",
       isRecommended: false,
       features: [
-        "Maximum of 10 Screens",
+        "Maximum of 15 Screens",
         "Database is available if needed",
         "Snappy and responsive",
       ],
     },
     {
       name: "Brand App",
-      price: "649,999",
+      price: "849,999",
       isRecommended: true,
       features: [
         "Unlimited Screens",
