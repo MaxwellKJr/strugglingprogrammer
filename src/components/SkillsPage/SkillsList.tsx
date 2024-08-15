@@ -14,10 +14,11 @@ const SkillsList = () => {
         <h4 className="category-headline">Programming Languages:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
-            if (skill.skill === 1) // Replace 'return' with 'return null' to skip rendering
+            if (skill.skill === 1)
+              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
-                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                  {skill.name} {skill.icon}
                 </li>
               );
           })}
@@ -27,10 +28,11 @@ const SkillsList = () => {
         <h4 className="category-headline">Web Libraries & Frameworks:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
-            if (skill.skill === 2) // Replace 'return' with 'return null' to skip rendering
+            if (skill.skill === 2)
+              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
-                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                  {skill.name} {skill.icon}
                 </li>
               );
           })}
@@ -40,10 +42,11 @@ const SkillsList = () => {
         <h4 className="category-headline">Mobile Development:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
-            if (skill.skill === 3) // Replace 'return' with 'return null' to skip rendering
+            if (skill.skill === 3)
+              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
-                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                  {skill.name} {skill.icon}
                 </li>
               );
           })}
@@ -53,10 +56,11 @@ const SkillsList = () => {
         <h4 className="category-headline">Query Languages:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
-            if (skill.skill === 4) // Replace 'return' with 'return null' to skip rendering
+            if (skill.skill === 4)
+              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
-                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                  {skill.name} {skill.icon}
                 </li>
               );
           })}
@@ -66,10 +70,11 @@ const SkillsList = () => {
         <h4 className="category-headline">Other Technologies:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
-            if (skill.skill === 5) // Replace 'return' with 'return null' to skip rendering
+            if (skill.skill === 5)
+              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
-                  {skill.name} <FontAwesomeIcon icon={skill.icon} size="lg" />
+                  {skill.name} {skill.icon}
                 </li>
               );
           })}
@@ -87,7 +92,12 @@ const SkillsList = () => {
                   <h5 className="type">{use.type}: </h5>
                 </li>
                 <li>
-                  <a href={use.link} target="_blank" rel="nooponer noreferrer" className="use-link">
+                  <a
+                    href={use.link}
+                    target="_blank"
+                    rel="nooponer noreferrer"
+                    className="use-link"
+                  >
                     <h3>
                       {use.name} <FontAwesomeIcon icon={use.icon} />
                     </h3>
