@@ -96,8 +96,8 @@
   height: 1px;
   color: rgba(255, 0, 102, 0.4588235294);
   border: 1px solid rgba(255, 0, 102, 0.4588235294);
-  bottom: "0";
-  left: "0";
+  bottom: 0;
+  left: 0;
   margin-left: 2px;
   margin-bottom: 1rem;
 }
@@ -133,14 +133,13 @@
     animation: blink 2.3s infinite;
     opacity: 0.5;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 5px;
     display: inline-block;
     font-family: "Odibee Sans";
     font-size: 1.6rem;
     width: 100%;
     color: #ff0077;
-    position: relative;
     transition: all 750ms ease-in-out;
   }
   #showcase .logo:hover .logo-text {

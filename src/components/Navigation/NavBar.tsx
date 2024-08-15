@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import "./NavBar.css";
 import pageLinks from "./PageLinks";
 import SocialLinks from "../SocialLinks/SocialLinks";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { RiHome6Fill } from "@react-icons/all-files/ri/RiHome6Fill";
 
 const NavBar = () => {
   const links = pageLinks;
@@ -21,7 +21,7 @@ const NavBar = () => {
           {links.map((link) => (
             <li key={link.name} className="nav-link">
               <Link to={link.route} activeClassName="active" title={link.title}>
-                <FontAwesomeIcon icon={link.icon} className="route-icon" />
+                {link.icon}
                 <span className="route-text">{link.name}</span>
               </Link>
             </li>

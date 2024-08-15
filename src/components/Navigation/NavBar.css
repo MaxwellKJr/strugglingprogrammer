@@ -102,12 +102,13 @@
   #main-nav .nav-links .nav-link a .route-icon {
     display: inline-block;
     align-items: center;
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
   }
 }
 @media (max-width: 968px) {
   #main-nav .nav-links .nav-link a .route-text {
+    font-weight: 500;
     font-size: 0.6rem;
     margin-top: 0.3rem;
   }

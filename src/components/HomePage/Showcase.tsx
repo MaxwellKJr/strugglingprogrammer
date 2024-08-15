@@ -7,7 +7,7 @@ import "./Showcase.css";
 const occupations = [
   {
     name: "Software Developer💻",
-    url: "https://maxwellkapezi-resume.netlify.app",
+    url: "https://linkedin.com/in/maxwellkjr",
   },
   {
     name: "Writer📝",
@@ -15,7 +15,7 @@ const occupations = [
   },
   {
     name: "Graphic Designer🖌️",
-    url: "https://instagram.com/maxwellkjr_",
+    url: "https://instagram.com/maxwellkjnr",
   },
 ];
 

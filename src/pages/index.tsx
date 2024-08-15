@@ -8,28 +8,27 @@ import Layout from "../layouts/index";
 
 export const query: StaticQueryDocument = graphql`
   query {
-    allSite {
-      nodes {
-        siteMetadata {
-          siteUrl
-          title
-          description
-        }
+    site {
+      siteMetadata {
+        siteUrl
+        title
+        description
+        about
       }
     }
   }
 `;
 
-const IndexPage = () => (
-  <Layout>
-    <Showcase />
-  </Layout>
-);
-
-export default IndexPage;
+export default function IndexPage() {
+  return (
+    <Layout>
+      <Showcase />
+    </Layout>
+  );
+}
 
 export const Head = ({ data }: PageProps) => {
-  const seo = data.allSite.nodes[0];
+  const seo = data.site;
 
   const { title, description, siteUrl } = seo.siteMetadata;
 
