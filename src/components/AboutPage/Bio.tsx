@@ -40,25 +40,17 @@ export default function Bio() {
           <div className="details">
             <h1>About Me</h1>
             <p>
-              My name is Maxwell Kapezi Jr. (BEd), a Software Developer with
-              more than 2 years of professional experience, from the Warm Heart
-              of Africa, Malawi 🇲🇼, currently focusing on{" "}
+              My name is Maxwell Kapezi Jr, a Software Developer with over 2
+              years of professional experience, I specialize in mobile app
+              development using{" "}
               <a
-                href="https://reactjs.org"
+                href="https://www.swift.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                React.js
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://laravel.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Laravel
-              </a>{" "}
-              frameworks for web development and{" "}
+                Swift
+              </a>
+              {", "}
               <a
                 href="http://kotlinlang.org"
                 target="_blank"
@@ -66,22 +58,45 @@ export default function Bio() {
               >
                 Kotlin
               </a>{" "}
-              and{" "}
+              , and{" "}
               <a
                 href="http://flutter.dev"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Flutter
-              </a>{" "}
-              for mobile app development.{" "}
+              </a>
+              {". "}
+              {/*along with web development{" "}*/}
+              {/*<a*/}
+              {/*  href="https://reactjs.org"*/}
+              {/*  target="_blank"*/}
+              {/*  rel="noopener noreferrer"*/}
+              {/*>*/}
+              {/*  React.js*/}
+              {/*</a>{" "}*/}
+              {/*and{" "}*/}
+              {/*<a*/}
+              {/*  href="https://laravel.com"*/}
+              {/*  target="_blank"*/}
+              {/*  rel="noopener noreferrer"*/}
+              {/*>*/}
+              {/*  Laravel*/}
+              {/*</a>{" "}*/}
             </p>
             <p>
-              I am passionate about software and all things tech, driven by the
-              desire to solve problems through code.
+              My journey in software development began in 2017, driven by a
+              passion for creating my own video games—though that dream died
+              quickly lol. If you want to know the whole story, read this post:{" "}
+              <Link to="/blog/hello-world">Hello World</Link>.
             </p>
             <p>
-              I strive and enjoy:{" "}
+              Whether it’s developing robust mobile applications or creating
+              dynamic web experiences, I am motivated by the impact that
+              well-crafted technology can have. My approach is guided by three
+              core principles:
+            </p>
+            <p>
               <Link to="/blog/software-that-works" className="underlined-link">
                 Building Things that Work
               </Link>
@@ -98,14 +113,8 @@ export default function Bio() {
               </strong>
             </p>
             <p>
-              I started learning how to code in 2017 because I wanted to make my
-              own video game (yes I wanted to make video games) but that dream
-              died quick. For the whole story read my post{" "}
-              <Link to="/blog/hello-world">Hello World</Link>
-              {"."}
-            </p>
-            <p>
-              Apart from coding I also enjoy writing fiction, poetry &amp; video
+              Apart from coding I also enjoy writing fiction, short stories to
+              be specific &amp; playing <em>&ldquo;difficult&rdquo;</em> video
               games. I mean why not?
             </p>
             <div className="professional-btns">

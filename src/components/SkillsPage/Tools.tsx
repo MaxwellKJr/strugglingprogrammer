@@ -34,7 +34,7 @@ const toolsList = () => [
     icon: <SiWebstorm />,
   },
   {
-    type: "Android + Flutter Development",
+    type: "Android/Flutter Dev",
     name: "Android Studio ",
     link: "https://developer.android.com/studio",
     description:
@@ -45,10 +45,10 @@ const toolsList = () => [
   },
   {
     type: "iOS Development",
-    name: "Xcode",
+    name: "Xcode ",
     link: "https://developer.apple.com/xcode/",
     description:
-      "The official and only IDE for developing iOS, iPadOS, and macOS",
+      "The official and only IDE for developing iOS, iPadOS, and macOS apps",
     whyUse:
       "I don't have a choice. I dread this IDE! If there were alternatives, trust me, I would use those.",
   },
