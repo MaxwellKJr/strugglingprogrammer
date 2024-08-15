@@ -67,7 +67,7 @@ const BlogPostTemplate = ({ data, pageContext }: any) => {
             <h3>{post.frontmatter.title}</h3>
             <div className="article-details">
               <small>{`Published On: ${post.frontmatter.date}`}</small>
-              <small>{`> ${post.timeToRead} minute read`}</small>
+              <small>{`🕑 ${post.timeToRead} minute read`}</small>
             </div>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />

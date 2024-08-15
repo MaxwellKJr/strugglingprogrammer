@@ -14,7 +14,6 @@ const SkillsList = () => {
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 1)
-              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
                   {skill.name} {skill.icon}
@@ -28,7 +27,6 @@ const SkillsList = () => {
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 2)
-              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
                   {skill.name} {skill.icon}
@@ -42,7 +40,6 @@ const SkillsList = () => {
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 3)
-              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
                   {skill.name} {skill.icon}
@@ -56,7 +53,6 @@ const SkillsList = () => {
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 4)
-              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
                   {skill.name} {skill.icon}
@@ -70,7 +66,6 @@ const SkillsList = () => {
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 5)
-              // Replace 'return' with 'return null' to skip rendering
               return (
                 <li key={skill.name} className="card-dark">
                   {skill.name} {skill.icon}

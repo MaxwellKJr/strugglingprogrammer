@@ -30,7 +30,7 @@ const BlogCard = ({ post }: PostProps) => {
           <GatsbyImage {...imageProps} />
         </Link>
         <div className="blog-details">
-          <small className="timeToRead">{`> ${timeToRead} minute read`}</small>
+          <small className="timeToRead">{`🕑 ${timeToRead} minute read`}</small>
           <h3>
             <Link to={`${slug}`}>{title}</Link>
           </h3>
