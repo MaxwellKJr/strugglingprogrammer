@@ -5,9 +5,11 @@
   .container {
     padding-top: 5rem;
     padding-bottom: 7rem;
+
     .split {
       .skills {
         padding: 1rem 0;
+
         .skills-grid {
           margin: 0.5rem 3rem 0 0;
           display: grid;
@@ -45,8 +47,7 @@
       }
 
       .use-card {
-        padding: 1rem;
-        padding-left: 0.4rem;
+        padding: 1rem 1rem 1rem 0.4rem;
         border-bottom: 1px solid $primary-border;
 
         &:last-child {
@@ -63,6 +64,7 @@
           justify-content: center;
           align-items: center;
           margin: 0.5rem 0;
+
           .type {
             margin-right: 1rem;
           }
@@ -70,6 +72,7 @@
           .use-link {
             color: $primary-white;
             text-decoration: underline;
+
             &:hover {
               color: $primary-color;
             }
@@ -78,10 +81,18 @@
 
         .use-description {
           li {
-            list-style: symbols("+") !important;
+            list-style-type: none;
             margin-left: 2rem;
             margin-bottom: 0.4rem;
             opacity: 0.8;
+            position: relative;
+
+            ::before {
+              content: '→';
+              position: absolute;
+              left: -20px;
+              top: 0;
+            }
           }
         }
       }

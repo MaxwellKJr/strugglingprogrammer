@@ -1,16 +1,15 @@
+import { FaSass } from "@react-icons/all-files/fa/FaSass";
 import { GrSwift } from "@react-icons/all-files/gr/GrSwift";
 import { SiAndroid } from "@react-icons/all-files/si/SiAndroid";
 import { SiBootstrap } from "@react-icons/all-files/si/SiBootstrap";
 import { SiGit } from "@react-icons/all-files/si/SiGit";
 import { SiGraphql } from "@react-icons/all-files/si/SiGraphql";
-import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
 import { SiJira } from "@react-icons/all-files/si/SiJira";
 import { SiLaravel } from "@react-icons/all-files/si/SiLaravel";
 import { SiMysql } from "@react-icons/all-files/si/SiMysql";
 import { SiNotion } from "@react-icons/all-files/si/SiNotion";
 import { SiPhp } from "@react-icons/all-files/si/SiPhp";
 import { SiReact } from "@react-icons/all-files/si/SiReact";
-import { SiSass } from "@react-icons/all-files/si/SiSass";
 import { SiTailwindcss } from "@react-icons/all-files/si/SiTailwindcss";
 import { SiTypescript } from "@react-icons/all-files/si/SiTypescript";
 import { SiDart } from "@react-icons/all-files/si/SiDart";
@@ -45,14 +44,29 @@ const skillsList = () => [
     icon: <SiDart />,
   },
   {
-    name: "React",
-    skill: 2,
-    icon: <SiReact />,
-  },
-  {
     name: "PHP",
     skill: 1,
     icon: <SiPhp />,
+  },
+  {
+    name: "Java",
+    skill: 1,
+    icon: <SiJava />,
+  },
+  {
+    name: "HTML",
+    skill: 1,
+    icon: <SiHtml5 />,
+  },
+  {
+    name: "CSS",
+    skill: 1,
+    icon: <SiCss3 />,
+  },
+  {
+    name: "React",
+    skill: 2,
+    icon: <SiReact />,
   },
   {
     name: "Laravel",
@@ -70,9 +84,9 @@ const skillsList = () => [
     icon: <SiBootstrap />,
   },
   {
-    name: "Java",
-    skill: 1,
-    icon: <SiJava />,
+    name: "Sass",
+    skill: 2,
+    icon: <FaSass />,
   },
   {
     name: "Android (Kotlin)",
@@ -93,21 +107,6 @@ const skillsList = () => [
     name: "React Native",
     skill: 3,
     icon: <SiReact />,
-  },
-  {
-    name: "HTML",
-    skill: 1,
-    icon: <SiHtml5 />,
-  },
-  {
-    name: "CSS",
-    skill: 1,
-    icon: <SiCss3 />,
-  },
-  {
-    name: "Sass",
-    skill: 2,
-    icon: <SiSass />,
   },
   {
     name: "SQL",

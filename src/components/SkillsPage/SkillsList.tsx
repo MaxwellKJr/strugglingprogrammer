@@ -2,7 +2,6 @@ import React from "react";
 import "./SkillsList.css";
 import skillsList from "./Skills";
 import toolsList from "./Tools";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SkillsList = () => {
   const skills = skillsList;
@@ -99,15 +98,13 @@ const SkillsList = () => {
                     className="use-link"
                   >
                     <h3>
-                      {use.name} <FontAwesomeIcon icon={use.icon} />
+                      {use.name} {use.icon}
                     </h3>
                   </a>
                 </li>
               </ul>
               <ul className="use-description">
-                <li>
-                  <em>{use.description}</em>
-                </li>
+                <li>{use.description}</li>
                 <li>
                   <h5>Why I Use This:</h5> {use.whyUse}
                 </li>
