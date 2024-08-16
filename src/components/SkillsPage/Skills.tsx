@@ -19,10 +19,15 @@ import { SiKotlin } from "@react-icons/all-files/si/SiKotlin";
 import { SiHtml5 } from "@react-icons/all-files/si/SiHtml5";
 import { SiCss3 } from "@react-icons/all-files/si/SiCss3";
 import { SiWordpress } from "@react-icons/all-files/si/SiWordpress";
+import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
+import { HiLightningBolt } from "@react-icons/all-files/hi/HiLightningBolt";
+import { SiStrapi } from "@react-icons/all-files/si/SiStrapi";
+import { SiRealm } from "@react-icons/all-files/si/SiRealm";
 
 import React from "react";
 
 const skillsList = () => [
+  // Programming Languages
   {
     name: "TypeScript",
     skill: 1,
@@ -48,11 +53,11 @@ const skillsList = () => [
     skill: 1,
     icon: <SiPhp />,
   },
-  {
-    name: "Java",
-    skill: 1,
-    icon: <SiJava />,
-  },
+  // {
+  //   name: "Java",
+  //   skill: 1,
+  //   icon: <SiJava />,
+  // },
   {
     name: "HTML",
     skill: 1,
@@ -63,6 +68,8 @@ const skillsList = () => [
     skill: 1,
     icon: <SiCss3 />,
   },
+
+  // Web Libraries and Frameworks
   {
     name: "React",
     skill: 2,
@@ -88,6 +95,7 @@ const skillsList = () => [
     skill: 2,
     icon: <FaSass />,
   },
+  // Mobile Development
   {
     name: "Android (Kotlin)",
     skill: 3,
@@ -108,6 +116,7 @@ const skillsList = () => [
     skill: 3,
     icon: <SiReact />,
   },
+  // Querying
   {
     name: "SQL",
     skill: 4,
@@ -118,24 +127,46 @@ const skillsList = () => [
     skill: 4,
     icon: <SiGraphql />,
   },
+  // Data Management and Storage
+  {
+    name: "Firebase",
+    skill: 5,
+    icon: <SiFirebase />,
+  },
+  {
+    name: "Supabase",
+    skill: 5,
+    icon: <HiLightningBolt />,
+  },
+  {
+    name: "Strapi",
+    skill: 5,
+    icon: <SiStrapi />,
+  },
+  {
+    name: "Realm",
+    skill: 5,
+    icon: <SiRealm />,
+  },
+  // Other Technologies
   {
     name: "Git",
-    skill: 5,
+    skill: 6,
     icon: <SiGit />,
   },
   {
     name: "Jira",
-    skill: 5,
+    skill: 6,
     icon: <SiJira />,
   },
   {
     name: "Notion",
-    skill: 5,
+    skill: 6,
     icon: <SiNotion />,
   },
   {
     name: "WordPress",
-    skill: 5,
+    skill: 6,
     icon: <SiWordpress />,
   },
 ];

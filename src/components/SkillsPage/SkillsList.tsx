@@ -9,6 +9,7 @@ const SkillsList = () => {
 
   return (
     <div className="split">
+      {/*Programming Languages*/}
       <div className="skills">
         <h4 className="category-headline">Programming Languages:</h4>
         <ul className="skills-grid">
@@ -22,8 +23,9 @@ const SkillsList = () => {
           })}
         </ul>
       </div>
+      {/*Web Libraries & Frameworks*/}
       <div className="skills">
-        <h4 className="category-headline">Web Libraries & Frameworks:</h4>
+        <h4 className="category-headline">Web Libraries &amp; Frameworks:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 2)
@@ -35,6 +37,7 @@ const SkillsList = () => {
           })}
         </ul>
       </div>
+      {/*Mobile Development*/}
       <div className="skills">
         <h4 className="category-headline">Mobile Development:</h4>
         <ul className="skills-grid">
@@ -48,8 +51,9 @@ const SkillsList = () => {
           })}
         </ul>
       </div>
+      {/*Querying*/}
       <div className="skills">
-        <h4 className="category-headline">Query Languages:</h4>
+        <h4 className="category-headline">Querying:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
             if (skill.skill === 4)
@@ -61,11 +65,26 @@ const SkillsList = () => {
           })}
         </ul>
       </div>
+      {/*Data Management & Storage*/}
+      <div className="skills">
+        <h4 className="category-headline">Data Management &amp; Storage:</h4>
+        <ul className="skills-grid">
+          {skills.map((skill) => {
+            if (skill.skill === 5)
+              return (
+                <li key={skill.name} className="card-dark">
+                  {skill.name} {skill.icon}
+                </li>
+              );
+          })}
+        </ul>
+      </div>
+      {/*Other Technologies*/}
       <div className="skills">
         <h4 className="category-headline">Other Technologies:</h4>
         <ul className="skills-grid">
           {skills.map((skill) => {
-            if (skill.skill === 5)
+            if (skill.skill === 6)
               return (
                 <li key={skill.name} className="card-dark">
                   {skill.name} {skill.icon}

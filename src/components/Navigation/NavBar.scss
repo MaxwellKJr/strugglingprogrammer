@@ -4,167 +4,167 @@
 $blinking-duration: 2.3s;
 
 @keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 #main-nav {
-  position: fixed;
-  background: $primary-background;
-  bottom: 0;
-  left: 0;
-  width: 10vw;
-  height: 100vh;
-  border-right: 1px $primary-color solid;
-  text-align: center;
-  z-index: 1000;
+    position: fixed;
+    background: $primary-background;
+    bottom: 0;
+    left: 0;
+    width: 10vw;
+    height: 100vh;
+    border-right: 1px $primary-color solid;
+    text-align: center;
+    z-index: 1000;
 
-  a {
-    color: #f0f8ff;
-    text-decoration: none;
-  }
-
-  .logo {
-    display: inline-block;
-    font-family: $odibee;
-    font-size: 1.5rem;
-    padding: 1rem;
-    width: 100%;
-    // height: 12vh;
-    color: $primary-color;
-    background: rgba($color: #ff0077, $alpha: 0.1);
-    position: relative;
-    transition: all 750ms ease-in-out;
-
-    &:hover {
-      .logo-text {
-        color: white;
-        transition: all 750ms ease-in-out;
-        transform: rotateY(360deg) !important;
-        -webkit-transform: rotateY(360deg) !important;
-        -moz-transform: rotateY(360deg) !important;
-        -ms-transform: rotateY(360deg) !important;
-        animation: blink $blinking-duration infinite;
-      }
+    a {
+        color: #f0f8ff;
+        text-decoration: none;
     }
 
-    .logo-text {
-      animation: blink $blinking-duration infinite;
-    }
-
-    @media (max-width: $lg) {
-      display: none;
-    }
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-    @media (max-width: $lg) {
-      height: 10vh !important;
-      justify-content: center;
-    }
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: center;
-
-    @media (max-width: $lg) {
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-grow: 0;
-      width: 100%;
-    }
-
-    .nav-link {
-      list-style: none;
-      text-align: center;
-
-      a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 2rem;
+    .logo {
+        display: inline-block;
+        font-family: $odibee;
+        font-size: 1.5rem;
+        padding: 1rem;
         width: 100%;
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        transition: color 300ms ease-in-out;
+        // height: 12vh;
+        color: $primary-color;
+        background: rgba($color: #ff0077, $alpha: 0.1);
+        position: relative;
+        transition: all 750ms ease-in-out;
 
         &:hover {
-          color: $primary-color;
+            .logo-text {
+                color: white;
+                transition: all 750ms ease-in-out;
+                transform: rotateY(360deg) !important;
+                -webkit-transform: rotateY(360deg) !important;
+                -moz-transform: rotateY(360deg) !important;
+                -ms-transform: rotateY(360deg) !important;
+                animation: blink $blinking-duration infinite;
+            }
         }
 
-        .route-icon {
-          display: none;
-          @media (max-width: $lg) {
-            display: inline-block;
-            align-items: center;
-            width: 16px;
-            height: 16px;
-          }
-        }
-
-        .route-text {
-          @media (max-width: $lg) {
-            font-weight: 500;
-            font-size: 0.54rem;
-            margin-top: 0.3rem;
-          }
+        .logo-text {
+            animation: blink $blinking-duration infinite;
         }
 
         @media (max-width: $lg) {
-          padding: 0;
+            display: none;
         }
-      }
-
-      .active {
-        color: $primary-color;
-        font-weight: 600;
-      }
     }
-  }
 
-  @media (max-width: $lg) {
-    background: $secondary-color;
-    bottom: 0;
-    height: 10vh;
-    width: 100vw;
-    border-right: none;
-    border-top: 1px $primary-color solid;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        @media (max-width: $lg) {
+            height: 10vh !important;
+            justify-content: center;
+        }
+    }
+
     .nav-links {
-      .nav-link {
-        a {
-          padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
 
-          &:hover {
-            background: none;
-          }
+        @media (max-width: $lg) {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-grow: 0;
+            width: 100%;
         }
-      }
-    }
-  }
 
-  #header-footer {
-    color: $secondary-white;
-    display: inline-block;
-    width: 100%;
-    padding: 0.4rem 0;
+        .nav-link {
+            list-style: none;
+            text-align: center;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem 2rem;
+                width: 100%;
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                transition: color 300ms ease-in-out;
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                .route-icon {
+                    display: none;
+                    @media (max-width: $lg) {
+                        display: inline-block;
+                        align-items: center;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+
+                .route-text {
+                    @media (max-width: $lg) {
+                        font-weight: 500;
+                        font-size: 0.54rem;
+                        margin-top: 0.3rem;
+                    }
+                }
+
+                @media (max-width: $lg) {
+                    padding: 0;
+                }
+            }
+
+            .active {
+                color: $primary-color;
+                font-weight: 600;
+            }
+        }
+    }
 
     @media (max-width: $lg) {
-      display: none;
+        background: $secondary-color;
+        bottom: 0;
+        height: 10vh;
+        width: 100vw;
+        border-right: none;
+        border-top: 1px $primary-color solid;
+        .nav-links {
+            .nav-link {
+                a {
+                    padding: 0;
+
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
+        }
     }
-  }
+
+    #header-footer {
+        color: $secondary-white;
+        display: inline-block;
+        width: 100%;
+        padding: 0.4rem 0;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
 }
