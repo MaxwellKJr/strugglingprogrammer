@@ -1,6 +1,6 @@
 import "../styles/global.css";
 
-import { graphql, PageProps, StaticQueryDocument } from "gatsby";
+import { graphql, StaticQueryDocument } from "gatsby";
 import React from "react";
 import Showcase from "../components/HomePage/Showcase";
 
@@ -27,10 +27,20 @@ export default function IndexPage() {
   );
 }
 
-export const Head = ({ data }: PageProps) => {
-  const seo = data.site;
+type SiteMetadata = {
+  siteUrl: string;
+  title: string;
+  description: string;
+  about: string;
+};
 
-  const { title, description, siteUrl } = seo.siteMetadata;
+type SiteData = {
+  siteMetadata: SiteMetadata;
+};
+
+export const Head = ({ data }: { data: SiteData }) => {
+  const seo = data.siteMetadata;
+  const { title, description, siteUrl } = seo;
 
   return (
     <>

@@ -91,7 +91,7 @@ export const Head = () => {
           "See Maxwell Kapezi Jr's work and works-in-progress he has been working on over the years."
         }
       />
-      <meta name="og:url" content={"https://bymjcodes.com/blog/"} />
+      <meta name="og:url" content={"https://bymjcodes.com/projects/"} />
       <meta name="og:type" content="website" />
       <meta name="twitter:title" content={"MJ Codes | Projects"} />
       <meta
