@@ -29,7 +29,7 @@ const ServicesPage = () => {
           <h1>Services & Pricing</h1>
           <small>
             <em>
-              Please note that prices may change due to the scope of work.
+              Please note that prices may change due to the scope of work. And
             </em>
           </small>
           <ul className="tabs">
