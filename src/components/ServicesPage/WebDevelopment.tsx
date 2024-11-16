@@ -52,7 +52,6 @@ export const WebDevelopment = () => {
         "Fast delivery of updates post deployment",
         "Consultations post deployment",
         "Admin priveleges are available",
-        "10+ years free domain registration",
       ],
     },
   ];

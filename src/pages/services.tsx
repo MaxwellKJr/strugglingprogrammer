@@ -27,9 +27,14 @@ const ServicesPage = () => {
       <section id="services">
         <div className="container">
           <h1>Services & Pricing</h1>
-          <small>
+          <small className="info">
             <em>
-              Please note that prices may change due to the scope of work. And
+              Please note that prices may change due to the scope of work,{" "}
+            </em>
+            <br />
+            <em>
+              Fees for domain name(s), Web, Google Play Store and App Store
+              hosting, etc are handled by the client.
             </em>
           </small>
           <ul className="tabs">
