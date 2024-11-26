@@ -65,16 +65,20 @@
 .questions-container .question-card {
   margin: 1rem 0;
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.631372549);
+  border-bottom: 1px solid #ebebeb;
 }
 .questions-container .question-card .question {
-  color: #ff0077;
   display: flex;
   justify-content: space-between;
+  opacity: 0.8;
+}
+.questions-container .question-card .question.question-open {
+  color: #ff0077;
 }
 .questions-container .question-card .answer {
   font-size: 14px;
   padding: 0.4rem 0;
+  margin-top: 0.8rem;
   transition: all 400ms ease-in-out;
   max-height: 200px;
   overflow: hidden;

@@ -32,7 +32,8 @@ export default function ServicesPage() {
             <em>
               Please note that prices may change due to the scope of work,{" "}
             </em>
-            <br />
+          </small>
+          <small className="info">
             <em>
               Fees for domain name(s), Web, Google Play Store and App Store
               hosting, etc are handled by the client.

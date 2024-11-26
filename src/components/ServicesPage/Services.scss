@@ -73,17 +73,21 @@
   .question-card {
     margin: 1rem 0;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #ffffffa1;
+    border-bottom: 1px solid $primary-white;
 
     .question {
-      color: $primary-color;
       display: flex;
       justify-content: space-between;
+      opacity: 0.8;
+      &.question-open {
+        color: $primary-color;
+      }
     }
 
     .answer {
       font-size: 14px;
       padding: 0.4rem 0;
+      margin-top: 0.8rem;
       transition: all 400ms ease-in-out;
       max-height: 200px;
       overflow: hidden;
