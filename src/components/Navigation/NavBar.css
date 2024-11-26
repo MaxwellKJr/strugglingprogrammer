@@ -102,8 +102,8 @@
   #main-nav .nav-links .nav-link a .route-icon {
     display: inline-block;
     align-items: center;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
 }
 @media (max-width: 968px) {
