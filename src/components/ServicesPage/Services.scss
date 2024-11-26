@@ -25,7 +25,7 @@
 
       .service-recommended-pill {
         display: inline-block;
-        background: #910a41;
+        background: $primary-border;
         color: $primary-white;
         padding: 0 0.3rem;
         border-radius: 10px;
@@ -64,5 +64,24 @@
   @media (max-width: $sm) {
     display: flex;
     flex-direction: column;
+  }
+}
+
+// FREQUENTLY ASKED QUESTIONS
+.questions-container {
+  margin: 1rem 0;
+  .question-card {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ffffffa1;
+
+    .question {
+      color: $primary-color;
+    }
+
+    .answer {
+      font-size: 14px;
+      padding: 0.4rem 0;
+    }
   }
 }

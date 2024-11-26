@@ -3,6 +3,7 @@ import Layout from "../layouts";
 import { WebDevelopment } from "../components/ServicesPage/WebDevelopment";
 import { MobileDevelopment } from "../components/ServicesPage/MobileDevelopment";
 import { PageProps, graphql } from "gatsby";
+import { FAQS } from "../components/ServicesPage/FAQS";
 
 export const query = graphql`
   query {
@@ -18,7 +19,7 @@ export const query = graphql`
   }
 `;
 
-const ServicesPage = () => {
+export default function ServicesPage() {
   const [toggle, setToggle] = useState(1);
 
   const toggleTab = (index: React.SetStateAction<number>) => setToggle(index);
@@ -50,15 +51,32 @@ const ServicesPage = () => {
             >
               Mobile App Development
             </li>
+            <li
+              className={toggle === 3 ? "active-tab" : "tab"}
+              onClick={() => toggleTab(3)}
+            >
+              FAQs
+            </li>
           </ul>
-          {toggle === 1 ? <WebDevelopment /> : <MobileDevelopment />}
+          {ServiceChoice(toggle)}
         </div>
       </section>
     </Layout>
   );
-};
+}
 
-export default ServicesPage;
+function ServiceChoice(toggle: number) {
+  switch (toggle) {
+    case 1:
+      return <WebDevelopment />;
+    case 2:
+      return <MobileDevelopment />;
+    case 3:
+      return <FAQS />;
+    default:
+      return null;
+  }
+}
 
 export const Head = ({ data }: PageProps) => {
   const seo = data.allSite.nodes[0];
