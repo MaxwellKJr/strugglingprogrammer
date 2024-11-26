@@ -22,7 +22,7 @@
 }
 .services-flex .service-card .service-name .service-recommended-pill {
   display: inline-block;
-  background: rgba(255, 0, 102, 0.4588235294);
+  background: #ff0077;
   color: #ebebeb;
   padding: 0 0.3rem;
   border-radius: 10px;

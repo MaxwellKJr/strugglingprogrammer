@@ -51,12 +51,13 @@ body {
 #services .tabs {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 #services .tabs .tab {
+  display: inline-block;
   color: #ebebeb;
   opacity: 0.8;
   font-size: 0.8rem;
