@@ -56,7 +56,7 @@ export default function ServicesPage() {
               className={toggle === 3 ? "active-tab" : "tab"}
               onClick={() => toggleTab(3)}
             >
-              FAQs
+              Frequently Asked Questions
             </li>
           </ul>
           {ServiceChoice(toggle)}
