@@ -57,6 +57,7 @@ body {
     margin-bottom: 1rem;
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     // padding: 0.2rem;
     // border: 1px solid index.$primary-border;
@@ -69,6 +70,7 @@ body {
       font-size: 0.8rem;
       padding: 0.4rem 0.8rem;
       margin-right: 0.5rem;
+      margin-top: 0.8rem;
       border-radius: 30px;
       border: 1px solid $primary-white;
       cursor: pointer;
@@ -108,6 +110,7 @@ body {
       font-weight: 600;
       padding: 0.4rem 0.8rem;
       margin-right: 0.5rem;
+      margin-top: 0.8rem;
       border-radius: 30px;
       cursor: pointer;
       position: relative;
